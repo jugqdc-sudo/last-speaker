@@ -1,0 +1,22 @@
+16:29:04  CHIEF  case open · piedmontese.wav · 0.46 h of tape · one speaker · no dictionary, no translation
+16:29:08  SCOUT  cut the tape into 292 utterances · 24.9 min of speech in 27.3 min of tape
+16:29:09  PHON   utterance 0 · 00:00:02 · 43 phones · inventory 26
+16:29:13  PHON   utterance 50 · 00:04:59 · 37 phones · inventory 81
+16:29:16  PHON   utterance 100 · 00:09:50 · 50 phones · inventory 92
+16:29:19  PHON   utterance 150 · 00:13:47 · 14 phones · inventory 95
+16:29:23  PHON   utterance 200 · 00:18:05 · 108 phones · inventory 96
+16:29:27  PHON   utterance 250 · 00:23:15 · 76 phones · inventory 101
+16:29:30  PHON   sound inventory from scratch: 102 phones · 22 vowels · 80 consonants
+16:29:30  LEX    1184 word candidates (chains that come back ≥3× in ≥3 utterances) · 2791 tokens · 66% of the tape covered · 628 stretches heard exactly once, so they could mean anything
+16:29:30  GRAM   18 rules written (9 endings, 9 prefixes) · 1 of them fight each other
+16:29:31  VOICE  his voice: median pitch 151 Hz, 8.8 phones/s · 16 utterances where the register shifts (pitch up, tempo up: not his usual voice)
+16:29:31  CHIEF  signed 1 rules · refused 17 · 0 fights stay open, nobody alive to settle them
+16:29:31  CHIEF  refused rule 2 [l a l] · heard 5 times, the gate wants 6
+16:29:31  CHIEF  refused rule 3 [i j e] · heard 5 times, the gate wants 6
+16:29:31  CHIEF  refused rule 4 [i t a] · heard 5 times, the gate wants 6
+16:29:31  CHIEF  refused rule 5 [e a l] · heard 5 times, the gate wants 6
+16:29:31  CHIEF  refused rule 6 [o t e] · heard 5 times, the gate wants 6
+16:29:31  CHIEF  refused rule 7 [ɒ l ә] · heard 5 times, the gate wants 6
+16:29:31  CHIEF  ... and 11 more refusals, all in report.md with the reason
+16:29:31  SCRIBE filed run.json, report.md, log.txt in /Users/wooooork/projects/tools/last-speaker/runs/piedmontese
+16:29:31  CHIEF  done in 0.4 min · WORDS SAVED 1184 · RULES 1 · FIGHTS 0 · SHIFTS 16 · SPEAKERS LEFT 1
