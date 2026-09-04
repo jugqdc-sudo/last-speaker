@@ -1,0 +1,17 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.mp4
+*.webm
+*.mkv
+*.log
+data/
+runs/*/phones.json
+*.wav
+runs/*/log_reuse.txt
+
+# internal notes, not for the public repo
+CLAUDE.md
