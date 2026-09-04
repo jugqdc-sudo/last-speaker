@@ -1,0 +1,9 @@
+15:59:12  CHIEF  case open · torwali.wav · 0.05 h of tape · one speaker · no dictionary, no translation
+15:59:12  SCOUT  reusing 46 cut utterances from phones.json
+15:59:12  PHON   reusing inventory: 86 phones · 19 vowels
+15:59:12  LEX    16 word candidates (chains that come back ≥3× in ≥3 utterances) · 47 tokens · 11% of the tape covered · 77 stretches heard exactly once, so they could mean anything
+15:59:12  GRAM   0 rules written (0 endings, 0 prefixes) · 0 of them fight each other
+15:59:12  VOICE  his voice: median pitch 157 Hz, 8.7 phones/s · 5 utterances where the register shifts (pitch up, tempo up: not his usual voice)
+15:59:12  CHIEF  signed 0 rules · refused 0 · 0 fights stay open, nobody alive to settle them
+15:59:12  SCRIBE filed run.json, report.md, log.txt in /Users/wooooork/projects/tools/last-speaker/runs/smoke
+15:59:12  CHIEF  done in 0.0 min · WORDS SAVED 16 · RULES 0 · FIGHTS 0 · SHIFTS 5 · SPEAKERS LEFT 1

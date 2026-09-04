@@ -1,0 +1,40 @@
+16:29:40  CHIEF  case open · torwali.wav · 1.2 h of tape · one speaker · no dictionary, no translation
+16:29:52  SCOUT  cut the tape into 1164 utterances · 55.9 min of speech in 71.9 min of tape
+16:29:53  PHON   utterance 0 · 00:00:01 · 57 phones · inventory 26
+16:29:55  PHON   utterance 50 · 00:03:18 · 43 phones · inventory 88
+16:29:57  PHON   utterance 100 · 00:06:05 · 27 phones · inventory 96
+16:29:59  PHON   utterance 150 · 00:08:51 · 64 phones · inventory 101
+16:30:00  PHON   utterance 200 · 00:11:35 · 8 phones · inventory 104
+16:30:02  PHON   utterance 250 · 00:14:52 · 40 phones · inventory 106
+16:30:04  PHON   utterance 300 · 00:17:55 · 16 phones · inventory 108
+16:30:06  PHON   utterance 350 · 00:20:32 · 16 phones · inventory 109
+16:30:07  PHON   utterance 400 · 00:23:03 · 21 phones · inventory 110
+16:30:09  PHON   utterance 450 · 00:25:43 · 8 phones · inventory 112
+16:30:11  PHON   utterance 500 · 00:29:17 · 6 phones · inventory 113
+16:30:13  PHON   utterance 550 · 00:32:28 · 7 phones · inventory 113
+16:30:15  PHON   utterance 600 · 00:35:37 · 45 phones · inventory 113
+16:30:17  PHON   utterance 650 · 00:39:45 · 48 phones · inventory 113
+16:30:19  PHON   utterance 700 · 00:42:50 · 55 phones · inventory 113
+16:30:21  PHON   utterance 750 · 00:46:26 · 58 phones · inventory 113
+16:30:23  PHON   utterance 800 · 00:49:13 · 22 phones · inventory 113
+16:30:25  PHON   utterance 850 · 00:52:34 · 16 phones · inventory 113
+16:30:27  PHON   utterance 900 · 00:55:19 · 10 phones · inventory 114
+16:30:29  PHON   utterance 950 · 00:58:38 · 41 phones · inventory 114
+16:30:31  PHON   utterance 1000 · 01:01:54 · 9 phones · inventory 115
+16:30:33  PHON   utterance 1050 · 01:04:55 · 9 phones · inventory 115
+16:30:35  PHON   utterance 1100 · 01:07:43 · 57 phones · inventory 115
+16:30:37  PHON   utterance 1150 · 01:11:02 · 22 phones · inventory 115
+16:30:37  PHON   sound inventory from scratch: 115 phones · 23 vowels · 92 consonants
+16:30:37  LEX    3218 word candidates (chains that come back ≥3× in ≥3 utterances) · 7750 tokens · 72% of the tape covered · 1316 stretches heard exactly once, so they could mean anything
+16:30:38  GRAM   60 rules written (28 endings, 32 prefixes) · 38 of them fight each other
+16:30:39  VOICE  his voice: median pitch 153 Hz, 10.3 phones/s · 60 utterances where the register shifts (pitch up, tempo up: not his usual voice)
+16:30:39  CHIEF  signed 19 rules · refused 41 · 9 fights stay open, nobody alive to settle them
+16:30:39  CHIEF  refused rule 20 [ʔ ɒ tʂ] · heard 5 times, the gate wants 6
+16:30:39  CHIEF  refused rule 21 [tɕ ɒ l] · heard 5 times, the gate wants 6
+16:30:39  CHIEF  refused rule 22 [o b ɒ] · heard 5 times, the gate wants 6
+16:30:39  CHIEF  refused rule 23 [n ɒ ɴ] · heard 5 times, the gate wants 6
+16:30:39  CHIEF  refused rule 24 [o b u] · heard 5 times, the gate wants 6
+16:30:39  CHIEF  refused rule 25 [ð e ɾ] · heard 5 times, the gate wants 6
+16:30:39  CHIEF  ... and 35 more refusals, all in report.md with the reason
+16:30:39  SCRIBE filed run.json, report.md, log.txt in /Users/wooooork/projects/tools/last-speaker/runs/torwali
+16:30:39  CHIEF  done in 1.0 min · WORDS SAVED 3218 · RULES 19 · FIGHTS 9 · SHIFTS 60 · SPEAKERS LEFT 1
