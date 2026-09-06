@@ -1,0 +1,13 @@
+# the versions the numbers in the README came out of (run on 2026-09-04, python 3.11)
+# without them "check it yourself" does not hold: a different allosaurus gives a different
+# transcription, and a different parselmouth gives a different register-shift threshold
+
+silero-vad==6.2.1          # SCOUT: cuts the tape into utterances
+allosaurus==1.0.2          # PHON: phones from raw audio, no language model
+praat-parselmouth==0.4.7   # VOICE: pitch and tempo per utterance
+soundfile==0.14.0          # wav reading
+numpy==2.4.6
+torch==2.14.0              # pulled in by silero-vad
+torchaudio==2.11.0
+# optional, only for make_gif.py (the log animation):
+# Pillow==11.3.0
