@@ -1,11 +1,14 @@
-# THE LAST SPEAKER
+# COLD.DESK
 
 **3,218 word candidates and 19 grammar rules out of 72 minutes of a language that has no
 writing system.** no dictionary. no translation. no idea what any of it means.
 
 six agents listen to raw tape of one speaker and pull out the sound inventory, the chains
-that keep coming back, and the patterns that behave like grammar. every single finding
-carries a position on the tape, so you can go to that second and hear it yourself.
+that keep coming back, and the patterns that behave like grammar. every finding carries a
+position on the tape, so you can go to that second and hear it yourself.
+
+case 01 is called **the last speaker**: one man, one language, and no second speaker anywhere
+to check the answers against.
 
 nothing gets written without a source. the gate refused 41 of the 60 rules and says why
 for each one.
@@ -13,7 +16,7 @@ for each one.
 ![the desk running on 72 minutes of Torwali](docs/desk.gif)
 
 **live report - every number opens that second of the recording:**
-[torwali](https://jugqdc-sudo.github.io/last-speaker/) · [piedmontese](https://jugqdc-sudo.github.io/last-speaker/piedmontese.html)
+[torwali](https://jugqdc-sudo.github.io/cold-desk/) · [piedmontese](https://jugqdc-sudo.github.io/cold-desk/piedmontese.html)
 
 ```bash
 pip install -r requirements.txt
