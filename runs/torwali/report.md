@@ -1,6 +1,6 @@
 # THE LAST SPEAKER · case report
 
-source: WIKITONGUES: Abdul Mateen speaking Torwali (https://www.youtube.com/watch?v=361y-JDT_bs)
+source:  ()
 
 | what | number |
 |---|---|
@@ -89,6 +89,74 @@ source: WIKITONGUES: Abdul Mateen speaking Torwali (https://www.youtube.com/watc
 - rule 37 `t ɒ s` · heard 5 times, the gate wants 6
 - rule 38 `ɒ ɴ ɒ` · heard 5 times, the gate wants 6
 - rule 39 `œ l j e` · heard 5 times, the gate wants 6
+
+## forms the grammar allows and nobody ever said
+
+| what | number |
+|---|---|
+| forms the signed rules produce | 1110 |
+| of those, actually on the tape | 5 |
+| never recorded by anybody | 1105 |
+| control: RANDOM chains of the same lengths found on the tape | 0 of 1110 |
+
+the control line is the point. if random junk landed on the tape as often as these forms,
+the derivation would mean nothing. each form below carries the stem and the rule it came
+from, and both of those carry tape positions - that is the whole provenance.
+
+- `j ʌ m ʌ ɾ ɒ` = stem `j ʌ m` + rule 1 `ʌ ɾ ɒ` (stem heard 2×, rule 11×)
+- `j ʌ m ɒ x ɒ` = stem `j ʌ m` + rule 3 `ɒ x ɒ` (stem heard 2×, rule 10×)
+- `j ʌ m i tɕ i` = stem `j ʌ m` + rule 5 `i tɕ i` (stem heard 2×, rule 9×)
+- `j ʌ m b a n` = stem `j ʌ m` + rule 6 `b a n` (stem heard 2×, rule 8×)
+- `j ʌ m l j i` = stem `j ʌ m` + rule 13 `l j i` (stem heard 2×, rule 7×)
+- `j ʌ m i ɕ i` = stem `j ʌ m` + rule 14 `i ɕ i` (stem heard 2×, rule 7×)
+- `j ʌ m b ɒ ɾ ɒ` = stem `j ʌ m` + rule 18 `b ɒ ɾ ɒ` (stem heard 2×, rule 6×)
+- `ʂ ɨ b ɒ x ɒ` = stem `ʂ ɨ b` + rule 3 `ɒ x ɒ` (stem heard 2×, rule 10×)
+- `ʂ ɨ b i tɕ i` = stem `ʂ ɨ b` + rule 5 `i tɕ i` (stem heard 2×, rule 9×)
+- `ʂ ɨ b b a n` = stem `ʂ ɨ b` + rule 6 `b a n` (stem heard 2×, rule 8×)
+- `ʂ ɨ b a l a` = stem `ʂ ɨ b` + rule 12 `a l a` (stem heard 2×, rule 8×)
+- `ʂ ɨ b l j i` = stem `ʂ ɨ b` + rule 13 `l j i` (stem heard 2×, rule 7×)
+- `ʂ ɨ b i ɕ i` = stem `ʂ ɨ b` + rule 14 `i ɕ i` (stem heard 2×, rule 7×)
+- `ʂ ɨ b b ɒ ɾ ɒ` = stem `ʂ ɨ b` + rule 18 `b ɒ ɾ ɒ` (stem heard 2×, rule 6×)
+- `b ɔ ɾ ʌ ɾ ɒ` = stem `b ɔ ɾ` + rule 1 `ʌ ɾ ɒ` (stem heard 5×, rule 11×)
+
+## the queue · what goes when he goes
+
+2041 of 3218 word candidates were heard twice or less AND no
+signed rule can rebuild them. those are the ones with nobody to ask.
+
+- `t uə e` heard 1× in 1 utterances · **nothing can rebuild it**
+- `b a l` heard 1× in 1 utterances · **nothing can rebuild it**
+- `i ɕ a` heard 1× in 1 utterances · **nothing can rebuild it**
+- `e ʂ ɒ` heard 1× in 1 utterances · **nothing can rebuild it**
+- `ɪ b ʌ` heard 1× in 1 utterances · **nothing can rebuild it**
+- `ʌ n d i` heard 1× in 1 utterances · **nothing can rebuild it**
+- `n t i ɕ i` heard 1× in 1 utterances · **nothing can rebuild it**
+- `i x a` heard 1× in 1 utterances · **nothing can rebuild it**
+- `ɒ l b` heard 1× in 1 utterances · **nothing can rebuild it**
+- `tʂ ʌ ɒ` heard 1× in 1 utterances · **nothing can rebuild it**
+- `ʁ ɒ tɕ` heard 1× in 1 utterances · **nothing can rebuild it**
+- `e m j` heard 1× in 1 utterances · **nothing can rebuild it**
+- `i ʂ ʌ` heard 1× in 1 utterances · **nothing can rebuild it**
+- `i b u l` heard 1× in 1 utterances · **nothing can rebuild it**
+- `j e ɟ j e` heard 1× in 1 utterances · **nothing can rebuild it**
+
+## does the voice fade across the tape
+
+| window | utterances | speech share | phones/s | pitch | median utterance |
+|---|---|---|---|---|---|
+| 00:00-10:00 | 170 | 0.773 | 10.0 | 156.8 | 2.1 s |
+| 10:00-20:00 | 172 | 0.771 | 10.87 | 149.7 | 2.2 s |
+| 20:00-30:00 | 171 | 0.778 | 11.43 | 153.1 | 2.0 s |
+| 30:00-40:00 | 140 | 0.76 | 9.16 | 155.4 | 2.65 s |
+| 40:00-50:00 | 156 | 0.799 | 10.0 | 153.4 | 2.3 s |
+| 50:00-60:00 | 160 | 0.792 | 10.33 | 152.7 | 2.3 s |
+| 60:00-70:00 | 167 | 0.764 | 10.0 | 152.1 | 2.2 s |
+| 70:00-71:00 | 28 | 0.8 | 10.28 | 150.9 | 2.75 s |
+
+trend per window: rate -0.6%, speech_share +0.4%, utt_seconds +2.6%
+
+a flat line here is a result: on this tape he does not slow down. the serial's
+voice budget needs sessions months apart, and one recording cannot give that.
 
 ## what this is not
 no dictionary of the language was used, nothing here is a translation, and a 'rule' is a chain that

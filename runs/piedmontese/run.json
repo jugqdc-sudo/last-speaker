@@ -1,8 +1,8 @@
 {
  "summary": {
   "source": {
-   "title": "Italy's Piedmontese language, casually spoken | Giorgio speaking Piedmontese | Wikitongues",
-   "url": "https://www.youtube.com/watch?v=kKg2gaNzBK4",
+   "title": "",
+   "url": "",
    "file": "piedmontese.wav",
    "seconds": 1639.7
   },
@@ -26,7 +26,27 @@
   "register_shifts": 16,
   "median_f0": 151.1,
   "median_rate": 8.77,
-  "speakers_left": 1
+  "speakers_left": 1,
+  "forms_the_rules_allow": 0,
+  "derived_found_on_tape": 0,
+  "derived_never_recorded": 0,
+  "control_random_on_tape": 0,
+  "queue_words": 1184,
+  "die_with_him": 747,
+  "fade_across_tape": {
+   "rate": {
+    "per_window": 0.635,
+    "per_window_pct": 7.22
+   },
+   "speech_share": {
+    "per_window": -0.015,
+    "per_window_pct": -1.65
+   },
+   "utt_seconds": {
+    "per_window": -0.2,
+    "per_window_pct": -4.38
+   }
+  }
  },
  "inventory": {
   "vowels": {
@@ -832,6 +852,2865 @@
     "rate": 8.0,
     "z_pitch": 2.02,
     "z_rate": -0.28
+   }
+  ],
+  "fatigue": {
+   "windows": [
+    {
+     "window": "00:00-10:00",
+     "utterances": 102,
+     "speech_share": 0.92,
+     "rate": 8.15,
+     "f0": 151.8,
+     "utt_seconds": 4.8
+    },
+    {
+     "window": "10:00-20:00",
+     "utterances": 115,
+     "speech_share": 0.921,
+     "rate": 8.82,
+     "f0": 156.5,
+     "utt_seconds": 4.5
+    },
+    {
+     "window": "20:00-27:00",
+     "utterances": 75,
+     "speech_share": 0.89,
+     "rate": 9.42,
+     "f0": 145.5,
+     "utt_seconds": 4.4
+    }
+   ],
+   "trend": {
+    "rate": {
+     "per_window": 0.635,
+     "per_window_pct": 7.22
+    },
+    "speech_share": {
+     "per_window": -0.015,
+     "per_window_pct": -1.65
+    },
+    "utt_seconds": {
+     "per_window": -0.2,
+     "per_window_pct": -4.38
+    }
+   },
+   "window_min": 10.0
+  }
+ },
+ "derived": {
+  "checked": 0,
+  "on_tape": 0,
+  "baseline": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "never_recorded": []
+ },
+ "queue": {
+  "total": 1184,
+  "unrecoverable": 747,
+  "top": [
+   {
+    "form": "i b ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a l t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e p a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p a tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i m e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i e p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i e s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e t a b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l e ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a o l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ a p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i p e ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ e t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a b o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e m i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a e m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ o p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "d i j a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ p uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o l i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ij i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j a l a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɒ p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ e n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l ɒ a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a t ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p i j a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e p ʌ ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i a ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɳ u",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ʁ ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɪ a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p e ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a t e a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s ʌ ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ n ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e æ n t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ p uə ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p uə a n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə ɒ a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i s p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a s i b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s i a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k a p i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ʂ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ s ә",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i p i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p i k a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p i p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l i l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ʌ b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l i t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɴ p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p a b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɪ p o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n p uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m a ʁ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e n i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɕ i a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i tʂ ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a m a ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k uə e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p a m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ m i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a tɕ u",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ɪ m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a n tʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɪ t a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɾ ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m a ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p a ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ o m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ʌ ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b i e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j a ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i t ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k a ð e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a l ɪ a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b e ɪ l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m o t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k a s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l a k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l ɒ m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a l ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i j a p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t a ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ j a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o n u",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k a s i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k u l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i t i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i i tʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l ɪ s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i ɡ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ p e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m ɒ t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʂ a e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n t ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p a t a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ð e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t a m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɾ m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ p o ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o l ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ l u",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ e ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i p ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k ʌ p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ a ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɾ p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s a l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e m o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ɴ a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ɒ a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e s p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t a p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t e p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ ð ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ʁ a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l a o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t e i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ t ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə a b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ ʌ n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə e ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ɒ b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ l uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l ɒ l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l a p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə o a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p ɾ ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə a ð e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ŋ m ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p i a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ɛ p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɴ p ɾ ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a s b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m a s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ɒ t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l ɪ k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ p uə a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o s e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m e t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e i p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ʂ ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o p e ɾ o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ a n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ l ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a p ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a p u",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a b j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a t ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɪ e s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə ɒ s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɴ d i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l a ʁ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i t a l ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a l o ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j a e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ m u",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a s p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b uə ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ a k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ p a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s ɒ s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a l u",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k ʌ s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s a k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a s i k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a l j a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e p ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s t i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ ɾ m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t a l j a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ð a s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ o l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "kp a l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ l ɒ b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ʂ ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p o ɾ a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ b ɒ ʔ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k e a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o s k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɾ e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i a m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʁ a ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l o ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j a ɒ l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "kp ɛ t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p i j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s u b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o p i k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o l l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə a l a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o ɾ t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i t ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ l i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ʌ l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k e a l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ a s e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i s ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɪ p uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʔ i j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o s t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ a p uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɴ d",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s t o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s p a t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ð o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ð a ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e p ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a i p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p o s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m a t ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p e n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a n a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə e b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p a ʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a t uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p ɒ ɾ ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ә p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a n p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t a b j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a n tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l a tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɒ p uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɪ p i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ɾ a l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ l e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k ʌ p uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t uə e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m a ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s t ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s p i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "d i j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l ɒ s ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b j e ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ɾ o a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɪ ɡ a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t e m a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i a ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ʌ p uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m o k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ʌ m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p a tʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ p ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a tɕ i e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə o p uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a kp ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p o ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e s o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t i l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a k o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "d i s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɾ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɒ l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o ð i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t e m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t e t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ a m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ p uə a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɪ t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a l m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a v i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ i t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j a t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p uə p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a n ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ d ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ʁ l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a l b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ð ɪ a t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s t e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɪ s e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p a ʁ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k o l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e i k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə a k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ʂ e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a n ʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o ð j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ k a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l i t a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k ʌ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɾ t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ a l a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s a v",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a b j e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t a o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə a i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e k t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a b ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i k u",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a l a s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p a ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɒ ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p uə o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s u m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k i a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ð e l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɴ p uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j a ŋ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɴ t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l e ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i a l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɾ k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ð ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a kp i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k ʌ b e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s a e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a m b j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ð ɪ s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e s e æ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p u u",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i p a ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i t a l j a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l i ɡ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ l t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a k ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t a tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s b i s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m a n o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɪ p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə a ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t uə i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s i e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i t a b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i b e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p ɾ o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ð ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o p o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ i k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə ɒ l i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ ɾ o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b j e m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ o l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k ʌ e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ð i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i s o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a e s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ m ɒ l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p uə e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɴ t i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k ʌ b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a b a s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i f uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p i k o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ɪ p",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "e n p a",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "i ʂ uə",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "i a b",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "t ɒ l",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "o m e",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "a ɳ e",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "ɾ ɒ ɪ",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "uə a ɴ",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "e p o",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "o ð ɪ",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "e i s",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "e b i",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "ʌ p e",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "n tɕ i",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "t ʌ p",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "a o tʂ",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "i l e",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "ʌ l j",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "i tɕ j",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "o m o",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "a s o",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "ð j a",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "a s ʌ",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "m i m",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "o ɾ p",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "e l u",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "uə a p",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "u tʂ uə",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "o s n",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "i ɴ i",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "ɪ p ɒ",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "i ð ʌ",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "t a ɪ",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "i f a",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "ɾ i m",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "l i a",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "a p a",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "a r i",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "uə b i",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "p ɒ ɾ",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "m ɒ l ɒ",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "t ʌ t",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "l a b",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "l ɪ e",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
+   },
+   {
+    "form": "s i l",
+    "heard": 2,
+    "utts": 2,
+    "derivable": false,
+    "priority": 0.5
    }
   ]
  },

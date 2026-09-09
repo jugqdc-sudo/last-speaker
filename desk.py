@@ -9,7 +9,7 @@ speaker. Nothing gets written without a tape position. Nothing gets translated.
 import argparse, json, pathlib, sys, time
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from core import tape
-from agents import scout, phon, lex, gram, voice, chief, scribe
+from agents import scout, phon, lex, gram, voice, chief, scribe, derive
 
 
 def main():
@@ -68,7 +68,11 @@ def main():
     rules, fights = gram.run(utts, lx, log)
     vc = voice.run(audio, utts, log)
     signed, refused, fights = chief.run(rules, fights, vc, utts, log)
-    summary = scribe.write(out, meta, utts, ph, lx, signed, refused, fights, vc, log)
+    dv = derive.run(utts, lx, signed, log)
+    qu = derive.queue(lx, dv, log)
+    fat = voice.fatigue(utts, log)
+    vc["fatigue"] = fat
+    summary = scribe.write(out, meta, utts, ph, lx, signed, refused, fights, vc, log, dv, qu)
     log("CHIEF", f"done in {(time.time()-t0)/60:.1f} min · WORDS SAVED {summary['words_saved']} · RULES {summary['rules_signed']} · FIGHTS {summary['fights_open']} · SHIFTS {summary['register_shifts']} · SPEAKERS LEFT 1")
     if a.reuse and (out / "log.txt").exists():
         (out / "log_reuse.txt").write_text("\n".join(log.lines) + "\n", encoding="utf-8")   # never overwrite the log of a full run

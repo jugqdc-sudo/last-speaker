@@ -1,6 +1,6 @@
 # THE LAST SPEAKER · case report
 
-source: Italy's Piedmontese language, casually spoken | Giorgio speaking Piedmontese | Wikitongues (https://www.youtube.com/watch?v=kKg2gaNzBK4)
+source:  ()
 
 | what | number |
 |---|---|
@@ -63,6 +63,54 @@ a ×1623, e ×902, ɒ ×647, i ×567, o ×544, ʌ ×473, uə ×457, ɪ ×316, u 
 - rule 16 `i l i` · heard 4 times, the gate wants 6
 - rule 17 `e b ʌ` · heard 4 times, the gate wants 6
 - rule 18 `u ɾ a` · heard 4 times, the gate wants 6
+
+## forms the grammar allows and nobody ever said
+
+| what | number |
+|---|---|
+| forms the signed rules produce | 0 |
+| of those, actually on the tape | 0 |
+| never recorded by anybody | 0 |
+| control: RANDOM chains of the same lengths found on the tape | 0 of 0 |
+
+the control line is the point. if random junk landed on the tape as often as these forms,
+the derivation would mean nothing. each form below carries the stem and the rule it came
+from, and both of those carry tape positions - that is the whole provenance.
+
+
+## the queue · what goes when he goes
+
+747 of 1184 word candidates were heard twice or less AND no
+signed rule can rebuild them. those are the ones with nobody to ask.
+
+- `i b ʌ` heard 1× in 1 utterances · **nothing can rebuild it**
+- `a l t` heard 1× in 1 utterances · **nothing can rebuild it**
+- `j e p a` heard 1× in 1 utterances · **nothing can rebuild it**
+- `p a tɕ` heard 1× in 1 utterances · **nothing can rebuild it**
+- `i m e` heard 1× in 1 utterances · **nothing can rebuild it**
+- `i e p` heard 1× in 1 utterances · **nothing can rebuild it**
+- `i e s` heard 1× in 1 utterances · **nothing can rebuild it**
+- `e t a b` heard 1× in 1 utterances · **nothing can rebuild it**
+- `l e ð` heard 1× in 1 utterances · **nothing can rebuild it**
+- `a o l` heard 1× in 1 utterances · **nothing can rebuild it**
+- `ʌ a p` heard 1× in 1 utterances · **nothing can rebuild it**
+- `i p e ɾ` heard 1× in 1 utterances · **nothing can rebuild it**
+- `ɾ e t` heard 1× in 1 utterances · **nothing can rebuild it**
+- `a b o` heard 1× in 1 utterances · **nothing can rebuild it**
+- `e m i` heard 1× in 1 utterances · **nothing can rebuild it**
+
+## does the voice fade across the tape
+
+| window | utterances | speech share | phones/s | pitch | median utterance |
+|---|---|---|---|---|---|
+| 00:00-10:00 | 102 | 0.92 | 8.15 | 151.8 | 4.8 s |
+| 10:00-20:00 | 115 | 0.921 | 8.82 | 156.5 | 4.5 s |
+| 20:00-27:00 | 75 | 0.89 | 9.42 | 145.5 | 4.4 s |
+
+trend per window: rate +7.2%, speech_share -1.6%, utt_seconds -4.4%
+
+a flat line here is a result: on this tape he does not slow down. the serial's
+voice budget needs sessions months apart, and one recording cannot give that.
 
 ## what this is not
 no dictionary of the language was used, nothing here is a translation, and a 'rule' is a chain that

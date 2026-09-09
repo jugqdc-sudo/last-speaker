@@ -31,8 +31,7 @@ def run(rules, fights, voice, utts, log, min_support=6, min_stems=4, foreign_sha
         signed.append(r)
     keep = {r["id"] for r in signed}
     fights = [f for f in fights if f["a"] in keep and f["b"] in keep]
-    for r in signed:
-        r.pop("stem_set", None); r.pop("_w", None)
+    # stem_set and _w are kept: DERIVE runs on them. SCRIBE strips them before writing.
     log("CHIEF", f"signed {len(signed)} rules · refused {len(refused)} · {len(fights)} fights stay open, nobody alive to settle them")
     for x in refused[:6]:
         log("CHIEF", f"refused rule {x['rule']} [{x['form']}] · {x['why']}")

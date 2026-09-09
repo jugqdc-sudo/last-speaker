@@ -59,12 +59,92 @@ def test_gate_refuses_thin_evidence():
     rules = [{"id": 1, "form": "ʌ ɾ ɒ", "kind": "suffix", "support": 11, "stems": 10, "utts": list(range(11))},
              {"id": 2, "form": "ʔ ɒ tʂ", "kind": "suffix", "support": 5,  "stems": 2,  "utts": list(range(5))}]
     signed, refused = chief.run(rules, fights=[], voice={"shifts": []},
-                                utts=[{"id": i} for i in range(60)],
+                                utts=[{"id": i, "start": float(i)} for i in range(60)],
                                 log=lambda *a, **k: None)[:2]
     ids_signed = {r["id"] for r in signed}
     assert 1 in ids_signed, "a rule with support 11 across 10 stems must pass"
     assert 2 not in ids_signed, "a rule heard 5 times must be refused"
     assert any("6" in (r.get("why") or "") for r in refused), "a refusal must carry its reason"
+
+
+def _tiny_desk():
+    """A toy tape with a real paradigm gap.
+
+    Four stems take both endings. A fifth stem is heard just as often, but only ever with
+    the first ending and with a filler - so it IS a stem to the desk, and the pair
+    (fifth stem + second ending) is the one thing the grammar allows and nobody said.
+
+    The trap this test walked into twice: a stem that only ever appears before ONE ending
+    never becomes a stem at all - LEX glues it into a single chain. A stem has to be heard
+    in two different contexts before there is anything to derive from.
+    """
+    stems = [["k", "a", "t"], ["m", "o", "p"], ["s", "i", "l"], ["b", "u", "n"]]
+    gap_stem = ["ɡ", "e", "r"]
+    E1, E2, FILL = ["ʌ", "ɾ", "ɒ"], ["ɒ", "x", "ɒ"], ["z", "e", "w"]
+    utts, i = [], 0
+    for st in stems:
+        for _ in range(2):
+            utts.append({"id": i, "phones": st + E1}); i += 1
+            utts.append({"id": i, "phones": st + E2}); i += 1
+    # exactly twice with each: the stem itself is heard 4 times and becomes a word, while
+    # the stem+ending chains stay under the threshold - otherwise greedy segmentation always
+    # takes the longest chain and the stem is never split out at all
+    for _ in range(2):
+        utts.append({"id": i, "phones": gap_stem + E1}); i += 1      # but NEVER with the second
+        utts.append({"id": i, "phones": gap_stem + FILL}); i += 1
+    return utts
+
+
+def test_derive_finds_the_form_nobody_said():
+    """The point of DAY 7: a form the rules allow that is on no second of the tape."""
+    from agents import derive
+    utts = _tiny_desk()
+    lx = lex.run(utts, log=lambda *a, **k: None, min_count=3, min_utts=3)
+    rules, _ = gram.run(utts, lx, log=lambda *a, **k: None, min_support=4, min_stems=3)
+    out = derive.run(utts, lx, rules, log=lambda *a, **k: None)
+    never = {d["form"] for d in out["never"]}
+    assert out["checked"] > 0, "with two endings and shared stems there must be something to derive"
+    assert any("ɡ e r" in f and "ɒ x ɒ" in f for f in never), \
+        "the one pair never said on the tape must come out of the derivation"
+    for d in out["never"]:
+        assert d["stem"] and d["rule_form"], "no form may be written without its stem and rule"
+
+
+def test_derive_stays_silent_without_two_rules():
+    """One rule cannot make an analogy. The desk must say so, not invent forms."""
+    from agents import derive
+    utts = [{"id": i, "phones": ["k", "a", "t", "ʌ", "ɾ", "ɒ"]} for i in range(6)]
+    lx = lex.run(utts, log=lambda *a, **k: None, min_count=3, min_utts=3)
+    rules, _ = gram.run(utts, lx, log=lambda *a, **k: None, min_support=3, min_stems=1)
+    out = derive.run(utts, lx, rules, log=lambda *a, **k: None)
+    assert out["checked"] == 0 and out["never"] == []
+
+
+def test_queue_puts_the_unrebuildable_first():
+    """A word the rules can rebuild is not the urgent one; a rare chain nothing produces is."""
+    from agents import derive
+    utts = _tiny_desk()
+    lx = lex.run(utts, log=lambda *a, **k: None, min_count=3, min_utts=3)
+    rules, _ = gram.run(utts, lx, log=lambda *a, **k: None, min_support=4, min_stems=3)
+    dv = derive.run(utts, lx, rules, log=lambda *a, **k: None)
+    q = derive.queue(lx, dv, log=lambda *a, **k: None)
+    assert q["total"] > 0
+    pri = [r["priority"] for r in q["top"]]
+    assert pri == sorted(pri, reverse=True), "the queue must be sorted, most unrecoverable first"
+    for r in q["top"]:
+        if r["derivable"]:
+            assert r["priority"] <= 1.0 / r["heard"], "a rebuildable word must never outrank an unrebuildable one of the same count"
+
+
+def test_fatigue_reports_a_flat_line_as_a_result():
+    """No fade is an answer. The measure must not go quiet when nothing is happening."""
+    from agents import voice
+    utts = [{"id": i, "start": i * 30.0, "end": i * 30.0 + 4.0, "rate": 10.0, "f0": 150.0,
+             "phones": ["a"] * 40} for i in range(80)]
+    out = voice.fatigue(utts, log=lambda *a, **k: None, window_min=10.0)
+    assert len(out["windows"]) >= 3
+    assert out["trend"] is not None
+    assert abs(out["trend"]["rate"]["per_window_pct"]) < 1.0, "a flat tape must report a flat trend"
 
 
 if __name__ == "__main__":

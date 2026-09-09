@@ -1,7 +1,7 @@
 # COLD.DESK
 
-**3,218 word candidates and 19 grammar rules out of 72 minutes of a language that has no
-writing system.** no dictionary. no translation. no idea what any of it means.
+**3,218 word candidates, 19 grammar rules, and 1,105 forms this language allows that nobody
+ever said on 72 minutes of tape.** no dictionary. no translation. no idea what any of it means.
 
 six agents listen to raw tape of one speaker and pull out the sound inventory, the chains
 that keep coming back, and the patterns that behave like grammar. every finding carries a
@@ -41,6 +41,12 @@ same code, two tapes from [Wikitongues](https://wikitongues.org) (CC BY), one sp
 | rules written → signed by CHIEF | 60 → 19 | 18 → 1 |
 | fights open (two answers) | 9 | 0 |
 | not his usual voice (register shifts) | 60 | 16 |
+| forms the signed rules allow | 1,110 | 0 (one rule signed, analogy needs two) |
+| of those, found on the tape after all | **5** | - |
+| never recorded by anybody | **1,105** | - |
+| control: random chains of the same lengths on tape | **0** | - |
+| words that die with him (heard ≤2×, no rule rebuilds them) | **2,041** | 747 |
+| does he fade across the tape | no, flat to the end | yes, utterances -4.4% per 10 min |
 | speakers on the tape | 1 | 1 |
 
 the vowel chart flips between the two tapes. the desk hears the language, not itself.
@@ -70,11 +76,53 @@ PHON    owns the sounds, the vowel chart  allosaurus · phones from raw audio, n
 LEX     owns the words, counts of one    a word is a chain of phones that comes back (≥3×, in ≥3 utterances)
 GRAM    owns the rules, the exceptions   a rule is a chain that keeps attaching to different neighbours;
                                          a fight is two rules one phone apart that both come back
+DERIVE  owns what the rules allow        stem × rule by analogy, then searched across the whole tape;
+                                         whatever is not there is a form nobody ever recorded
 VOICE   owns how he sounds               praat · pitch and tempo per utterance; 2σ off = not his usual voice
 CHIEF   runs the case                    the gate: no tape position → no. heard < 6 times → no.
                                          lives only in a shifted register → no, that is somebody else's voice
 SCRIBE  owns the log                     log.txt · run.json · report.md
 ```
+
+## the forms nobody ever said
+
+the desk signs a rule when a chunk keeps attaching to many different stems. run that the other
+way and it predicts: if stem A takes ending 1 and stem B takes ending 2, then A+2 is a form
+this grammar allows. every one of those is then searched across all 1,164 utterances as an
+exact phone chain.
+
+```
+1,110 forms the signed rules produce
+    5 turned out to be on the tape after all      ← the rules predicted real speech
+1,105 are on no second of 72 minutes
+```
+
+**the control line is the whole point.** 1,110 random chains of the same lengths, phones drawn
+by how common they are on this tape: **0 of them land anywhere in it.** without that number the
+5 hits mean nothing, and the desk prints it on every run whether it flatters the result or not.
+
+each derived form carries the stem it came from and the rule that produced it, and both of
+those carry tape positions. nothing is written that cannot be traced back to a second of audio.
+
+on the piedmontese tape DERIVE outputs **nothing at all** and says why: the gate signed one
+rule out of eighteen, and an analogy needs two. 27 minutes is not enough tape, and the desk
+says that instead of filling the gap with something that looks like an answer.
+
+## the queue · what goes when he goes
+
+a word the rules can rebuild after he is gone is not the urgent one. a chain heard once or
+twice that no rule produces is the one nobody will ever recover.
+
+**2,041 of 3,218 word candidates** on the torwali tape are in that second group. that ordering
+is what the desk hands a linguist who has limited time with the last speaker: not the most
+frequent words, the least recoverable ones.
+
+## does the voice fade
+
+the desk measures tempo, speech share and utterance length in 10-minute windows across the tape.
+torwali: **flat to the end**, he does not slow down over 72 minutes. piedmontese: utterances get
+**4.4% shorter every 10 minutes**. same measure, two different answers, so it is measuring the
+tape and not itself. a flat line is reported as a result, not hidden as a missing number.
 
 ## run it on your own tape
 
@@ -105,10 +153,12 @@ the heavy parts need models and a tape. the logic every number rests on does not
 python3 tests/test_desk.py
 ```
 
-five checks, no dependencies, under a second: a phoneme keeps its skeleton when length and
+nine checks, no dependencies, under a second: a phoneme keeps its skeleton when length and
 aspiration are stripped, an affricate is never cut in half, a fight is two forms exactly one
-phone apart, a chain heard once never becomes a word, and the gate refuses a rule with thin
-support and says why. if any of those break, every table above is wrong.
+phone apart, a chain heard once never becomes a word, the gate refuses a rule with thin support
+and says why, the derivation produces the one pair a toy tape never contains, it stays silent
+when there is only one rule to work with, the queue puts the unrebuildable first, and a flat
+tape is reported as flat. if any of those break, every table above is wrong.
 
 full run needs `pip install -r requirements.txt` - versions pinned to the ones the numbers
 came out of.

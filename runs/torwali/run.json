@@ -1,8 +1,8 @@
 {
  "summary": {
   "source": {
-   "title": "WIKITONGUES: Abdul Mateen speaking Torwali",
-   "url": "https://www.youtube.com/watch?v=361y-JDT_bs",
+   "title": "",
+   "url": "",
    "file": "torwali.wav",
    "seconds": 4314.8
   },
@@ -26,7 +26,27 @@
   "register_shifts": 60,
   "median_f0": 152.9,
   "median_rate": 10.27,
-  "speakers_left": 1
+  "speakers_left": 1,
+  "forms_the_rules_allow": 1110,
+  "derived_found_on_tape": 5,
+  "derived_never_recorded": 1105,
+  "control_random_on_tape": 0,
+  "queue_words": 3218,
+  "die_with_him": 2041,
+  "fade_across_tape": {
+   "rate": {
+    "per_window": -0.0577,
+    "per_window_pct": -0.56
+   },
+   "speech_share": {
+    "per_window": 0.0028,
+    "per_window_pct": 0.36
+   },
+   "utt_seconds": {
+    "per_window": 0.0607,
+    "per_window_pct": 2.63
+   }
+  }
  },
  "inventory": {
   "vowels": {
@@ -2031,6 +2051,7406 @@
     "rate": 5.0,
     "z_pitch": 4.88,
     "z_rate": -1.66
+   }
+  ],
+  "fatigue": {
+   "windows": [
+    {
+     "window": "00:00-10:00",
+     "utterances": 170,
+     "speech_share": 0.773,
+     "rate": 10.0,
+     "f0": 156.8,
+     "utt_seconds": 2.1
+    },
+    {
+     "window": "10:00-20:00",
+     "utterances": 172,
+     "speech_share": 0.771,
+     "rate": 10.87,
+     "f0": 149.7,
+     "utt_seconds": 2.2
+    },
+    {
+     "window": "20:00-30:00",
+     "utterances": 171,
+     "speech_share": 0.778,
+     "rate": 11.43,
+     "f0": 153.1,
+     "utt_seconds": 2.0
+    },
+    {
+     "window": "30:00-40:00",
+     "utterances": 140,
+     "speech_share": 0.76,
+     "rate": 9.16,
+     "f0": 155.4,
+     "utt_seconds": 2.65
+    },
+    {
+     "window": "40:00-50:00",
+     "utterances": 156,
+     "speech_share": 0.799,
+     "rate": 10.0,
+     "f0": 153.4,
+     "utt_seconds": 2.3
+    },
+    {
+     "window": "50:00-60:00",
+     "utterances": 160,
+     "speech_share": 0.792,
+     "rate": 10.33,
+     "f0": 152.7,
+     "utt_seconds": 2.3
+    },
+    {
+     "window": "60:00-70:00",
+     "utterances": 167,
+     "speech_share": 0.764,
+     "rate": 10.0,
+     "f0": 152.1,
+     "utt_seconds": 2.2
+    },
+    {
+     "window": "70:00-71:00",
+     "utterances": 28,
+     "speech_share": 0.8,
+     "rate": 10.28,
+     "f0": 150.9,
+     "utt_seconds": 2.75
+    }
+   ],
+   "trend": {
+    "rate": {
+     "per_window": -0.0577,
+     "per_window_pct": -0.56
+    },
+    "speech_share": {
+     "per_window": 0.0028,
+     "per_window_pct": 0.36
+    },
+    "utt_seconds": {
+     "per_window": 0.0607,
+     "per_window_pct": 2.63
+    }
+   },
+   "window_min": 10.0
+  }
+ },
+ "derived": {
+  "checked": 1110,
+  "on_tape": 5,
+  "baseline": {
+   "n": 1110,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "never_recorded": [
+   {
+    "form": "j ʌ m ʌ ɾ ɒ",
+    "stem": "j ʌ m",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "j ʌ m ɒ x ɒ",
+    "stem": "j ʌ m",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "j ʌ m i tɕ i",
+    "stem": "j ʌ m",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "j ʌ m b a n",
+    "stem": "j ʌ m",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "j ʌ m l j i",
+    "stem": "j ʌ m",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "j ʌ m i ɕ i",
+    "stem": "j ʌ m",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "j ʌ m b ɒ ɾ ɒ",
+    "stem": "j ʌ m",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "ʂ ɨ b ɒ x ɒ",
+    "stem": "ʂ ɨ b",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "ʂ ɨ b i tɕ i",
+    "stem": "ʂ ɨ b",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "ʂ ɨ b b a n",
+    "stem": "ʂ ɨ b",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʂ ɨ b a l a",
+    "stem": "ʂ ɨ b",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʂ ɨ b l j i",
+    "stem": "ʂ ɨ b",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʂ ɨ b i ɕ i",
+    "stem": "ʂ ɨ b",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʂ ɨ b b ɒ ɾ ɒ",
+    "stem": "ʂ ɨ b",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "b ɔ ɾ ʌ ɾ ɒ",
+    "stem": "b ɔ ɾ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 11
+   },
+   {
+    "form": "b ɔ ɾ ɒ x ɒ",
+    "stem": "b ɔ ɾ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 10
+   },
+   {
+    "form": "b ɔ ɾ i tɕ i",
+    "stem": "b ɔ ɾ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 9
+   },
+   {
+    "form": "b ɔ ɾ b a n",
+    "stem": "b ɔ ɾ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 8
+   },
+   {
+    "form": "b ɔ ɾ a l a",
+    "stem": "b ɔ ɾ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 8
+   },
+   {
+    "form": "b ɔ ɾ l j i",
+    "stem": "b ɔ ɾ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 7
+   },
+   {
+    "form": "b ɔ ɾ i ɕ i",
+    "stem": "b ɔ ɾ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʁ ɒ l ɯ ʌ ɾ ɒ",
+    "stem": "ʁ ɒ l ɯ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "ʁ ɒ l ɯ i tɕ i",
+    "stem": "ʁ ɒ l ɯ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "ʁ ɒ l ɯ b a n",
+    "stem": "ʁ ɒ l ɯ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʁ ɒ l ɯ a l a",
+    "stem": "ʁ ɒ l ɯ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʁ ɒ l ɯ l j i",
+    "stem": "ʁ ɒ l ɯ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʁ ɒ l ɯ i ɕ i",
+    "stem": "ʁ ɒ l ɯ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʁ ɒ l ɯ b ɒ ɾ ɒ",
+    "stem": "ʁ ɒ l ɯ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "b a ɴ d ʌ ɾ ɒ",
+    "stem": "b a ɴ d",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "b a ɴ d ɒ x ɒ",
+    "stem": "b a ɴ d",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "b a ɴ d i tɕ i",
+    "stem": "b a ɴ d",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "b a ɴ d b a n",
+    "stem": "b a ɴ d",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "b a ɴ d a l a",
+    "stem": "b a ɴ d",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "b a ɴ d l j i",
+    "stem": "b a ɴ d",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "b a ɴ d b ɒ ɾ ɒ",
+    "stem": "b a ɴ d",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɴ ɳ ɒ ʌ ɾ ɒ",
+    "stem": "ɴ ɳ ɒ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɴ ɳ ɒ ɒ x ɒ",
+    "stem": "ɴ ɳ ɒ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "ɴ ɳ ɒ b a n",
+    "stem": "ɴ ɳ ɒ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɴ ɳ ɒ a l a",
+    "stem": "ɴ ɳ ɒ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɴ ɳ ɒ l j i",
+    "stem": "ɴ ɳ ɒ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɴ ɳ ɒ i ɕ i",
+    "stem": "ɴ ɳ ɒ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɴ ɳ ɒ b ɒ ɾ ɒ",
+    "stem": "ɴ ɳ ɒ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ i k ʌ ɾ ɒ",
+    "stem": "tɕ i k",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "tɕ i k ɒ x ɒ",
+    "stem": "tɕ i k",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "tɕ i k i tɕ i",
+    "stem": "tɕ i k",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "tɕ i k b a n",
+    "stem": "tɕ i k",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "tɕ i k a l a",
+    "stem": "tɕ i k",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "tɕ i k i ɕ i",
+    "stem": "tɕ i k",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "tɕ i k b ɒ ɾ ɒ",
+    "stem": "tɕ i k",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "j ʔ ɒ ʌ ɾ ɒ",
+    "stem": "j ʔ ɒ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "j ʔ ɒ i tɕ i",
+    "stem": "j ʔ ɒ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "j ʔ ɒ b a n",
+    "stem": "j ʔ ɒ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "j ʔ ɒ a l a",
+    "stem": "j ʔ ɒ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "j ʔ ɒ l j i",
+    "stem": "j ʔ ɒ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "j ʔ ɒ i ɕ i",
+    "stem": "j ʔ ɒ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "j ʔ ɒ b ɒ ɾ ɒ",
+    "stem": "j ʔ ɒ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɴ dʒ i ɒ x ɒ",
+    "stem": "ɴ dʒ i",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "ɴ dʒ i i tɕ i",
+    "stem": "ɴ dʒ i",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɴ dʒ i b a n",
+    "stem": "ɴ dʒ i",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɴ dʒ i a l a",
+    "stem": "ɴ dʒ i",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɴ dʒ i l j i",
+    "stem": "ɴ dʒ i",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɴ dʒ i i ɕ i",
+    "stem": "ɴ dʒ i",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɴ dʒ i b ɒ ɾ ɒ",
+    "stem": "ɴ dʒ i",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "a n t ʌ ɾ ɒ",
+    "stem": "a n t",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "a n t ɒ x ɒ",
+    "stem": "a n t",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "a n t i tɕ i",
+    "stem": "a n t",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "a n t b a n",
+    "stem": "a n t",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "a n t a l a",
+    "stem": "a n t",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "a n t l j i",
+    "stem": "a n t",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "a n t b ɒ ɾ ɒ",
+    "stem": "a n t",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɳ ʁ ɒ ʌ ɾ ɒ",
+    "stem": "ɳ ʁ ɒ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɳ ʁ ɒ i tɕ i",
+    "stem": "ɳ ʁ ɒ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɳ ʁ ɒ b a n",
+    "stem": "ɳ ʁ ɒ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɳ ʁ ɒ a l a",
+    "stem": "ɳ ʁ ɒ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɳ ʁ ɒ l j i",
+    "stem": "ɳ ʁ ɒ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɳ ʁ ɒ i ɕ i",
+    "stem": "ɳ ʁ ɒ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɳ ʁ ɒ b ɒ ɾ ɒ",
+    "stem": "ɳ ʁ ɒ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɪ ɡ uə ʌ ɾ ɒ",
+    "stem": "ɪ ɡ uə",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɪ ɡ uə ɒ x ɒ",
+    "stem": "ɪ ɡ uə",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "ɪ ɡ uə i tɕ i",
+    "stem": "ɪ ɡ uə",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɪ ɡ uə b a n",
+    "stem": "ɪ ɡ uə",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɪ ɡ uə l j i",
+    "stem": "ɪ ɡ uə",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɪ ɡ uə i ɕ i",
+    "stem": "ɪ ɡ uə",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɪ ɡ uə b ɒ ɾ ɒ",
+    "stem": "ɪ ɡ uə",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɒ r ɒ ʌ ɾ ɒ",
+    "stem": "ɒ r ɒ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɒ r ɒ i tɕ i",
+    "stem": "ɒ r ɒ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɒ r ɒ b a n",
+    "stem": "ɒ r ɒ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɒ r ɒ a l a",
+    "stem": "ɒ r ɒ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɒ r ɒ l j i",
+    "stem": "ɒ r ɒ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɒ r ɒ i ɕ i",
+    "stem": "ɒ r ɒ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɒ r ɒ b ɒ ɾ ɒ",
+    "stem": "ɒ r ɒ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɒ ɳ i ʌ ɾ ɒ",
+    "stem": "ɒ ɳ i",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɒ ɳ i i tɕ i",
+    "stem": "ɒ ɳ i",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɒ ɳ i b a n",
+    "stem": "ɒ ɳ i",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɒ ɳ i a l a",
+    "stem": "ɒ ɳ i",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɒ ɳ i l j i",
+    "stem": "ɒ ɳ i",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɒ ɳ i i ɕ i",
+    "stem": "ɒ ɳ i",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɒ ɳ i b ɒ ɾ ɒ",
+    "stem": "ɒ ɳ i",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 6
+   },
+   {
+    "form": "l ð ɯ ʌ ɾ ɒ",
+    "stem": "l ð ɯ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "l ð ɯ ɒ x ɒ",
+    "stem": "l ð ɯ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "l ð ɯ b a n",
+    "stem": "l ð ɯ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "l ð ɯ a l a",
+    "stem": "l ð ɯ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "l ð ɯ l j i",
+    "stem": "l ð ɯ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "l ð ɯ i ɕ i",
+    "stem": "l ð ɯ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "l ð ɯ b ɒ ɾ ɒ",
+    "stem": "l ð ɯ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "s ʌ b ɒ x ɒ",
+    "stem": "s ʌ b",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 10
+   },
+   {
+    "form": "s ʌ b i tɕ i",
+    "stem": "s ʌ b",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 9
+   },
+   {
+    "form": "s ʌ b b a n",
+    "stem": "s ʌ b",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "s ʌ b a l a",
+    "stem": "s ʌ b",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "s ʌ b l j i",
+    "stem": "s ʌ b",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "s ʌ b i ɕ i",
+    "stem": "s ʌ b",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "s ʌ b b ɒ ɾ ɒ",
+    "stem": "s ʌ b",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɒ tɕ i a ʌ ɾ ɒ",
+    "stem": "ɒ tɕ i a",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɒ tɕ i a i tɕ i",
+    "stem": "ɒ tɕ i a",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɒ tɕ i a b a n",
+    "stem": "ɒ tɕ i a",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɒ tɕ i a a l a",
+    "stem": "ɒ tɕ i a",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɒ tɕ i a l j i",
+    "stem": "ɒ tɕ i a",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɒ tɕ i a i ɕ i",
+    "stem": "ɒ tɕ i a",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɒ tɕ i a b ɒ ɾ ɒ",
+    "stem": "ɒ tɕ i a",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 6
+   },
+   {
+    "form": "o b uə ʌ ɾ ɒ",
+    "stem": "o b uə",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "o b uə ɒ x ɒ",
+    "stem": "o b uə",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "o b uə i tɕ i",
+    "stem": "o b uə",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "o b uə b a n",
+    "stem": "o b uə",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "o b uə l j i",
+    "stem": "o b uə",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "o b uə i ɕ i",
+    "stem": "o b uə",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "o b uə b ɒ ɾ ɒ",
+    "stem": "o b uə",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɛ b a ʌ ɾ ɒ",
+    "stem": "ɛ b a",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɛ b a ɒ x ɒ",
+    "stem": "ɛ b a",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 10
+   },
+   {
+    "form": "ɛ b a i tɕ i",
+    "stem": "ɛ b a",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɛ b a b a n",
+    "stem": "ɛ b a",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɛ b a a l a",
+    "stem": "ɛ b a",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɛ b a l j i",
+    "stem": "ɛ b a",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɛ b a b ɒ ɾ ɒ",
+    "stem": "ɛ b a",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 5,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɒ tʂ ɨ ʌ ɾ ɒ",
+    "stem": "ɒ tʂ ɨ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɒ tʂ ɨ ɒ x ɒ",
+    "stem": "ɒ tʂ ɨ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 10
+   },
+   {
+    "form": "ɒ tʂ ɨ b a n",
+    "stem": "ɒ tʂ ɨ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɒ tʂ ɨ a l a",
+    "stem": "ɒ tʂ ɨ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɒ tʂ ɨ l j i",
+    "stem": "ɒ tʂ ɨ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɒ tʂ ɨ i ɕ i",
+    "stem": "ɒ tʂ ɨ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɒ tʂ ɨ b ɒ ɾ ɒ",
+    "stem": "ɒ tʂ ɨ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 6
+   },
+   {
+    "form": "dʒ ɒ ɴ ʌ ɾ ɒ",
+    "stem": "dʒ ɒ ɴ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "dʒ ɒ ɴ ɒ x ɒ",
+    "stem": "dʒ ɒ ɴ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "dʒ ɒ ɴ i tɕ i",
+    "stem": "dʒ ɒ ɴ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "dʒ ɒ ɴ b a n",
+    "stem": "dʒ ɒ ɴ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "dʒ ɒ ɴ a l a",
+    "stem": "dʒ ɒ ɴ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "dʒ ɒ ɴ l j i",
+    "stem": "dʒ ɒ ɴ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "dʒ ɒ ɴ i ɕ i",
+    "stem": "dʒ ɒ ɴ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɒ b ɒ ʌ ɾ ɒ",
+    "stem": "ɒ b ɒ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɒ b ɒ ɒ x ɒ",
+    "stem": "ɒ b ɒ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "ɒ b ɒ i tɕ i",
+    "stem": "ɒ b ɒ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɒ b ɒ b a n",
+    "stem": "ɒ b ɒ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɒ b ɒ a l a",
+    "stem": "ɒ b ɒ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɒ b ɒ i ɕ i",
+    "stem": "ɒ b ɒ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɒ b ɒ b ɒ ɾ ɒ",
+    "stem": "ɒ b ɒ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "i e p uə ʌ ɾ ɒ",
+    "stem": "i e p uə",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "i e p uə ɒ x ɒ",
+    "stem": "i e p uə",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "i e p uə i tɕ i",
+    "stem": "i e p uə",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "i e p uə l j i",
+    "stem": "i e p uə",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "i e p uə i ɕ i",
+    "stem": "i e p uə",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "i e p uə b ɒ ɾ ɒ",
+    "stem": "i e p uə",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "uə e ɪ ʌ ɾ ɒ",
+    "stem": "uə e ɪ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "uə e ɪ ɒ x ɒ",
+    "stem": "uə e ɪ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "uə e ɪ b a n",
+    "stem": "uə e ɪ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "uə e ɪ a l a",
+    "stem": "uə e ɪ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "uə e ɪ l j i",
+    "stem": "uə e ɪ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "uə e ɪ i ɕ i",
+    "stem": "uə e ɪ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "uə e ɪ b ɒ ɾ ɒ",
+    "stem": "uə e ɪ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɕ j i ʌ ɾ ɒ",
+    "stem": "ɕ j i",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɕ j i ɒ x ɒ",
+    "stem": "ɕ j i",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 10
+   },
+   {
+    "form": "ɕ j i i tɕ i",
+    "stem": "ɕ j i",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɕ j i b a n",
+    "stem": "ɕ j i",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɕ j i a l a",
+    "stem": "ɕ j i",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɕ j i i ɕ i",
+    "stem": "ɕ j i",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɕ j i b ɒ ɾ ɒ",
+    "stem": "ɕ j i",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 6
+   },
+   {
+    "form": "i ʁ ɒ ʌ ɾ ɒ",
+    "stem": "i ʁ ɒ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "i ʁ ɒ ɒ x ɒ",
+    "stem": "i ʁ ɒ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "i ʁ ɒ i tɕ i",
+    "stem": "i ʁ ɒ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "i ʁ ɒ b a n",
+    "stem": "i ʁ ɒ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "i ʁ ɒ a l a",
+    "stem": "i ʁ ɒ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "i ʁ ɒ l j i",
+    "stem": "i ʁ ɒ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "i ʁ ɒ i ɕ i",
+    "stem": "i ʁ ɒ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɕ i n ʌ ɾ ɒ",
+    "stem": "ɕ i n",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɕ i n ɒ x ɒ",
+    "stem": "ɕ i n",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 10
+   },
+   {
+    "form": "ɕ i n i tɕ i",
+    "stem": "ɕ i n",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɕ i n b a n",
+    "stem": "ɕ i n",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɕ i n l j i",
+    "stem": "ɕ i n",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɕ i n i ɕ i",
+    "stem": "ɕ i n",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɕ i n b ɒ ɾ ɒ",
+    "stem": "ɕ i n",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 6
+   },
+   {
+    "form": "ә tɕ ɒ ɒ x ɒ",
+    "stem": "ә tɕ ɒ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "ә tɕ ɒ i tɕ i",
+    "stem": "ә tɕ ɒ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "ә tɕ ɒ b a n",
+    "stem": "ә tɕ ɒ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "ә tɕ ɒ a l a",
+    "stem": "ә tɕ ɒ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "ә tɕ ɒ l j i",
+    "stem": "ә tɕ ɒ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "ә tɕ ɒ i ɕ i",
+    "stem": "ә tɕ ɒ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "ә tɕ ɒ b ɒ ɾ ɒ",
+    "stem": "ә tɕ ɒ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɨ n ɒ ʌ ɾ ɒ",
+    "stem": "ɨ n ɒ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɨ n ɒ i tɕ i",
+    "stem": "ɨ n ɒ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɨ n ɒ b a n",
+    "stem": "ɨ n ɒ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɨ n ɒ a l a",
+    "stem": "ɨ n ɒ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɨ n ɒ l j i",
+    "stem": "ɨ n ɒ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɨ n ɒ i ɕ i",
+    "stem": "ɨ n ɒ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɨ n ɒ b ɒ ɾ ɒ",
+    "stem": "ɨ n ɒ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "m ʌ ɴ ʌ ɾ ɒ",
+    "stem": "m ʌ ɴ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 11
+   },
+   {
+    "form": "m ʌ ɴ ɒ x ɒ",
+    "stem": "m ʌ ɴ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 10
+   },
+   {
+    "form": "m ʌ ɴ i tɕ i",
+    "stem": "m ʌ ɴ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 9
+   },
+   {
+    "form": "m ʌ ɴ b a n",
+    "stem": "m ʌ ɴ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 8
+   },
+   {
+    "form": "m ʌ ɴ a l a",
+    "stem": "m ʌ ɴ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 8
+   },
+   {
+    "form": "m ʌ ɴ l j i",
+    "stem": "m ʌ ɴ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 7
+   },
+   {
+    "form": "m ʌ ɴ b ɒ ɾ ɒ",
+    "stem": "m ʌ ɴ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 9,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ i a ʌ ɾ ɒ",
+    "stem": "tɕ i a",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 11
+   },
+   {
+    "form": "tɕ i a i tɕ i",
+    "stem": "tɕ i a",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 9
+   },
+   {
+    "form": "tɕ i a b a n",
+    "stem": "tɕ i a",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "tɕ i a a l a",
+    "stem": "tɕ i a",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "tɕ i a l j i",
+    "stem": "tɕ i a",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 7
+   },
+   {
+    "form": "tɕ i a b ɒ ɾ ɒ",
+    "stem": "tɕ i a",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 6
+   },
+   {
+    "form": "ð e tɕ ʌ ɾ ɒ",
+    "stem": "ð e tɕ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "ð e tɕ ɒ x ɒ",
+    "stem": "ð e tɕ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "ð e tɕ b a n",
+    "stem": "ð e tɕ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ð e tɕ a l a",
+    "stem": "ð e tɕ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ð e tɕ l j i",
+    "stem": "ð e tɕ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ð e tɕ i ɕ i",
+    "stem": "ð e tɕ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ð e tɕ b ɒ ɾ ɒ",
+    "stem": "ð e tɕ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɪ p a ʌ ɾ ɒ",
+    "stem": "ɪ p a",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɪ p a ɒ x ɒ",
+    "stem": "ɪ p a",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "ɪ p a i tɕ i",
+    "stem": "ɪ p a",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɪ p a a l a",
+    "stem": "ɪ p a",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɪ p a l j i",
+    "stem": "ɪ p a",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɪ p a i ɕ i",
+    "stem": "ɪ p a",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɪ p a b ɒ ɾ ɒ",
+    "stem": "ɪ p a",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "e p uə ʌ ɾ ɒ",
+    "stem": "e p uə",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "e p uə ɒ x ɒ",
+    "stem": "e p uə",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "e p uə i tɕ i",
+    "stem": "e p uə",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "e p uə l j i",
+    "stem": "e p uə",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "e p uə i ɕ i",
+    "stem": "e p uə",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "e p uə b ɒ ɾ ɒ",
+    "stem": "e p uə",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ e ɾ ʌ ɾ ɒ",
+    "stem": "tɕ e ɾ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 11
+   },
+   {
+    "form": "tɕ e ɾ ɒ x ɒ",
+    "stem": "tɕ e ɾ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 10
+   },
+   {
+    "form": "tɕ e ɾ i tɕ i",
+    "stem": "tɕ e ɾ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 9
+   },
+   {
+    "form": "tɕ e ɾ a l a",
+    "stem": "tɕ e ɾ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "tɕ e ɾ l j i",
+    "stem": "tɕ e ɾ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "tɕ e ɾ i ɕ i",
+    "stem": "tɕ e ɾ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "tɕ e ɾ b ɒ ɾ ɒ",
+    "stem": "tɕ e ɾ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 6
+   },
+   {
+    "form": "b ɪ l ʌ ɾ ɒ",
+    "stem": "b ɪ l",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 11
+   },
+   {
+    "form": "b ɪ l ɒ x ɒ",
+    "stem": "b ɪ l",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 10
+   },
+   {
+    "form": "b ɪ l i tɕ i",
+    "stem": "b ɪ l",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 9
+   },
+   {
+    "form": "b ɪ l b a n",
+    "stem": "b ɪ l",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 8
+   },
+   {
+    "form": "b ɪ l a l a",
+    "stem": "b ɪ l",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 8
+   },
+   {
+    "form": "b ɪ l l j i",
+    "stem": "b ɪ l",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 7
+   },
+   {
+    "form": "b ɪ l b ɒ ɾ ɒ",
+    "stem": "b ɪ l",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 6,
+    "rule_heard": 6
+   },
+   {
+    "form": "kp ɒ ә ʌ ɾ ɒ",
+    "stem": "kp ɒ ә",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "kp ɒ ә ɒ x ɒ",
+    "stem": "kp ɒ ә",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "kp ɒ ә i tɕ i",
+    "stem": "kp ɒ ә",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "kp ɒ ә b a n",
+    "stem": "kp ɒ ә",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "kp ɒ ә a l a",
+    "stem": "kp ɒ ә",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "kp ɒ ә l j i",
+    "stem": "kp ɒ ә",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "kp ɒ ә i ɕ i",
+    "stem": "kp ɒ ә",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "b ɛ ɾ ɒ x ɒ",
+    "stem": "b ɛ ɾ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 10
+   },
+   {
+    "form": "b ɛ ɾ i tɕ i",
+    "stem": "b ɛ ɾ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 9
+   },
+   {
+    "form": "b ɛ ɾ b a n",
+    "stem": "b ɛ ɾ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "b ɛ ɾ a l a",
+    "stem": "b ɛ ɾ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "b ɛ ɾ l j i",
+    "stem": "b ɛ ɾ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "b ɛ ɾ i ɕ i",
+    "stem": "b ɛ ɾ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "b ɛ ɾ b ɒ ɾ ɒ",
+    "stem": "b ɛ ɾ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɴ tʂ e ʌ ɾ ɒ",
+    "stem": "ɴ tʂ e",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɴ tʂ e ɒ x ɒ",
+    "stem": "ɴ tʂ e",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "ɴ tʂ e i tɕ i",
+    "stem": "ɴ tʂ e",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɴ tʂ e a l a",
+    "stem": "ɴ tʂ e",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɴ tʂ e l j i",
+    "stem": "ɴ tʂ e",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɴ tʂ e i ɕ i",
+    "stem": "ɴ tʂ e",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɴ tʂ e b ɒ ɾ ɒ",
+    "stem": "ɴ tʂ e",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "e ɾ ɪ ʌ ɾ ɒ",
+    "stem": "e ɾ ɪ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "e ɾ ɪ ɒ x ɒ",
+    "stem": "e ɾ ɪ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "e ɾ ɪ i tɕ i",
+    "stem": "e ɾ ɪ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "e ɾ ɪ a l a",
+    "stem": "e ɾ ɪ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "e ɾ ɪ l j i",
+    "stem": "e ɾ ɪ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "e ɾ ɪ i ɕ i",
+    "stem": "e ɾ ɪ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "e ɾ ɪ b ɒ ɾ ɒ",
+    "stem": "e ɾ ɪ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "t uə o ʌ ɾ ɒ",
+    "stem": "t uə o",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 11
+   },
+   {
+    "form": "t uə o ɒ x ɒ",
+    "stem": "t uə o",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 10
+   },
+   {
+    "form": "t uə o i tɕ i",
+    "stem": "t uə o",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 9
+   },
+   {
+    "form": "t uə o b a n",
+    "stem": "t uə o",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "t uə o a l a",
+    "stem": "t uə o",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "t uə o i ɕ i",
+    "stem": "t uə o",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "t uə o b ɒ ɾ ɒ",
+    "stem": "t uə o",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 6
+   },
+   {
+    "form": "e k ʌ ʌ ɾ ɒ",
+    "stem": "e k ʌ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 11
+   },
+   {
+    "form": "e k ʌ ɒ x ɒ",
+    "stem": "e k ʌ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 10
+   },
+   {
+    "form": "e k ʌ i tɕ i",
+    "stem": "e k ʌ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 9
+   },
+   {
+    "form": "e k ʌ a l a",
+    "stem": "e k ʌ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "e k ʌ l j i",
+    "stem": "e k ʌ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 7
+   },
+   {
+    "form": "e k ʌ i ɕ i",
+    "stem": "e k ʌ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 7
+   },
+   {
+    "form": "e k ʌ b ɒ ɾ ɒ",
+    "stem": "e k ʌ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 6
+   },
+   {
+    "form": "a ɒ b ʌ ɾ ɒ",
+    "stem": "a ɒ b",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "a ɒ b i tɕ i",
+    "stem": "a ɒ b",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "a ɒ b b a n",
+    "stem": "a ɒ b",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "a ɒ b a l a",
+    "stem": "a ɒ b",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "a ɒ b l j i",
+    "stem": "a ɒ b",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "a ɒ b i ɕ i",
+    "stem": "a ɒ b",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "a ɒ b b ɒ ɾ ɒ",
+    "stem": "a ɒ b",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ i b ʌ ɾ ɒ",
+    "stem": "tɕ i b",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 11
+   },
+   {
+    "form": "tɕ i b ɒ x ɒ",
+    "stem": "tɕ i b",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 10
+   },
+   {
+    "form": "tɕ i b b a n",
+    "stem": "tɕ i b",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "tɕ i b a l a",
+    "stem": "tɕ i b",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 8
+   },
+   {
+    "form": "tɕ i b l j i",
+    "stem": "tɕ i b",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "tɕ i b i ɕ i",
+    "stem": "tɕ i b",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 7
+   },
+   {
+    "form": "tɕ i b b ɒ ɾ ɒ",
+    "stem": "tɕ i b",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 4,
+    "rule_heard": 6
+   },
+   {
+    "form": "ʌ ŋ t ʌ ɾ ɒ",
+    "stem": "ʌ ŋ t",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "ʌ ŋ t ɒ x ɒ",
+    "stem": "ʌ ŋ t",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "ʌ ŋ t i tɕ i",
+    "stem": "ʌ ŋ t",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "ʌ ŋ t a l a",
+    "stem": "ʌ ŋ t",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʌ ŋ t l j i",
+    "stem": "ʌ ŋ t",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʌ ŋ t i ɕ i",
+    "stem": "ʌ ŋ t",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʌ ŋ t b ɒ ɾ ɒ",
+    "stem": "ʌ ŋ t",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɪ s uə ʌ ɾ ɒ",
+    "stem": "ɪ s uə",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɪ s uə ɒ x ɒ",
+    "stem": "ɪ s uə",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "ɪ s uə i tɕ i",
+    "stem": "ɪ s uə",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɪ s uə b a n",
+    "stem": "ɪ s uə",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɪ s uə l j i",
+    "stem": "ɪ s uə",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɪ s uə i ɕ i",
+    "stem": "ɪ s uə",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɪ s uə b ɒ ɾ ɒ",
+    "stem": "ɪ s uə",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "w a l ʌ ɾ ɒ",
+    "stem": "w a l",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "w a l ɒ x ɒ",
+    "stem": "w a l",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "w a l i tɕ i",
+    "stem": "w a l",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "w a l b a n",
+    "stem": "w a l",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "w a l a l a",
+    "stem": "w a l",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "w a l l j i",
+    "stem": "w a l",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "w a l b ɒ ɾ ɒ",
+    "stem": "w a l",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "b ʌ ɳ ʌ ɾ ɒ",
+    "stem": "b ʌ ɳ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 11
+   },
+   {
+    "form": "b ʌ ɳ ɒ x ɒ",
+    "stem": "b ʌ ɳ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "b ʌ ɳ i tɕ i",
+    "stem": "b ʌ ɳ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "b ʌ ɳ b a n",
+    "stem": "b ʌ ɳ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "b ʌ ɳ a l a",
+    "stem": "b ʌ ɳ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "b ʌ ɳ l j i",
+    "stem": "b ʌ ɳ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "b ʌ ɳ i ɕ i",
+    "stem": "b ʌ ɳ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "l k ʌ ʌ ɾ ɒ",
+    "stem": "l k ʌ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "l k ʌ ɒ x ɒ",
+    "stem": "l k ʌ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "l k ʌ i tɕ i",
+    "stem": "l k ʌ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "l k ʌ a l a",
+    "stem": "l k ʌ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "l k ʌ l j i",
+    "stem": "l k ʌ",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "l k ʌ i ɕ i",
+    "stem": "l k ʌ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "l k ʌ b ɒ ɾ ɒ",
+    "stem": "l k ʌ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "ɒ ʂ ɻ ʌ ɾ ɒ",
+    "stem": "ɒ ʂ ɻ",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 10,
+    "rule_heard": 11
+   },
+   {
+    "form": "ɒ ʂ ɻ ɒ x ɒ",
+    "stem": "ɒ ʂ ɻ",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 10,
+    "rule_heard": 10
+   },
+   {
+    "form": "ɒ ʂ ɻ i tɕ i",
+    "stem": "ɒ ʂ ɻ",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 10,
+    "rule_heard": 9
+   },
+   {
+    "form": "ɒ ʂ ɻ b a n",
+    "stem": "ɒ ʂ ɻ",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 10,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɒ ʂ ɻ a l a",
+    "stem": "ɒ ʂ ɻ",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 10,
+    "rule_heard": 8
+   },
+   {
+    "form": "ɒ ʂ ɻ i ɕ i",
+    "stem": "ɒ ʂ ɻ",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 10,
+    "rule_heard": 7
+   },
+   {
+    "form": "ɒ ʂ ɻ b ɒ ɾ ɒ",
+    "stem": "ɒ ʂ ɻ",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 10,
+    "rule_heard": 6
+   },
+   {
+    "form": "dʒ ɒ b ɒ x ɒ",
+    "stem": "dʒ ɒ b",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "dʒ ɒ b i tɕ i",
+    "stem": "dʒ ɒ b",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "dʒ ɒ b b a n",
+    "stem": "dʒ ɒ b",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "dʒ ɒ b a l a",
+    "stem": "dʒ ɒ b",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "dʒ ɒ b l j i",
+    "stem": "dʒ ɒ b",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "dʒ ɒ b i ɕ i",
+    "stem": "dʒ ɒ b",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "dʒ ɒ b b ɒ ɾ ɒ",
+    "stem": "dʒ ɒ b",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "b ɔ n ʌ ɾ ɒ",
+    "stem": "b ɔ n",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "b ɔ n i tɕ i",
+    "stem": "b ɔ n",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "b ɔ n b a n",
+    "stem": "b ɔ n",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "b ɔ n a l a",
+    "stem": "b ɔ n",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "b ɔ n l j i",
+    "stem": "b ɔ n",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "b ɔ n i ɕ i",
+    "stem": "b ɔ n",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "b ɔ n b ɒ ɾ ɒ",
+    "stem": "b ɔ n",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "uə o b ɒ x ɒ",
+    "stem": "uə o b",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "uə o b i tɕ i",
+    "stem": "uə o b",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "uə o b b a n",
+    "stem": "uə o b",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "uə o b a l a",
+    "stem": "uə o b",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "uə o b l j i",
+    "stem": "uə o b",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "uə o b i ɕ i",
+    "stem": "uə o b",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "uə o b b ɒ ɾ ɒ",
+    "stem": "uə o b",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ j i ʌ ɾ ɒ",
+    "stem": "tɕ j i",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 11
+   },
+   {
+    "form": "tɕ j i ɒ x ɒ",
+    "stem": "tɕ j i",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 10
+   },
+   {
+    "form": "tɕ j i b a n",
+    "stem": "tɕ j i",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "tɕ j i a l a",
+    "stem": "tɕ j i",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "tɕ j i l j i",
+    "stem": "tɕ j i",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 7
+   },
+   {
+    "form": "tɕ j i i ɕ i",
+    "stem": "tɕ j i",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 7
+   },
+   {
+    "form": "tɕ j i b ɒ ɾ ɒ",
+    "stem": "tɕ j i",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 6
+   },
+   {
+    "form": "m j e ʌ ɾ ɒ",
+    "stem": "m j e",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 11
+   },
+   {
+    "form": "m j e ɒ x ɒ",
+    "stem": "m j e",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 10
+   },
+   {
+    "form": "m j e i tɕ i",
+    "stem": "m j e",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 9
+   },
+   {
+    "form": "m j e b a n",
+    "stem": "m j e",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "m j e a l a",
+    "stem": "m j e",
+    "rule": 12,
+    "rule_form": "a l a",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "m j e i ɕ i",
+    "stem": "m j e",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 7
+   },
+   {
+    "form": "m j e b ɒ ɾ ɒ",
+    "stem": "m j e",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 7,
+    "rule_heard": 6
+   },
+   {
+    "form": "a ɴ p ʌ ɾ ɒ",
+    "stem": "a ɴ p",
+    "rule": 1,
+    "rule_form": "ʌ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 11
+   },
+   {
+    "form": "a ɴ p ɒ x ɒ",
+    "stem": "a ɴ p",
+    "rule": 3,
+    "rule_form": "ɒ x ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "a ɴ p i tɕ i",
+    "stem": "a ɴ p",
+    "rule": 5,
+    "rule_form": "i tɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "a ɴ p b a n",
+    "stem": "a ɴ p",
+    "rule": 6,
+    "rule_form": "b a n",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "a ɴ p l j i",
+    "stem": "a ɴ p",
+    "rule": 13,
+    "rule_form": "l j i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "a ɴ p i ɕ i",
+    "stem": "a ɴ p",
+    "rule": 14,
+    "rule_form": "i ɕ i",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "a ɴ p b ɒ ɾ ɒ",
+    "stem": "a ɴ p",
+    "rule": 18,
+    "rule_form": "b ɒ ɾ ɒ",
+    "kind": "suffix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "b æ n ɒ j e",
+    "stem": "ɒ j e",
+    "rule": 4,
+    "rule_form": "b æ n",
+    "kind": "prefix",
+    "stem_heard": 5,
+    "rule_heard": 9
+   },
+   {
+    "form": "b a ɾ ɒ j e",
+    "stem": "ɒ j e",
+    "rule": 7,
+    "rule_form": "b a ɾ",
+    "kind": "prefix",
+    "stem_heard": 5,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ l ɒ j e",
+    "stem": "ɒ j e",
+    "rule": 8,
+    "rule_form": "ʔ ɒ l",
+    "kind": "prefix",
+    "stem_heard": 5,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ tɕ ɒ j e",
+    "stem": "ɒ j e",
+    "rule": 9,
+    "rule_form": "ʔ ɒ tɕ",
+    "kind": "prefix",
+    "stem_heard": 5,
+    "rule_heard": 8
+   },
+   {
+    "form": "b u ɾ ɒ j e",
+    "stem": "ɒ j e",
+    "rule": 10,
+    "rule_form": "b u ɾ",
+    "kind": "prefix",
+    "stem_heard": 5,
+    "rule_heard": 8
+   },
+   {
+    "form": "s ɒ n ɒ j e",
+    "stem": "ɒ j e",
+    "rule": 11,
+    "rule_form": "s ɒ n",
+    "kind": "prefix",
+    "stem_heard": 5,
+    "rule_heard": 8
+   },
+   {
+    "form": "a tʂ e ɒ j e",
+    "stem": "ɒ j e",
+    "rule": 15,
+    "rule_form": "a tʂ e",
+    "kind": "prefix",
+    "stem_heard": 5,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʔ ɒ n ɒ j e",
+    "stem": "ɒ j e",
+    "rule": 16,
+    "rule_form": "ʔ ɒ n",
+    "kind": "prefix",
+    "stem_heard": 5,
+    "rule_heard": 7
+   },
+   {
+    "form": "b o ɾ ɒ j e",
+    "stem": "ɒ j e",
+    "rule": 17,
+    "rule_form": "b o ɾ",
+    "kind": "prefix",
+    "stem_heard": 5,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ ɒ b ɒ j e",
+    "stem": "ɒ j e",
+    "rule": 19,
+    "rule_form": "tɕ ɒ b",
+    "kind": "prefix",
+    "stem_heard": 5,
+    "rule_heard": 6
+   },
+   {
+    "form": "b u l ɔ ɴ b",
+    "stem": "ɔ ɴ b",
+    "rule": 2,
+    "rule_form": "b u l",
+    "kind": "prefix",
+    "stem_heard": 3,
+    "rule_heard": 10
+   },
+   {
+    "form": "b æ n ɔ ɴ b",
+    "stem": "ɔ ɴ b",
+    "rule": 4,
+    "rule_form": "b æ n",
+    "kind": "prefix",
+    "stem_heard": 3,
+    "rule_heard": 9
+   },
+   {
+    "form": "b a ɾ ɔ ɴ b",
+    "stem": "ɔ ɴ b",
+    "rule": 7,
+    "rule_form": "b a ɾ",
+    "kind": "prefix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ tɕ ɔ ɴ b",
+    "stem": "ɔ ɴ b",
+    "rule": 9,
+    "rule_form": "ʔ ɒ tɕ",
+    "kind": "prefix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "b u ɾ ɔ ɴ b",
+    "stem": "ɔ ɴ b",
+    "rule": 10,
+    "rule_form": "b u ɾ",
+    "kind": "prefix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "s ɒ n ɔ ɴ b",
+    "stem": "ɔ ɴ b",
+    "rule": 11,
+    "rule_form": "s ɒ n",
+    "kind": "prefix",
+    "stem_heard": 3,
+    "rule_heard": 8
+   },
+   {
+    "form": "a tʂ e ɔ ɴ b",
+    "stem": "ɔ ɴ b",
+    "rule": 15,
+    "rule_form": "a tʂ e",
+    "kind": "prefix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʔ ɒ n ɔ ɴ b",
+    "stem": "ɔ ɴ b",
+    "rule": 16,
+    "rule_form": "ʔ ɒ n",
+    "kind": "prefix",
+    "stem_heard": 3,
+    "rule_heard": 7
+   },
+   {
+    "form": "b o ɾ ɔ ɴ b",
+    "stem": "ɔ ɴ b",
+    "rule": 17,
+    "rule_form": "b o ɾ",
+    "kind": "prefix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ ɒ b ɔ ɴ b",
+    "stem": "ɔ ɴ b",
+    "rule": 19,
+    "rule_form": "tɕ ɒ b",
+    "kind": "prefix",
+    "stem_heard": 3,
+    "rule_heard": 6
+   },
+   {
+    "form": "b u l ɴ i ɴ",
+    "stem": "ɴ i ɴ",
+    "rule": 2,
+    "rule_form": "b u l",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "b æ n ɴ i ɴ",
+    "stem": "ɴ i ɴ",
+    "rule": 4,
+    "rule_form": "b æ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "b a ɾ ɴ i ɴ",
+    "stem": "ɴ i ɴ",
+    "rule": 7,
+    "rule_form": "b a ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ l ɴ i ɴ",
+    "stem": "ɴ i ɴ",
+    "rule": 8,
+    "rule_form": "ʔ ɒ l",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "b u ɾ ɴ i ɴ",
+    "stem": "ɴ i ɴ",
+    "rule": 10,
+    "rule_form": "b u ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "s ɒ n ɴ i ɴ",
+    "stem": "ɴ i ɴ",
+    "rule": 11,
+    "rule_form": "s ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "a tʂ e ɴ i ɴ",
+    "stem": "ɴ i ɴ",
+    "rule": 15,
+    "rule_form": "a tʂ e",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʔ ɒ n ɴ i ɴ",
+    "stem": "ɴ i ɴ",
+    "rule": 16,
+    "rule_form": "ʔ ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "b o ɾ ɴ i ɴ",
+    "stem": "ɴ i ɴ",
+    "rule": 17,
+    "rule_form": "b o ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ ɒ b ɴ i ɴ",
+    "stem": "ɴ i ɴ",
+    "rule": 19,
+    "rule_form": "tɕ ɒ b",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "b u l i j i",
+    "stem": "i j i",
+    "rule": 2,
+    "rule_form": "b u l",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 10
+   },
+   {
+    "form": "b æ n i j i",
+    "stem": "i j i",
+    "rule": 4,
+    "rule_form": "b æ n",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 9
+   },
+   {
+    "form": "b a ɾ i j i",
+    "stem": "i j i",
+    "rule": 7,
+    "rule_form": "b a ɾ",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ l i j i",
+    "stem": "i j i",
+    "rule": 8,
+    "rule_form": "ʔ ɒ l",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ tɕ i j i",
+    "stem": "i j i",
+    "rule": 9,
+    "rule_form": "ʔ ɒ tɕ",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "s ɒ n i j i",
+    "stem": "i j i",
+    "rule": 11,
+    "rule_form": "s ɒ n",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "a tʂ e i j i",
+    "stem": "i j i",
+    "rule": 15,
+    "rule_form": "a tʂ e",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʔ ɒ n i j i",
+    "stem": "i j i",
+    "rule": 16,
+    "rule_form": "ʔ ɒ n",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 7
+   },
+   {
+    "form": "b o ɾ i j i",
+    "stem": "i j i",
+    "rule": 17,
+    "rule_form": "b o ɾ",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ ɒ b i j i",
+    "stem": "i j i",
+    "rule": 19,
+    "rule_form": "tɕ ɒ b",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 6
+   },
+   {
+    "form": "b u l ɒ i b",
+    "stem": "ɒ i b",
+    "rule": 2,
+    "rule_form": "b u l",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "b a ɾ ɒ i b",
+    "stem": "ɒ i b",
+    "rule": 7,
+    "rule_form": "b a ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ l ɒ i b",
+    "stem": "ɒ i b",
+    "rule": 8,
+    "rule_form": "ʔ ɒ l",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ tɕ ɒ i b",
+    "stem": "ɒ i b",
+    "rule": 9,
+    "rule_form": "ʔ ɒ tɕ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "b u ɾ ɒ i b",
+    "stem": "ɒ i b",
+    "rule": 10,
+    "rule_form": "b u ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "s ɒ n ɒ i b",
+    "stem": "ɒ i b",
+    "rule": 11,
+    "rule_form": "s ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "a tʂ e ɒ i b",
+    "stem": "ɒ i b",
+    "rule": 15,
+    "rule_form": "a tʂ e",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʔ ɒ n ɒ i b",
+    "stem": "ɒ i b",
+    "rule": 16,
+    "rule_form": "ʔ ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "b o ɾ ɒ i b",
+    "stem": "ɒ i b",
+    "rule": 17,
+    "rule_form": "b o ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ ɒ b ɒ i b",
+    "stem": "ɒ i b",
+    "rule": 19,
+    "rule_form": "tɕ ɒ b",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "b æ n tɕ a m",
+    "stem": "tɕ a m",
+    "rule": 4,
+    "rule_form": "b æ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "b a ɾ tɕ a m",
+    "stem": "tɕ a m",
+    "rule": 7,
+    "rule_form": "b a ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ l tɕ a m",
+    "stem": "tɕ a m",
+    "rule": 8,
+    "rule_form": "ʔ ɒ l",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ tɕ tɕ a m",
+    "stem": "tɕ a m",
+    "rule": 9,
+    "rule_form": "ʔ ɒ tɕ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "b u ɾ tɕ a m",
+    "stem": "tɕ a m",
+    "rule": 10,
+    "rule_form": "b u ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "s ɒ n tɕ a m",
+    "stem": "tɕ a m",
+    "rule": 11,
+    "rule_form": "s ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "a tʂ e tɕ a m",
+    "stem": "tɕ a m",
+    "rule": 15,
+    "rule_form": "a tʂ e",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʔ ɒ n tɕ a m",
+    "stem": "tɕ a m",
+    "rule": 16,
+    "rule_form": "ʔ ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "b o ɾ tɕ a m",
+    "stem": "tɕ a m",
+    "rule": 17,
+    "rule_form": "b o ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ ɒ b tɕ a m",
+    "stem": "tɕ a m",
+    "rule": 19,
+    "rule_form": "tɕ ɒ b",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "b u l m ɒ ʂ",
+    "stem": "m ɒ ʂ",
+    "rule": 2,
+    "rule_form": "b u l",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "b æ n m ɒ ʂ",
+    "stem": "m ɒ ʂ",
+    "rule": 4,
+    "rule_form": "b æ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "b a ɾ m ɒ ʂ",
+    "stem": "m ɒ ʂ",
+    "rule": 7,
+    "rule_form": "b a ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ tɕ m ɒ ʂ",
+    "stem": "m ɒ ʂ",
+    "rule": 9,
+    "rule_form": "ʔ ɒ tɕ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "b u ɾ m ɒ ʂ",
+    "stem": "m ɒ ʂ",
+    "rule": 10,
+    "rule_form": "b u ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "s ɒ n m ɒ ʂ",
+    "stem": "m ɒ ʂ",
+    "rule": 11,
+    "rule_form": "s ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "a tʂ e m ɒ ʂ",
+    "stem": "m ɒ ʂ",
+    "rule": 15,
+    "rule_form": "a tʂ e",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʔ ɒ n m ɒ ʂ",
+    "stem": "m ɒ ʂ",
+    "rule": 16,
+    "rule_form": "ʔ ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "b o ɾ m ɒ ʂ",
+    "stem": "m ɒ ʂ",
+    "rule": 17,
+    "rule_form": "b o ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ ɒ b m ɒ ʂ",
+    "stem": "m ɒ ʂ",
+    "rule": 19,
+    "rule_form": "tɕ ɒ b",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "b u l ɪ b uə",
+    "stem": "ɪ b uə",
+    "rule": 2,
+    "rule_form": "b u l",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "b æ n ɪ b uə",
+    "stem": "ɪ b uə",
+    "rule": 4,
+    "rule_form": "b æ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "b a ɾ ɪ b uə",
+    "stem": "ɪ b uə",
+    "rule": 7,
+    "rule_form": "b a ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ l ɪ b uə",
+    "stem": "ɪ b uə",
+    "rule": 8,
+    "rule_form": "ʔ ɒ l",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ tɕ ɪ b uə",
+    "stem": "ɪ b uə",
+    "rule": 9,
+    "rule_form": "ʔ ɒ tɕ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "b u ɾ ɪ b uə",
+    "stem": "ɪ b uə",
+    "rule": 10,
+    "rule_form": "b u ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "s ɒ n ɪ b uə",
+    "stem": "ɪ b uə",
+    "rule": 11,
+    "rule_form": "s ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ n ɪ b uə",
+    "stem": "ɪ b uə",
+    "rule": 16,
+    "rule_form": "ʔ ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "b o ɾ ɪ b uə",
+    "stem": "ɪ b uə",
+    "rule": 17,
+    "rule_form": "b o ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ ɒ b ɪ b uə",
+    "stem": "ɪ b uə",
+    "rule": 19,
+    "rule_form": "tɕ ɒ b",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "b u l n ʂ ʌ",
+    "stem": "n ʂ ʌ",
+    "rule": 2,
+    "rule_form": "b u l",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "b æ n n ʂ ʌ",
+    "stem": "n ʂ ʌ",
+    "rule": 4,
+    "rule_form": "b æ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "b a ɾ n ʂ ʌ",
+    "stem": "n ʂ ʌ",
+    "rule": 7,
+    "rule_form": "b a ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ l n ʂ ʌ",
+    "stem": "n ʂ ʌ",
+    "rule": 8,
+    "rule_form": "ʔ ɒ l",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ tɕ n ʂ ʌ",
+    "stem": "n ʂ ʌ",
+    "rule": 9,
+    "rule_form": "ʔ ɒ tɕ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "b u ɾ n ʂ ʌ",
+    "stem": "n ʂ ʌ",
+    "rule": 10,
+    "rule_form": "b u ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "s ɒ n n ʂ ʌ",
+    "stem": "n ʂ ʌ",
+    "rule": 11,
+    "rule_form": "s ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ n n ʂ ʌ",
+    "stem": "n ʂ ʌ",
+    "rule": 16,
+    "rule_form": "ʔ ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "b o ɾ n ʂ ʌ",
+    "stem": "n ʂ ʌ",
+    "rule": 17,
+    "rule_form": "b o ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ ɒ b n ʂ ʌ",
+    "stem": "n ʂ ʌ",
+    "rule": 19,
+    "rule_form": "tɕ ɒ b",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "b u l ɒ l ɒ",
+    "stem": "ɒ l ɒ",
+    "rule": 2,
+    "rule_form": "b u l",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 10
+   },
+   {
+    "form": "b æ n ɒ l ɒ",
+    "stem": "ɒ l ɒ",
+    "rule": 4,
+    "rule_form": "b æ n",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 9
+   },
+   {
+    "form": "b a ɾ ɒ l ɒ",
+    "stem": "ɒ l ɒ",
+    "rule": 7,
+    "rule_form": "b a ɾ",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ l ɒ l ɒ",
+    "stem": "ɒ l ɒ",
+    "rule": 8,
+    "rule_form": "ʔ ɒ l",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ tɕ ɒ l ɒ",
+    "stem": "ɒ l ɒ",
+    "rule": 9,
+    "rule_form": "ʔ ɒ tɕ",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "b u ɾ ɒ l ɒ",
+    "stem": "ɒ l ɒ",
+    "rule": 10,
+    "rule_form": "b u ɾ",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "s ɒ n ɒ l ɒ",
+    "stem": "ɒ l ɒ",
+    "rule": 11,
+    "rule_form": "s ɒ n",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 8
+   },
+   {
+    "form": "a tʂ e ɒ l ɒ",
+    "stem": "ɒ l ɒ",
+    "rule": 15,
+    "rule_form": "a tʂ e",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 7
+   },
+   {
+    "form": "b o ɾ ɒ l ɒ",
+    "stem": "ɒ l ɒ",
+    "rule": 17,
+    "rule_form": "b o ɾ",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ ɒ b ɒ l ɒ",
+    "stem": "ɒ l ɒ",
+    "rule": 19,
+    "rule_form": "tɕ ɒ b",
+    "kind": "prefix",
+    "stem_heard": 7,
+    "rule_heard": 6
+   },
+   {
+    "form": "b u l ɻ b uə",
+    "stem": "ɻ b uə",
+    "rule": 2,
+    "rule_form": "b u l",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 10
+   },
+   {
+    "form": "b æ n ɻ b uə",
+    "stem": "ɻ b uə",
+    "rule": 4,
+    "rule_form": "b æ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 9
+   },
+   {
+    "form": "ʔ ɒ l ɻ b uə",
+    "stem": "ɻ b uə",
+    "rule": 8,
+    "rule_form": "ʔ ɒ l",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "ʔ ɒ tɕ ɻ b uə",
+    "stem": "ɻ b uə",
+    "rule": 9,
+    "rule_form": "ʔ ɒ tɕ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "b u ɾ ɻ b uə",
+    "stem": "ɻ b uə",
+    "rule": 10,
+    "rule_form": "b u ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "s ɒ n ɻ b uə",
+    "stem": "ɻ b uə",
+    "rule": 11,
+    "rule_form": "s ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 8
+   },
+   {
+    "form": "a tʂ e ɻ b uə",
+    "stem": "ɻ b uə",
+    "rule": 15,
+    "rule_form": "a tʂ e",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "ʔ ɒ n ɻ b uə",
+    "stem": "ɻ b uə",
+    "rule": 16,
+    "rule_form": "ʔ ɒ n",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 7
+   },
+   {
+    "form": "b o ɾ ɻ b uə",
+    "stem": "ɻ b uə",
+    "rule": 17,
+    "rule_form": "b o ɾ",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "tɕ ɒ b ɻ b uə",
+    "stem": "ɻ b uə",
+    "rule": 19,
+    "rule_form": "tɕ ɒ b",
+    "kind": "prefix",
+    "stem_heard": 2,
+    "rule_heard": 6
+   },
+   {
+    "form": "b u l j i e",
+    "stem": "j i e",
+    "rule": 2,
+    "rule_form": "b u l",
+    "kind": "prefix",
+    "stem_heard": 6,
+    "rule_heard": 10
+   }
+  ]
+ },
+ "queue": {
+  "total": 3218,
+  "unrecoverable": 2041,
+  "top": [
+   {
+    "form": "t uə e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b a l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i ɕ a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ʂ ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɪ b ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ n d i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n t i ɕ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i x a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ l b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tʂ ʌ ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʁ ɒ tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e m j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i ʂ ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i b u l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e ɟ j e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɻ tɕ i a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ n ɒ j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m i e ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m i j o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b u tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i f ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ɳ ә",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ l ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ m u",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i ɴ d uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i tɕ e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ɾ d ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə o ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j i j t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "d i dʒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b a ʁ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n t uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o uə m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b a ɳ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "æ ʂ ɻ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p uə o j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ n tʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɻ p uə o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tʂ e ʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ʁ p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "d i e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ð ɪ e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a s i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i j æ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e ɴ b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e s tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʁ ɒ t ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ n tɕ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j ʌ ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ŋ t ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n d ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɴ ɒ kp",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ l j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə k u",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ ð ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i ɒ ʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ b uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɪ l j e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n ɒ n ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j ɒ b ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ kp uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o l m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e b ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a tɕ ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t i d",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ b e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n ɴ æ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tʂ e l o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ʔ ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b ɒ tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ d e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e b e i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m a ð e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i i n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ n t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m a n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɪ tʂ e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k uə i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e j b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ʂ o uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b a ɾ j i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ɾ ɒ d",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s i o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʂ æ n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ð ʌ l a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p o ʁ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɪ m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ ɾ m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ t ɯ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e tʂ ɻ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i ɒ n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i e k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "f uə e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s uə o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l j ɨ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s ʌ ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ b uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "u b o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ ɒ j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ a tʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o uə p uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o ŋ ʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ n a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɾ l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s ɛ tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l e ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n k i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j a n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b a tɕ ɒ s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ kp ɔ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɴ tʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m i k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ kp b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "d ɒ t e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ɴ æ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t i b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k t ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o p uə a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɴ tʂ ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b uə o tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a tɕ j i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e tɕ j i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ð ɪ ʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ d ɒ l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə tɕ i e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e tɕ i i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ ɾ b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m e m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b a ɾ t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e m uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ɳ d ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m a d i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a tɕ i ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɴ tʂ o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m ɛ ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɴ j e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s ɒ b ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ m u",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e ɴ ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l e s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p uə a tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t e l a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s i ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o uə l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n ɒ p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɕ i æ n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʂ ɻ p uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i b o l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʂ ʌ l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɴ ɒ b a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s t j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə a j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e j a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k ɒ o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ŋ tɕ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ tɕ o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ŋ kp",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b o b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l ʌ b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p uə k uə o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə t ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i l ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ e m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m a tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə o a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n s o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɴ b æ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i ʂ ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "x a l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ɒ b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ð ʌ ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɛ ɾ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i tɕ ɨ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l u j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ e k",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i o b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l ɛ ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ɴ ɳ ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j o m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t o ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e p uə o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i p uə ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ j e j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e b ɤ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l e tʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə ɒ l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ ɒ ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b ɒ d",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i æ ɕ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e n m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɾ ʌ n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɾ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ð e b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i e ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ n tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i ɴ i n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n a l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ ɒ m ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "r ɒ j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e p uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʁ ɒ ʂ ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e dʒ e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e t j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b ɒ x",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ ɨ kp",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ð i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m ʌ d",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i ɒ tɕ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɴ n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "d e l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a p j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l m j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e p ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɳ b ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i a b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ d ɨ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l ɒ m ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a j i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l ɟ j e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b j e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p uə o ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ t m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i kp a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɳ i m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ tɕ ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e b æ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "d ɒ t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ j ɨ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l i l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tʂ ʌ b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s ɪ t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ tʂ ʌ ŋ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "u l j e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b uə s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ ɒ tʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ ŋ ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e b ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɴ ɳ ә",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ŋ b a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ɴ n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʂ ɒ ɾ p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɴ i æ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʂ ɻ tʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a b ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ s p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ɴ d",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ ɴ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə a z",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ ɒ d",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o ʂ ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b uə a b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s o n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɕ i kp",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l i ɡ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ɒ l ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k a ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i k o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p ɒ n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n ɴ d j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a l a m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l ɒ ʔ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʁ ɒ l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l i j e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ p uə a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ j a b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l j e d",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i b a ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ij j e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tʂ uə a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n t e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i i ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e tʂ o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ j kp",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i tʂ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i ɡ ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b i ɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ l ɒ ɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɕ i ə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ʂ uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m uə o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə a e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a n tɕ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i ɒ a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ ɒ s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e m o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ ɒ ɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i o ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t ɒ ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e l o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i t a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l a ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tʂ ɒ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o l l a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ɾ tɕ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a n kp",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "d i j i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ ɒ ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə e n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ j e tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ n ɟ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ ɴ m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n tɕ ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɴ ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "u ɾ b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɾ e tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɒ tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a l t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɪ ʂ uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ ɒ p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b ɛ ɾ j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i j d",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l a ʁ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n i n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ l a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ s uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tʂ ɒ ɳ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i æ a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i ɒ ɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "uə o j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ a ɳ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ b ɛ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ŋ b æ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l i j a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ m ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ b ɔ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "o ɾ tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j i dʒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tʂ o m",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ә ɴ tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "v e ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɾ p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɴ n ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p uə e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l ɒ r",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l ɪ tʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a tʂ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m i b a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ j ɨ b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b u ɳ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ð ɒ æ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɕ i t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ ɳ ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ tʂ uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e j o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j i b uə",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɪ l ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j æ ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i k a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i æ ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a j ɯ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "d uə a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ e o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "t i s",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ tʂ ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e b e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "d i l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i j o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɪ b o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a s ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɴ ɳ d",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j a p ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "u n a",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b a ɪ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b ʌ ɾ ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ɒ e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i æ n tɕ i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e tʂ ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ m ә ɴ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a ð ә",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ ɟ ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i b ɒ n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l i i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɾ a d",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ i æ ɒ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j a ʁ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ t o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e ɴ n i",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "n o p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "e s t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "a z ʌ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "j e ɟ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ә ɒ l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɟ i t",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "tɕ e tʂ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "k ʌ b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l a ð",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "kp e tɕ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p ɒ p",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "b a j",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ s o",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "s i l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɕ i l",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "m ʌ kp",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "p a n",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "l m e",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ʌ b ʌ ɾ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "ɒ j ɳ",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
+   },
+   {
+    "form": "i m i b",
+    "heard": 1,
+    "utts": 1,
+    "derivable": false,
+    "priority": 1.0
    }
   ]
  },

@@ -5,7 +5,9 @@ Every tape position is a link to that second of the recording on YouTube."""
 import json, pathlib, re, sys, html
 
 name = sys.argv[1] if len(sys.argv) > 1 else "torwali"
-page_name = sys.argv[2] if len(sys.argv) > 2 else "index"
+# a page is named after its run by default; index.html stays with torwali.
+# without this, `make_site.py piedmontese` silently overwrites another tape's page
+page_name = sys.argv[2] if len(sys.argv) > 2 else ("index" if sys.argv[1] == "torwali" else sys.argv[1])
 root = pathlib.Path(__file__).parent
 run = json.loads((root / "runs" / name / "run.json").read_text())
 log = (root / "runs" / name / "log.txt").read_text().splitlines()
@@ -56,6 +58,26 @@ vow_bars = "".join(
     f'<div class="vb"><span class="ipa">{e(p)}</span><i style="width:{int(180*c/vmax)}px"></i><b>{c}</b></div>' for p, c in vow)
 log_rows = "".join(f'<div>{e(l)}</div>' for l in log)
 
+dv = run.get("derived") or {}
+qu = run.get("queue") or {}
+fat = (run.get("voice") or {}).get("fatigue") or {}
+der_rows = "".join(
+    f'<tr><td class="ipa">{e(d["form"])}</td><td class="ipa">{e(d["stem"])}</td>'
+    f'<td class="n" style="white-space:nowrap">+ rule {d["rule"]}</td><td class="ipa">{e(d["rule_form"])}</td>'
+    f'<td>stem {d["stem_heard"]}× · rule {d["rule_heard"]}×</td></tr>'
+    for d in (dv.get("never_recorded") or [])[:14])
+q_rows = "".join(
+    f'<tr><td class="ipa">{e(r["form"])}</td><td>{r["heard"]}× in {r["utts"]} utterances</td>'
+    f'<td class="{"mint" if r["derivable"] else "red"}">'
+    f'{"rules can rebuild it" if r["derivable"] else "nothing can rebuild it"}</td></tr>'
+    for r in (qu.get("top") or [])[:14])
+fat_rows = "".join(
+    f'<tr><td>{e(w["window"])}</td><td>{w["utterances"]}</td><td>{w["speech_share"]}</td>'
+    f'<td>{w["rate"]}</td><td>{w["f0"]}</td><td>{w["utt_seconds"]} s</td></tr>'
+    for w in (fat.get("windows") or []))
+fat_trend = ", ".join(f'{k} {v["per_window_pct"]:+.1f}%' for k, v in (fat.get("trend") or {}).items())
+b = dv.get("baseline") or {}
+
 page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>THE LAST SPEAKER · {e(name)} · case report</title>
@@ -98,6 +120,8 @@ ul{{padding-left:18px}} li{{margin:3px 0}}
 <div>RULES SIGNED<b class="mint">{s['rules_signed']}</b></div><div>RULES REFUSED<b class="red">{s['rules_refused']}</b></div>
 <div>FIGHTS OPEN<b class="red">{s['fights_open']}</b></div><div>NOT HIS USUAL VOICE<b>{s['register_shifts']}</b></div>
 <div>SOUNDS · CORE<b>{s['inventory']} · {s['core_inventory']}</b></div><div>SPEECH ON TAPE<b>{s['speech_hours']} h</b></div><div>SPEAKERS LEFT<b class="red">1</b></div>
+{f'<div>NEVER RECORDED<b class="red">{s["derived_never_recorded"]:,}</b></div>' if s.get("derived_never_recorded") else ''}
+{f'<div>DIE WITH HIM<b class="red">{s["die_with_him"]:,}</b></div>' if s.get("die_with_him") else ''}
 </div>
 <h2>the wall · chains that keep coming back</h2>
 <div class="wall">{cards}</div>
@@ -113,6 +137,15 @@ ul{{padding-left:18px}} li{{margin:3px 0}}
 {vow_bars}
 <h2>case log</h2>
 <div class="log">{log_rows}</div>
+{f'''<h2>forms this grammar allows that nobody ever said</h2>
+<div class="note">run the signed rules the other way: if one stem takes an ending and another stem takes a different one, both crossings are forms the language permits. every one of them was then searched across all {s['utterances']:,} utterances as an exact phone chain. <b>{dv.get("checked",0):,} forms · {dv.get("on_tape",0)} turned out to be on the tape after all · {s.get("derived_never_recorded", 0):,} are on no second of it (first 14 below).</b><br><br><b>control:</b> {b.get("hits","-")} of {b.get("n","-"):,} RANDOM chains of the same lengths land anywhere on this tape. without that line the hits above would mean nothing.</div>
+<table>{der_rows}</table>''' if der_rows else ''}
+{f'''<h2>the queue · what goes when he goes</h2>
+<div class="note">a word the rules can rebuild after he is gone is not the urgent one. a chain heard once or twice that no rule produces is the one nobody recovers. <b>{qu.get("unrecoverable",0):,} of {qu.get("total",0):,}</b> word candidates are in that second group - that is the order to work through, not the frequency list.</div>
+<table>{q_rows}</table>''' if q_rows else ''}
+{f'''<h2>does the voice fade across the tape</h2>
+<div class="note">tempo, speech share and utterance length in 10-minute windows. trend per window: <b>{fat_trend or "not enough windows"}</b>. a flat line is a result, not a missing measurement - the serial's voice budget needs sessions months apart, and one recording cannot give that.</div>
+<table><tr><td>window</td><td>utterances</td><td>speech share</td><td>phones/s</td><td>pitch</td><td>median utterance</td></tr>{fat_rows}</table>''' if fat_rows else ''}
 <h2>what this is not</h2>
 <div class="note">no dictionary of the language was used and nothing here is a translation. a "word" is a chain of phones that repeats, a "rule" is a chain that keeps attaching to different neighbours, a "fight" is two of them one phone apart. the register detector hears pitch and tempo, not meaning. a linguist would call this a starting point. that is what it is, and every line carries the second of tape it came from.</div>
 <div class="foot">other tapes: <a href="index.html">torwali</a> · <a href="piedmontese.html">piedmontese</a> · desk.py run tape.wav · generated from runs/{e(name)}/run.json</div>
