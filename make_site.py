@@ -125,25 +125,25 @@ ul{{padding-left:18px}} li{{margin:3px 0}}
 </div>
 <h2>the wall · chains that keep coming back</h2>
 <div class="wall">{cards}</div>
-<h2>rules signed by CHIEF · a chain that attaches to many different neighbours</h2>
+<h2 id="rules">rules signed by CHIEF · a chain that attaches to many different neighbours</h2>
 <table>{rule_rows}</table>
-<h2>fights · two answers, nobody alive to settle it</h2>
+<h2 id="fights">fights · two answers, nobody alive to settle it</h2>
 <table>{fight_rows}</table>
 <h2>the gate · refused ({len(refused)})</h2>
 <ul>{ref_rows}{'<li>… and ' + str(len(refused)-10) + ' more in report.md</li>' if len(refused) > 10 else ''}</ul>
-<h2>his voice · where the register shifts (median {s['median_f0']} Hz, {s['median_rate']} phones/s)</h2>
+<h2 id="voice">his voice · where the register shifts (median {s['median_f0']} Hz, {s['median_rate']} phones/s)</h2>
 <table>{shift_rows}</table>
 <h2>vowels nobody wrote down</h2>
 {vow_bars}
 <h2>case log</h2>
 <div class="log">{log_rows}</div>
-{f'''<h2>forms this grammar allows that nobody ever said</h2>
+{f'''<h2 id="derived">forms this grammar allows that nobody ever said</h2>
 <div class="note">run the signed rules the other way: if one stem takes an ending and another stem takes a different one, both crossings are forms the language permits. every one of them was then searched across all {s['utterances']:,} utterances as an exact phone chain. <b>{dv.get("checked",0):,} forms · {dv.get("on_tape",0)} turned out to be on the tape after all · {s.get("derived_never_recorded", 0):,} are on no second of it (first 14 below).</b><br><br><b>control:</b> {b.get("hits","-")} of {b.get("n","-"):,} RANDOM chains of the same lengths land anywhere on this tape. without that line the hits above would mean nothing.</div>
 <table>{der_rows}</table>''' if der_rows else ''}
-{f'''<h2>the queue · what goes when he goes</h2>
+{f'''<h2 id="queue">the queue · what goes when he goes</h2>
 <div class="note">a word the rules can rebuild after he is gone is not the urgent one. a chain heard once or twice that no rule produces is the one nobody recovers. <b>{qu.get("unrecoverable",0):,} of {qu.get("total",0):,}</b> word candidates are in that second group - that is the order to work through, not the frequency list.</div>
 <table>{q_rows}</table>''' if q_rows else ''}
-{f'''<h2>does the voice fade across the tape</h2>
+{f'''<h2 id="fade">does the voice fade across the tape</h2>
 <div class="note">tempo, speech share and utterance length in 10-minute windows. trend per window: <b>{fat_trend or "not enough windows"}</b>. a flat line is a result, not a missing measurement - the serial's voice budget needs sessions months apart, and one recording cannot give that.</div>
 <table><tr><td>window</td><td>utterances</td><td>speech share</td><td>phones/s</td><td>pitch</td><td>median utterance</td></tr>{fat_rows}</table>''' if fat_rows else ''}
 <h2>what this is not</h2>

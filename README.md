@@ -3,6 +3,13 @@
 **3,218 word candidates, 19 grammar rules, and 1,105 forms this language allows that nobody
 ever said on 72 minutes of tape.** no dictionary. no translation. no idea what any of it means.
 
+> **came here from the serial?** the speaker in it is invented. everything below is not: real
+> tape, real numbers, and a table further down saying day by day which part of the story exists
+> as code you can run and which part needs a living human in the room.
+> **the fastest check:** [what the desk found, with every number opening that second of the
+> recording](https://jugqdc-sudo.github.io/cold-desk/) · [the serial against the code, day by
+> day](https://jugqdc-sudo.github.io/cold-desk/serial.html)
+
 six agents listen to raw tape of one speaker and pull out the sound inventory, the chains
 that keep coming back, and the patterns that behave like grammar. every finding carries a
 position on the tape, so you can go to that second and hear it yourself.
@@ -189,6 +196,10 @@ mistake the desk itself refuses to make.
 | 3 | rules turn out to be him doing somebody else's voice | **done.** every rule carries `in_shifted_voice`. on this tape **6 of the 19 signed rules** only show up where his pitch or tempo is 2σ off his own median |
 | 4 | the desk speaks the language back to him | the sentence assembly is not written yet. voice cloning off 45 h of one speaker is a solved problem, the reaction of a native speaker is not |
 | 5 | the returned words come back 40 ms slower | per-utterance pitch and tempo are already measured (`voice.shifts`); comparing the same word across two dates is one script away and not written yet |
+| 6 | the machine passes the desk's own test for a speaker | **needs a living speaker.** two of the three checks are mechanical, the third one - takes a correction - is a person changing their mind in the room. nothing here fakes it |
+| 7 | the bot says a word that is on no tape, and it turns out to be real | **done.** `agents/derive.py` runs the signed rules the other way: **1,110** forms allowed, **5** found on the tape after all, **1,105** on no second of it. And the control: **0 of 1,110** random chains of the same lengths land anywhere |
+| 8 | the queue is sorted by which words are safe to lose | **done.** `derive.queue()` - **2,041 of 3,218** word candidates were heard twice or less and no rule can rebuild them. That is the order to work through with a speaker |
+| 8 | his voice has fewer minutes left than the queue has words | **partly.** a budget across months needs sessions across months. What is here is the honest half: fade measured inside one tape, 10-minute windows. Torwali flat to the end, Piedmontese **-4.4%** of utterance length per window |
 
 what the desk will never do: judge whether a rule is a joke, hear that a word belongs to
 somebody's mother, or decide that a pattern is dead. those need the speaker. the gate exists
