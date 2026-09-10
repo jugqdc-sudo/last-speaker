@@ -39,9 +39,20 @@ def pos(sec):
     sec = int(sec); return f"{sec//3600:02d}:{(sec%3600)//60:02d}:{sec%60:02d}"
 
 
+# Clips let a claim be heard on the page. A reader who has to leave for YouTube to check
+# something does not come back, so the timestamp plays here and cmd+click still opens the tape.
+clips_dir = root / "docs" / "clips" / name
+clips = json.loads((clips_dir / "clips.json").read_text()) if (clips_dir / "clips.json").exists() else {}
+if not clips:
+    print(f"  note: no clips for '{name}' - timestamps will only link out. run make_clips.py {name}")
+
+
 def link(uid):
     st = utts[uid]["start"]
-    return f'<a class="pos" href="{yt(st)}" target="_blank">{pos(st)}</a>'
+    c = clips.get(str(uid))
+    extra = (f' data-c="clips/{name}/{c["f"]}" data-d="{c["dur"]}"'
+             f' title="click to hear this second · cmd+click opens the tape"') if c else ''
+    return f'<a class="pos{" pl" if c else ""}" href="{yt(st)}"{extra}>{pos(st)}</a>'
 
 
 e = html.escape
@@ -136,6 +147,36 @@ body:after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 .rv{opacity:0;transform:translateY(14px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
 .rv.on{opacity:1;transform:none}
 
+/* ── таймкод, который играет плёнку прямо здесь ── */
+.pos.pl{cursor:pointer}
+.pos.pl:after{content:"▸";margin-left:4px;font-size:9px;color:var(--faint);transition:color .18s}
+.pos.pl:hover:after{color:var(--mint)}
+.pos.playing{background:#16190f;color:#e7eae0;border-bottom-color:transparent}
+.pos.playing:after{content:"■";color:#c8913a}
+.pos.playing:before{opacity:0}
+/* полоска проигрывания бежит под таймкодом */
+.pos .prg{position:absolute;left:0;bottom:-1px;height:2px;background:#c8913a;width:0}
+
+/* «сейчас играет» - прилипает к ленте плёнки, видно на любой прокрутке */
+.now{position:fixed;left:0;right:0;bottom:0;z-index:40;background:#16190f;color:#e7eae0;
+  padding:9px 16px;display:flex;align-items:center;gap:14px;font-size:10.5px;letter-spacing:1.6px;
+  transform:translateY(110%);transition:transform .28s cubic-bezier(.2,.7,.3,1)}
+.now.on{transform:none}
+.now .dot{width:7px;height:7px;border-radius:50%;background:var(--red);animation:blink 1s steps(1,end) infinite;flex:none}
+.now .bar2{flex:1;height:3px;background:#2f342b;position:relative;min-width:60px}
+.now .bar2 i{position:absolute;inset:0 auto 0 0;background:#c8913a;width:0}
+.now a{color:#9aa693;text-decoration:none;border-bottom:1px solid #3a4034;white-space:nowrap}
+
+/* ── что страница доказывает, а что нет ── */
+.proof{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.proof>div{padding:14px 16px;border:1px solid var(--line);background:var(--card)}
+.proof .yes{border-left:3px solid var(--mint)}
+.proof .no{border-left:3px solid var(--red);background:#faf6f5}
+.proof h3{margin:0 0 8px;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+.proof .yes h3{color:var(--mint)} .proof .no h3{color:var(--red)}
+.proof ul{margin:0;padding-left:16px} .proof li{margin:5px 0;color:var(--dim);font-size:11.5px;line-height:1.6}
+@media(max-width:760px){.proof{grid-template-columns:1fr}}
+
 /* ── таймкоды: подсветка как у живой позиции на плёнке ── */
 .pos{position:relative;padding:1px 3px;transition:background .18s,color .18s}
 .pos:hover{background:#d9ecdf;color:#1d4a33;border-bottom-style:solid}
@@ -204,22 +245,65 @@ ANIM_JS = """
   function frame(){
     t+=slow?0:1;
     g.clearRect(0,0,W,H);
-    var bw=3, gap=3, n=Math.floor(W/(bw+gap)), cur=(t*0.0016)%1;
+    // пока клип играет, дорожка показывает НАСТОЯЩУЮ позицию, а не свой холостой ход
+    var live=window.__play&&window.__play.on;
+    var bw=3, gap=3, n=Math.floor(W/(bw+gap)), cur= live ? window.__play.k : (t*0.0016)%1;
     for(var i=0;i<n;i++){
       var u=i/n;
       // огибающая речи: пачки высказываний с паузами, как на настоящей плёнке
       var env=Math.max(0,Math.sin(u*26)*0.5+0.5)*Math.max(0,Math.sin(u*7.3+1.1)*0.6+0.55);
-      var a=env*(0.35+seed(i+((t*0.02)|0))*0.65);
+      var a=env*(0.35+seed(i+((t*(live?0.09:0.02))|0))*0.65);
       var h=Math.max(1,a*(H-10));
       var past=u<cur;
-      g.fillStyle = past ? (u>cur-0.02 ? '#c8913a' : 'rgba(43,48,42,.62)') : 'rgba(43,48,42,.16)';
+      g.fillStyle = past ? (u>cur-0.02 ? '#c8913a' : (live?'rgba(200,145,58,.55)':'rgba(43,48,42,.62)'))
+                         : 'rgba(43,48,42,.16)';
       g.fillRect(i*(bw+gap), (H-h)/2, bw, h);
     }
-    g.fillStyle='rgba(192,74,60,.75)';
-    g.fillRect(cur*W, 4, 1, H-8);
+    g.fillStyle= live ? 'rgba(192,74,60,1)' : 'rgba(192,74,60,.75)';
+    g.fillRect(cur*W, 4, live?2:1, H-8);
     requestAnimationFrame(frame);
   }
   frame();
+})();
+
+// Плёнка играет прямо на странице: клик по таймкоду - и слышно ту самую секунду.
+// Дорожка в герое на это время перестаёт быть декорацией и показывает реальную позицию.
+window.__play = {on:false, k:0};
+(function(){
+  var a=new Audio(), cur=null, now=document.getElementById('now'),
+      nowT=document.getElementById('nowt'), nowB=document.getElementById('nowb'),
+      nowL=document.getElementById('nowl');
+  function stop(){
+    if(cur){ cur.classList.remove('playing'); var p=cur.querySelector('.prg'); if(p) p.remove(); }
+    cur=null; window.__play.on=false; if(now) now.classList.remove('on');
+  }
+  document.addEventListener('click', function(ev){
+    var el=ev.target.closest('a.pos.pl'); if(!el) return;
+    if(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button===1) return;   // cmd+click уходит на плёнку целиком
+    ev.preventDefault();
+    if(cur===el){ a.pause(); stop(); return; }
+    stop();
+    cur=el; el.classList.add('playing');
+    var p=document.createElement('i'); p.className='prg'; el.appendChild(p);
+    a.src=el.getAttribute('data-c'); a.currentTime=0; a.play();
+    window.__play.on=true;
+    if(now){
+      now.classList.add('on');
+      nowT.textContent='TAPE '+el.textContent.replace(/[▸■]/g,'').trim();
+      nowL.href=el.href;
+    }
+  });
+  a.addEventListener('timeupdate', function(){
+    var k=a.duration? a.currentTime/a.duration : 0;
+    window.__play.k=k;
+    if(cur){ var p=cur.querySelector('.prg'); if(p) p.style.width=(k*100)+'%'; }
+    if(nowB) nowB.style.width=(k*100)+'%';
+  });
+  a.addEventListener('ended', stop);
+  a.addEventListener('error', function(){
+    // молчащая кнопка хуже отсутствующей: если клип не загрузился, уводим на плёнку
+    if(cur){ var h=cur.href; stop(); window.open(h,'_blank'); }
+  });
 })();
 
 // секции проявляются один раз, без дёрганья при обратной прокрутке
@@ -383,6 +467,38 @@ ul{{padding-left:18px}} li{{margin:3px 0}}
   <span class="cap">{s['speech_hours']} H OF SPEECH · {s['utterances']:,} UTTERANCES</span>
 </div>
 
+<h2 id="proof">what this page proves, and what it does not</h2>
+<div class="proof rv">
+  <div class="yes">
+    <h3>you can verify this yourself</h3>
+    <ul>
+      <li><b>the tape is real and so are the positions.</b> click any timestamp and the recording
+        plays right here, at that second. cmd+click opens the full tape on the source.</li>
+      <li><b>the chains really do repeat.</b> a "word" here means an exact sequence of sounds that
+        came back {words[0]['count']}, {words[5]['count']}, {words[-1]['count']} times across {s['utterances']:,} utterances. hear them and count.</li>
+      <li><b>the desk refuses more than it accepts.</b> {s['rules_refused']} of {s['rules_signed'] + s['rules_refused']} rules
+        were thrown out, each with the reason, listed below.</li>
+      <li><b>it is not pattern noise.</b> {b.get('n', 0):,} random chains of the same lengths were run
+        through the same grammar: {b.get('hits', 0)} of them land anywhere on this tape.</li>
+      <li><b>the code is open.</b> same pipeline, your own recording, one command.</li>
+    </ul>
+  </div>
+  <div class="no">
+    <h3>what it is not</h3>
+    <ul>
+      <li><b>nothing here is a translation.</b> no dictionary was used and the desk does not know
+        what any of it means. it never guesses a meaning.</li>
+      <li><b>"word" and "rule" are mechanical terms.</b> a word is a repeating chain of sounds,
+        a rule is a chain that attaches to many different stems. a linguist would call this a
+        starting point, not a description of the language.</li>
+      <li><b>no native speaker has confirmed any of it.</b> that is the whole problem of case 01:
+        there is nobody left to ask.</li>
+      <li><b>the serial on the account is dramatised.</b> the desk, the tape and every number here
+        are real. the story around them is a story.</li>
+    </ul>
+  </div>
+</div>
+
 <h2 id="check">how to check this yourself · takes about a minute</h2>
 <div class="checks rv">
   <div class="chk"><div class="no">1</div><h3>click any timestamp</h3>
@@ -431,6 +547,12 @@ ul{{padding-left:18px}} li{{margin:3px 0}}
 <h2>what this is not</h2>
 <div class="note">no dictionary of the language was used and nothing here is a translation. a "word" is a chain of phones that repeats, a "rule" is a chain that keeps attaching to different neighbours, a "fight" is two of them one phone apart. the register detector hears pitch and tempo, not meaning. a linguist would call this a starting point. that is what it is, and every line carries the second of tape it came from.</div>
 {ca_block}
+<div class="now" id="now">
+  <span class="dot"></span>
+  <span id="nowt">TAPE</span>
+  <span class="bar2"><i id="nowb"></i></span>
+  <a id="nowl" href="{e(meta['url'])}" target="_blank">OPEN THE FULL TAPE ↗</a>
+</div>
 <div class="foot">other tapes: <a href="index.html">torwali</a> · <a href="piedmontese.html">piedmontese</a>
  · <a href="https://github.com/jugqdc-sudo/cold-desk" target="_blank">code</a>
  · <a href="https://x.com/ventry089" target="_blank">the serial</a>

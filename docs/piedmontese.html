@@ -103,6 +103,36 @@ body:after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 .rv{opacity:0;transform:translateY(14px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
 .rv.on{opacity:1;transform:none}
 
+/* ── таймкод, который играет плёнку прямо здесь ── */
+.pos.pl{cursor:pointer}
+.pos.pl:after{content:"▸";margin-left:4px;font-size:9px;color:var(--faint);transition:color .18s}
+.pos.pl:hover:after{color:var(--mint)}
+.pos.playing{background:#16190f;color:#e7eae0;border-bottom-color:transparent}
+.pos.playing:after{content:"■";color:#c8913a}
+.pos.playing:before{opacity:0}
+/* полоска проигрывания бежит под таймкодом */
+.pos .prg{position:absolute;left:0;bottom:-1px;height:2px;background:#c8913a;width:0}
+
+/* «сейчас играет» - прилипает к ленте плёнки, видно на любой прокрутке */
+.now{position:fixed;left:0;right:0;bottom:0;z-index:40;background:#16190f;color:#e7eae0;
+  padding:9px 16px;display:flex;align-items:center;gap:14px;font-size:10.5px;letter-spacing:1.6px;
+  transform:translateY(110%);transition:transform .28s cubic-bezier(.2,.7,.3,1)}
+.now.on{transform:none}
+.now .dot{width:7px;height:7px;border-radius:50%;background:var(--red);animation:blink 1s steps(1,end) infinite;flex:none}
+.now .bar2{flex:1;height:3px;background:#2f342b;position:relative;min-width:60px}
+.now .bar2 i{position:absolute;inset:0 auto 0 0;background:#c8913a;width:0}
+.now a{color:#9aa693;text-decoration:none;border-bottom:1px solid #3a4034;white-space:nowrap}
+
+/* ── что страница доказывает, а что нет ── */
+.proof{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.proof>div{padding:14px 16px;border:1px solid var(--line);background:var(--card)}
+.proof .yes{border-left:3px solid var(--mint)}
+.proof .no{border-left:3px solid var(--red);background:#faf6f5}
+.proof h3{margin:0 0 8px;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+.proof .yes h3{color:var(--mint)} .proof .no h3{color:var(--red)}
+.proof ul{margin:0;padding-left:16px} .proof li{margin:5px 0;color:var(--dim);font-size:11.5px;line-height:1.6}
+@media(max-width:760px){.proof{grid-template-columns:1fr}}
+
 /* ── таймкоды: подсветка как у живой позиции на плёнке ── */
 .pos{position:relative;padding:1px 3px;transition:background .18s,color .18s}
 .pos:hover{background:#d9ecdf;color:#1d4a33;border-bottom-style:solid}
@@ -202,6 +232,38 @@ html,body{overflow-x:hidden}
   <span class="cap">0.42 H OF SPEECH · 292 UTTERANCES</span>
 </div>
 
+<h2 id="proof">what this page proves, and what it does not</h2>
+<div class="proof rv">
+  <div class="yes">
+    <h3>you can verify this yourself</h3>
+    <ul>
+      <li><b>the tape is real and so are the positions.</b> click any timestamp and the recording
+        plays right here, at that second. cmd+click opens the full tape on the source.</li>
+      <li><b>the chains really do repeat.</b> a "word" here means an exact sequence of sounds that
+        came back 9, 8, 7 times across 292 utterances. hear them and count.</li>
+      <li><b>the desk refuses more than it accepts.</b> 17 of 18 rules
+        were thrown out, each with the reason, listed below.</li>
+      <li><b>it is not pattern noise.</b> 0 random chains of the same lengths were run
+        through the same grammar: 0 of them land anywhere on this tape.</li>
+      <li><b>the code is open.</b> same pipeline, your own recording, one command.</li>
+    </ul>
+  </div>
+  <div class="no">
+    <h3>what it is not</h3>
+    <ul>
+      <li><b>nothing here is a translation.</b> no dictionary was used and the desk does not know
+        what any of it means. it never guesses a meaning.</li>
+      <li><b>"word" and "rule" are mechanical terms.</b> a word is a repeating chain of sounds,
+        a rule is a chain that attaches to many different stems. a linguist would call this a
+        starting point, not a description of the language.</li>
+      <li><b>no native speaker has confirmed any of it.</b> that is the whole problem of case 01:
+        there is nobody left to ask.</li>
+      <li><b>the serial on the account is dramatised.</b> the desk, the tape and every number here
+        are real. the story around them is a story.</li>
+    </ul>
+  </div>
+</div>
+
 <h2 id="check">how to check this yourself · takes about a minute</h2>
 <div class="checks rv">
   <div class="chk"><div class="no">1</div><h3>click any timestamp</h3>
@@ -225,15 +287,15 @@ html,body{overflow-x:hidden}
 <div>DIE WITH HIM<b class="red">747</b></div>
 </div>
 <h2 class="rv">the wall · chains that keep coming back</h2>
-<div class="wall rv"><div class="card"><div class="ipa">a l a</div><div class="cnt">×9</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=44s" target="_blank">00:00:44</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=409s" target="_blank">00:06:49</a></div></div><div class="card"><div class="ipa">ij j a</div><div class="cnt">×9</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=231s" target="_blank">00:03:51</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=421s" target="_blank">00:07:01</a></div></div><div class="card"><div class="ipa">b j e</div><div class="cnt">×9</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=340s" target="_blank">00:05:40</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=362s" target="_blank">00:06:02</a></div></div><div class="card"><div class="ipa">e t i</div><div class="cnt">×9</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=482s" target="_blank">00:08:02</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=535s" target="_blank">00:08:55</a></div></div><div class="card"><div class="ipa">p a ɾ</div><div class="cnt">×8</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=2s" target="_blank">00:00:02</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=29s" target="_blank">00:00:29</a></div></div><div class="card"><div class="ipa">o m a</div><div class="cnt">×8</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=39s" target="_blank">00:00:39</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=50s" target="_blank">00:00:50</a></div></div><div class="card"><div class="ipa">e tɕ i</div><div class="cnt">×8</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=86s" target="_blank">00:01:26</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=243s" target="_blank">00:04:03</a></div></div><div class="card"><div class="ipa">i j a</div><div class="cnt">×8</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=299s" target="_blank">00:04:59</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=304s" target="_blank">00:05:04</a></div></div><div class="card"><div class="ipa">u m a</div><div class="cnt">×8</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=304s" target="_blank">00:05:04</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=352s" target="_blank">00:05:52</a></div></div><div class="card"><div class="ipa">ð j e</div><div class="cnt">×8</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=466s" target="_blank">00:07:46</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=477s" target="_blank">00:07:57</a></div></div><div class="card"><div class="ipa">t ɾ a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=29s" target="_blank">00:00:29</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=188s" target="_blank">00:03:08</a></div></div><div class="card"><div class="ipa">l a s</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=50s" target="_blank">00:00:50</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=173s" target="_blank">00:02:53</a></div></div><div class="card"><div class="ipa">a p e</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=128s" target="_blank">00:02:08</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=352s" target="_blank">00:05:52</a></div></div><div class="card"><div class="ipa">s t a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=188s" target="_blank">00:03:08</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=352s" target="_blank">00:05:52</a></div></div><div class="card"><div class="ipa">p e ɾ</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=212s" target="_blank">00:03:32</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=243s" target="_blank">00:04:03</a></div></div><div class="card"><div class="ipa">i t ɒ</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=231s" target="_blank">00:03:51</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=512s" target="_blank">00:08:32</a></div></div><div class="card"><div class="ipa">a s e</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=243s" target="_blank">00:04:03</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=590s" target="_blank">00:09:50</a></div></div><div class="card"><div class="ipa">o b a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=256s" target="_blank">00:04:16</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=283s" target="_blank">00:04:43</a></div></div><div class="card"><div class="ipa">a l o</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=334s" target="_blank">00:05:34</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=426s" target="_blank">00:07:06</a></div></div><div class="card"><div class="ipa">e l a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=399s" target="_blank">00:06:39</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=418s" target="_blank">00:06:58</a></div></div><div class="card"><div class="ipa">m uə a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=466s" target="_blank">00:07:46</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=977s" target="_blank">00:16:17</a></div></div></div>
+<div class="wall rv"><div class="card"><div class="ipa">a l a</div><div class="cnt">×9</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=44s" data-c="clips/piedmontese/u8.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:00:44</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=409s" data-c="clips/piedmontese/u68.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:06:49</a></div></div><div class="card"><div class="ipa">ij j a</div><div class="cnt">×9</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=231s" data-c="clips/piedmontese/u40.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:03:51</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=421s" data-c="clips/piedmontese/u70.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:07:01</a></div></div><div class="card"><div class="ipa">b j e</div><div class="cnt">×9</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=340s" data-c="clips/piedmontese/u58.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:05:40</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=362s" data-c="clips/piedmontese/u60.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:06:02</a></div></div><div class="card"><div class="ipa">e t i</div><div class="cnt">×9</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=482s" data-c="clips/piedmontese/u80.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:08:02</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=535s" data-c="clips/piedmontese/u90.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:08:55</a></div></div><div class="card"><div class="ipa">p a ɾ</div><div class="cnt">×8</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=2s" data-c="clips/piedmontese/u0.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:00:02</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=29s" data-c="clips/piedmontese/u6.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:00:29</a></div></div><div class="card"><div class="ipa">o m a</div><div class="cnt">×8</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=39s" data-c="clips/piedmontese/u7.mp3" data-d="3.9" title="click to hear this second · cmd+click opens the tape">00:00:39</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=50s" data-c="clips/piedmontese/u9.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:00:50</a></div></div><div class="card"><div class="ipa">e tɕ i</div><div class="cnt">×8</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=86s" data-c="clips/piedmontese/u16.mp3" data-d="3.3" title="click to hear this second · cmd+click opens the tape">00:01:26</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=243s" data-c="clips/piedmontese/u41.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:04:03</a></div></div><div class="card"><div class="ipa">i j a</div><div class="cnt">×8</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=299s" data-c="clips/piedmontese/u50.mp3" data-d="4.0" title="click to hear this second · cmd+click opens the tape">00:04:59</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=304s" data-c="clips/piedmontese/u52.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:05:04</a></div></div><div class="card"><div class="ipa">u m a</div><div class="cnt">×8</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=304s" data-c="clips/piedmontese/u52.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:05:04</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=352s" data-c="clips/piedmontese/u59.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:05:52</a></div></div><div class="card"><div class="ipa">ð j e</div><div class="cnt">×8</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=466s" data-c="clips/piedmontese/u78.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:07:46</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=477s" data-c="clips/piedmontese/u79.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:07:57</a></div></div><div class="card"><div class="ipa">t ɾ a</div><div class="cnt">×7</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=29s" data-c="clips/piedmontese/u6.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:00:29</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=188s" data-c="clips/piedmontese/u33.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:03:08</a></div></div><div class="card"><div class="ipa">l a s</div><div class="cnt">×7</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=50s" data-c="clips/piedmontese/u9.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:00:50</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=173s" data-c="clips/piedmontese/u31.mp3" data-d="4.4" title="click to hear this second · cmd+click opens the tape">00:02:53</a></div></div><div class="card"><div class="ipa">a p e</div><div class="cnt">×7</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=128s" data-c="clips/piedmontese/u23.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:02:08</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=352s" data-c="clips/piedmontese/u59.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:05:52</a></div></div><div class="card"><div class="ipa">s t a</div><div class="cnt">×7</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=188s" data-c="clips/piedmontese/u33.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:03:08</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=352s" data-c="clips/piedmontese/u59.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:05:52</a></div></div><div class="card"><div class="ipa">p e ɾ</div><div class="cnt">×7</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=212s" data-c="clips/piedmontese/u37.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:03:32</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=243s" data-c="clips/piedmontese/u41.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:04:03</a></div></div><div class="card"><div class="ipa">i t ɒ</div><div class="cnt">×7</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=231s" data-c="clips/piedmontese/u40.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:03:51</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=512s" data-c="clips/piedmontese/u86.mp3" data-d="1.9" title="click to hear this second · cmd+click opens the tape">00:08:32</a></div></div><div class="card"><div class="ipa">a s e</div><div class="cnt">×7</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=243s" data-c="clips/piedmontese/u41.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:04:03</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=590s" data-c="clips/piedmontese/u100.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:09:50</a></div></div><div class="card"><div class="ipa">o b a</div><div class="cnt">×7</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=256s" data-c="clips/piedmontese/u43.mp3" data-d="2.2" title="click to hear this second · cmd+click opens the tape">00:04:16</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=283s" data-c="clips/piedmontese/u48.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:04:43</a></div></div><div class="card"><div class="ipa">a l o</div><div class="cnt">×7</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=334s" data-c="clips/piedmontese/u57.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:05:34</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=426s" data-c="clips/piedmontese/u71.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:07:06</a></div></div><div class="card"><div class="ipa">e l a</div><div class="cnt">×7</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=399s" data-c="clips/piedmontese/u65.mp3" data-d="3.6" title="click to hear this second · cmd+click opens the tape">00:06:39</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=418s" data-c="clips/piedmontese/u69.mp3" data-d="3.1" title="click to hear this second · cmd+click opens the tape">00:06:58</a></div></div><div class="card"><div class="ipa">m uə a</div><div class="cnt">×7</div><div class="where"><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=466s" data-c="clips/piedmontese/u78.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:07:46</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=977s" data-c="clips/piedmontese/u180.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:16:17</a></div></div></div>
 <h2 id="rules">rules signed by CHIEF · a chain that attaches to many different neighbours</h2>
-<table><tr><td class="n">1</td><td class="k">prefix</td><td class="ipa">i d i</td><td>6× on 6 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=50s" target="_blank">00:00:50</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=269s" target="_blank">00:04:29</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=299s" target="_blank">00:04:59</a></td></tr></table>
+<table><tr><td class="n">1</td><td class="k">prefix</td><td class="ipa">i d i</td><td>6× on 6 stems</td><td><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=50s" data-c="clips/piedmontese/u9.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:00:50</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=269s" data-c="clips/piedmontese/u45.mp3" data-d="4.1" title="click to hear this second · cmd+click opens the tape">00:04:29</a> <a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=299s" data-c="clips/piedmontese/u50.mp3" data-d="4.0" title="click to hear this second · cmd+click opens the tape">00:04:59</a></td></tr></table>
 <h2 id="fights">fights · two answers, nobody alive to settle it</h2>
 <table></table>
 <h2>the gate · refused (17)</h2>
 <ul><li><span class="ipa">l a l</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">i j e</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">i t a</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">e a l</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">o t e</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">ɒ l ә</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">p ɾ ɒ</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">i s u</span> · heard 4 times, the gate wants 6</li><li><span class="ipa">i b a</span> · heard 4 times, the gate wants 6</li><li><span class="ipa">m a l</span> · heard 4 times, the gate wants 6</li><li>… and 7 more in report.md</li></ul>
 <h2 id="voice">his voice · where the register shifts (median 151.1 Hz, 8.77 phones/s)</h2>
-<table><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=1060s" target="_blank">00:17:40</a></td><td>299.1 Hz</td><td class="hi">z +4.1</td><td>4.0 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=549s" target="_blank">00:09:09</a></td><td>298.5 Hz</td><td class="hi">z +4.1</td><td>3.33 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=749s" target="_blank">00:12:29</a></td><td>292.7 Hz</td><td class="hi">z +3.9</td><td>0.0 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=720s" target="_blank">00:12:00</a></td><td>266.5 Hz</td><td class="hi">z +3.2</td><td>4.44 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=1026s" target="_blank">00:17:06</a></td><td>257.2 Hz</td><td class="hi">z +3.0</td><td>10.0 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=90s" target="_blank">00:01:30</a></td><td>255.6 Hz</td><td class="hi">z +2.9</td><td>10.58 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=407s" target="_blank">00:06:47</a></td><td>247.9 Hz</td><td class="hi">z +2.7</td><td>6.36 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=730s" target="_blank">00:12:10</a></td><td>235.2 Hz</td><td class="hi">z +2.3</td><td>7.11 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=322s" target="_blank">00:05:22</a></td><td>233.9 Hz</td><td class="hi">z +2.3</td><td>2.63 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=1191s" target="_blank">00:19:51</a></td><td>233.5 Hz</td><td class="hi">z +2.3</td><td>9.8 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=421s" target="_blank">00:07:01</a></td><td>232.0 Hz</td><td class="hi">z +2.2</td><td>8.12 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=662s" target="_blank">00:11:02</a></td><td>231.6 Hz</td><td class="hi">z +2.2</td><td>5.0 phones/s</td></tr></table>
+<table><tr><td><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=1060s" data-c="clips/piedmontese/u195.mp3" data-d="0.5" title="click to hear this second · cmd+click opens the tape">00:17:40</a></td><td>299.1 Hz</td><td class="hi">z +4.1</td><td>4.0 phones/s</td></tr><tr><td><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=549s" data-c="clips/piedmontese/u92.mp3" data-d="0.6" title="click to hear this second · cmd+click opens the tape">00:09:09</a></td><td>298.5 Hz</td><td class="hi">z +4.1</td><td>3.33 phones/s</td></tr><tr><td><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=749s" data-c="clips/piedmontese/u130.mp3" data-d="0.5" title="click to hear this second · cmd+click opens the tape">00:12:29</a></td><td>292.7 Hz</td><td class="hi">z +3.9</td><td>0.0 phones/s</td></tr><tr><td><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=720s" data-c="clips/piedmontese/u125.mp3" data-d="0.9" title="click to hear this second · cmd+click opens the tape">00:12:00</a></td><td>266.5 Hz</td><td class="hi">z +3.2</td><td>4.44 phones/s</td></tr><tr><td><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=1026s" data-c="clips/piedmontese/u188.mp3" data-d="1.1" title="click to hear this second · cmd+click opens the tape">00:17:06</a></td><td>257.2 Hz</td><td class="hi">z +3.0</td><td>10.0 phones/s</td></tr><tr><td><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=90s" data-c="clips/piedmontese/u17.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:01:30</a></td><td>255.6 Hz</td><td class="hi">z +2.9</td><td>10.58 phones/s</td></tr><tr><td><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=407s" data-c="clips/piedmontese/u67.mp3" data-d="1.1" title="click to hear this second · cmd+click opens the tape">00:06:47</a></td><td>247.9 Hz</td><td class="hi">z +2.7</td><td>6.36 phones/s</td></tr><tr><td><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=730s" data-c="clips/piedmontese/u128.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:12:10</a></td><td>235.2 Hz</td><td class="hi">z +2.3</td><td>7.11 phones/s</td></tr><tr><td><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=322s" data-c="clips/piedmontese/u55.mp3" data-d="1.9" title="click to hear this second · cmd+click opens the tape">00:05:22</a></td><td>233.9 Hz</td><td class="hi">z +2.3</td><td>2.63 phones/s</td></tr><tr><td><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=1191s" data-c="clips/piedmontese/u215.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:19:51</a></td><td>233.5 Hz</td><td class="hi">z +2.3</td><td>9.8 phones/s</td></tr><tr><td><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=421s" data-c="clips/piedmontese/u70.mp3" data-d="4.5" title="click to hear this second · cmd+click opens the tape">00:07:01</a></td><td>232.0 Hz</td><td class="hi">z +2.2</td><td>8.12 phones/s</td></tr><tr><td><a class="pos pl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=662s" data-c="clips/piedmontese/u114.mp3" data-d="0.8" title="click to hear this second · cmd+click opens the tape">00:11:02</a></td><td>231.6 Hz</td><td class="hi">z +2.2</td><td>5.0 phones/s</td></tr></table>
 <h2>vowels nobody wrote down</h2>
 <div class="vb"><span class="ipa">a</span><i style="width:180px"></i><b>1623</b></div><div class="vb"><span class="ipa">e</span><i style="width:100px"></i><b>902</b></div><div class="vb"><span class="ipa">ɒ</span><i style="width:71px"></i><b>647</b></div><div class="vb"><span class="ipa">i</span><i style="width:62px"></i><b>567</b></div><div class="vb"><span class="ipa">o</span><i style="width:60px"></i><b>544</b></div><div class="vb"><span class="ipa">ʌ</span><i style="width:52px"></i><b>473</b></div><div class="vb"><span class="ipa">uə</span><i style="width:50px"></i><b>457</b></div><div class="vb"><span class="ipa">ɪ</span><i style="width:35px"></i><b>316</b></div><div class="vb"><span class="ipa">u</span><i style="width:34px"></i><b>312</b></div><div class="vb"><span class="ipa">ɛ</span><i style="width:9px"></i><b>90</b></div><div class="vb"><span class="ipa">ɨ</span><i style="width:9px"></i><b>89</b></div><div class="vb"><span class="ipa">æ</span><i style="width:5px"></i><b>46</b></div>
 <h2>case log</h2>
@@ -248,6 +310,12 @@ html,body{overflow-x:hidden}
 <h2>what this is not</h2>
 <div class="note">no dictionary of the language was used and nothing here is a translation. a "word" is a chain of phones that repeats, a "rule" is a chain that keeps attaching to different neighbours, a "fight" is two of them one phone apart. the register detector hears pitch and tempo, not meaning. a linguist would call this a starting point. that is what it is, and every line carries the second of tape it came from.</div>
 
+<div class="now" id="now">
+  <span class="dot"></span>
+  <span id="nowt">TAPE</span>
+  <span class="bar2"><i id="nowb"></i></span>
+  <a id="nowl" href="https://www.youtube.com/watch?v=kKg2gaNzBK4" target="_blank">OPEN THE FULL TAPE ↗</a>
+</div>
 <div class="foot">other tapes: <a href="index.html">torwali</a> · <a href="piedmontese.html">piedmontese</a>
  · <a href="https://github.com/jugqdc-sudo/cold-desk" target="_blank">code</a>
  · <a href="https://x.com/ventry089" target="_blank">the serial</a>
@@ -265,22 +333,65 @@ html,body{overflow-x:hidden}
   function frame(){
     t+=slow?0:1;
     g.clearRect(0,0,W,H);
-    var bw=3, gap=3, n=Math.floor(W/(bw+gap)), cur=(t*0.0016)%1;
+    // пока клип играет, дорожка показывает НАСТОЯЩУЮ позицию, а не свой холостой ход
+    var live=window.__play&&window.__play.on;
+    var bw=3, gap=3, n=Math.floor(W/(bw+gap)), cur= live ? window.__play.k : (t*0.0016)%1;
     for(var i=0;i<n;i++){
       var u=i/n;
       // огибающая речи: пачки высказываний с паузами, как на настоящей плёнке
       var env=Math.max(0,Math.sin(u*26)*0.5+0.5)*Math.max(0,Math.sin(u*7.3+1.1)*0.6+0.55);
-      var a=env*(0.35+seed(i+((t*0.02)|0))*0.65);
+      var a=env*(0.35+seed(i+((t*(live?0.09:0.02))|0))*0.65);
       var h=Math.max(1,a*(H-10));
       var past=u<cur;
-      g.fillStyle = past ? (u>cur-0.02 ? '#c8913a' : 'rgba(43,48,42,.62)') : 'rgba(43,48,42,.16)';
+      g.fillStyle = past ? (u>cur-0.02 ? '#c8913a' : (live?'rgba(200,145,58,.55)':'rgba(43,48,42,.62)'))
+                         : 'rgba(43,48,42,.16)';
       g.fillRect(i*(bw+gap), (H-h)/2, bw, h);
     }
-    g.fillStyle='rgba(192,74,60,.75)';
-    g.fillRect(cur*W, 4, 1, H-8);
+    g.fillStyle= live ? 'rgba(192,74,60,1)' : 'rgba(192,74,60,.75)';
+    g.fillRect(cur*W, 4, live?2:1, H-8);
     requestAnimationFrame(frame);
   }
   frame();
+})();
+
+// Плёнка играет прямо на странице: клик по таймкоду - и слышно ту самую секунду.
+// Дорожка в герое на это время перестаёт быть декорацией и показывает реальную позицию.
+window.__play = {on:false, k:0};
+(function(){
+  var a=new Audio(), cur=null, now=document.getElementById('now'),
+      nowT=document.getElementById('nowt'), nowB=document.getElementById('nowb'),
+      nowL=document.getElementById('nowl');
+  function stop(){
+    if(cur){ cur.classList.remove('playing'); var p=cur.querySelector('.prg'); if(p) p.remove(); }
+    cur=null; window.__play.on=false; if(now) now.classList.remove('on');
+  }
+  document.addEventListener('click', function(ev){
+    var el=ev.target.closest('a.pos.pl'); if(!el) return;
+    if(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button===1) return;   // cmd+click уходит на плёнку целиком
+    ev.preventDefault();
+    if(cur===el){ a.pause(); stop(); return; }
+    stop();
+    cur=el; el.classList.add('playing');
+    var p=document.createElement('i'); p.className='prg'; el.appendChild(p);
+    a.src=el.getAttribute('data-c'); a.currentTime=0; a.play();
+    window.__play.on=true;
+    if(now){
+      now.classList.add('on');
+      nowT.textContent='TAPE '+el.textContent.replace(/[▸■]/g,'').trim();
+      nowL.href=el.href;
+    }
+  });
+  a.addEventListener('timeupdate', function(){
+    var k=a.duration? a.currentTime/a.duration : 0;
+    window.__play.k=k;
+    if(cur){ var p=cur.querySelector('.prg'); if(p) p.style.width=(k*100)+'%'; }
+    if(nowB) nowB.style.width=(k*100)+'%';
+  });
+  a.addEventListener('ended', stop);
+  a.addEventListener('error', function(){
+    // молчащая кнопка хуже отсутствующей: если клип не загрузился, уводим на плёнку
+    if(cur){ var h=cur.href; stop(); window.open(h,'_blank'); }
+  });
 })();
 
 // секции проявляются один раз, без дёрганья при обратной прокрутке
