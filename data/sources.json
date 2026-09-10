@@ -1,0 +1,13 @@
+{
+  "_why": "Tape metadata lives here, not only in run.json. A re-run that loses title/url would silently turn every timestamp on the site into a dead '#' link - which breaks the one thing the page promises. make_site.py falls back to this file and shouts if a tape is missing from it.",
+  "torwali": {
+    "title": "WIKITONGUES: Abdul Mateen speaking Torwali",
+    "url": "https://www.youtube.com/watch?v=361y-JDT_bs",
+    "licence": "Wikitongues, CC BY"
+  },
+  "piedmontese": {
+    "title": "Italy's Piedmontese language, casually spoken | Giorgio speaking Piedmontese | Wikitongues",
+    "url": "https://www.youtube.com/watch?v=kKg2gaNzBK4",
+    "licence": "Wikitongues, CC BY"
+  }
+}

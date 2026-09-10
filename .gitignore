@@ -8,10 +8,13 @@ __pycache__/
 *.webm
 *.mkv
 *.log
-data/
+data/*
 runs/*/phones.json
 *.wav
 runs/*/log_reuse.txt
 
 # internal notes, not for the public repo
 CLAUDE.md
+
+# tape metadata is code, not data: the site build needs it (dead timestamps without it)
+!data/sources.json

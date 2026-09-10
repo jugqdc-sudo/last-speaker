@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>THE LAST SPEAKER</title>
+  <clipPath id="head"><path d="M560 150 C700 180 770 320 748 470 C736 560 700 600 700 640 C700 700 660 714 600 720 L600 880 L300 880 C300 760 250 700 250 560 C250 300 380 150 560 150 Z"/></clipPath>
+  <path d="M560 150 C700 180 770 320 748 470 C736 560 700 600 700 640 C700 700 660 714 600 720 L600 880 L300 880 C300 760 250 700 250 560 C250 300 380 150 560 150 Z" fill="#22261f"/>
+  <g clip-path="url(#head)">
+    <rect x="228" y="462.5" width="9" height="99.0" fill="#eceee9"/>
+    <rect x="245" y="343.3" width="9" height="337.5" fill="#eceee9"/>
+    <rect x="262" y="494.8" width="9" height="34.3" fill="#eceee9"/>
+    <rect x="279" y="450.9" width="9" height="122.2" fill="#eceee9"/>
+    <rect x="296" y="410.3" width="9" height="203.4" fill="#eceee9"/>
+    <rect x="313" y="378.7" width="9" height="266.6" fill="#eceee9"/>
+    <rect x="330" y="479.4" width="9" height="65.2" fill="#eceee9"/>
+    <rect x="347" y="488.8" width="9" height="46.3" fill="#eceee9"/>
+    <rect x="364" y="381.4" width="9" height="261.2" fill="#eceee9"/>
+    <rect x="381" y="431.3" width="9" height="161.3" fill="#eceee9"/>
+    <rect x="398" y="456.6" width="9" height="110.9" fill="#eceee9"/>
+    <rect x="415" y="487.8" width="9" height="48.3" fill="#eceee9"/>
+    <rect x="432" y="380.8" width="9" height="262.4" fill="#eceee9"/>
+    <rect x="449" y="485.4" width="9" height="53.2" fill="#eceee9"/>
+    <rect x="466" y="461.3" width="9" height="101.5" fill="#eceee9"/>
+    <rect x="483" y="446.6" width="9" height="130.9" fill="#eceee9"/>
+    <rect x="500" y="404.9" width="9" height="214.2" fill="#eceee9"/>
+    <rect x="517" y="496.9" width="9" height="30.2" fill="#eceee9"/>
+    <rect x="534" y="486.2" width="9" height="51.7" fill="#eceee9"/>
+    <rect x="551" y="422.6" width="9" height="178.8" fill="#eceee9"/>
+    <rect x="568" y="443.5" width="9" height="137.0" fill="#eceee9"/>
+    <rect x="585" y="475.7" width="9" height="72.6" fill="#eceee9"/>
+    <rect x="602" y="504.8" width="9" height="14.5" fill="#eceee9"/>
+    <rect x="619" y="420.3" width="9" height="183.5" fill="#eceee9"/>
+    <rect x="636" y="483.9" width="9" height="56.1" fill="#eceee9"/>
+    <rect x="653" y="475.5" width="9" height="73.0" fill="#eceee9"/>
+    <rect x="670" y="475.8" width="9" height="72.3" fill="#eceee9"/>
+    <rect x="687" y="436.7" width="9" height="150.7" fill="#eceee9"/>
+    <rect x="704" y="508.9" width="9" height="6.3" fill="#eceee9"/>
+    <rect x="721" y="490.4" width="9" height="43.2" fill="#eceee9"/>
+    <rect x="738" y="459.9" width="9" height="104.2" fill="#eceee9"/>
+    <rect x="755" y="463.5" width="9" height="97.0" fill="#eceee9"/>
+    <rect x="772" y="492.9" width="9" height="38.2" fill="#eceee9"/>
+    <rect x="789" y="510.6" width="9" height="2.8" fill="#eceee9"/>
+    <rect x="806" y="459.8" width="9" height="104.4" fill="#eceee9"/>
+    <rect x="823" y="490.7" width="9" height="42.6" fill="#eceee9"/>
+    <rect x="840" y="491.9" width="9" height="40.3" fill="#eceee9"/>
+    <rect x="857" y="497.4" width="9" height="29.2" fill="#c8913a"/>
+    <rect x="874" y="472.4" width="9" height="79.2" fill="#c8913a"/>
+    <rect x="891" y="509.9" width="9" height="4.1" fill="#c8913a"/>
+    <rect x="908" y="500.2" width="9" height="23.6" fill="#c8913a"/>
+    <rect x="925" y="491.8" width="9" height="40.3" fill="#c8913a"/>
+    <rect x="942" y="490.4" width="9" height="43.2" fill="#c8913a"/>
+    <rect x="959" y="506.4" width="9" height="11.2" fill="#c8913a"/>
+    <rect x="976" y="509.8" width="9" height="4.5" fill="#c8913a"/>
+    <rect x="993" y="497.6" width="9" height="28.8" fill="#c8913a"/>
+  </g>
+</svg>

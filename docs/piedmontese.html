@@ -1,6 +1,11 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>THE LAST SPEAKER · piedmontese · case report</title>
+<link rel="icon" href="logo.svg">
+<meta property="og:title" content="THE LAST SPEAKER · COLD.DESK">
+<meta property="og:description" content="six agents, 0.46 hours of a language with no alphabet, 1,184 words and 1 rules - every one of them opens the second of tape it came from">
+<meta property="og:image" content="https://jugqdc-sudo.github.io/cold-desk/desk.gif">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Instrument+Serif&display=swap" rel="stylesheet">
 <style>
@@ -31,10 +36,186 @@ td.hi{color:var(--red);font-weight:700} td.lo{color:var(--mint);font-weight:700}
 .note{background:#fbf7ea;border-left:3px solid #c8913a;padding:10px 14px;color:#4a4f45}
 ul{padding-left:18px} li{margin:3px 0}
 .foot{margin-top:40px;color:var(--faint);font-size:11px}
+
+/* ── шапка: логотип едет с прокруткой, чтобы имя было видно всегда ── */
+.bar{position:sticky;top:0;z-index:20;background:rgba(244,242,236,.94);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);margin:0 -18px 0;padding:9px 18px;display:flex;align-items:center;gap:12px}
+.bar img{width:26px;height:26px;display:block}
+.bar .nm{font-weight:700;letter-spacing:2.5px;font-size:12px}
+.bar .cs{color:var(--dim);letter-spacing:2px;font-size:10px}
+.bar .sp{margin-left:auto;display:flex;gap:14px;font-size:10.5px;letter-spacing:1.6px}
+.bar .sp a{color:var(--dim);text-decoration:none;border-bottom:1px solid transparent}
+.bar .sp a:hover{color:var(--ink);border-bottom-color:var(--line)}
+
+/* ── герой ── */
+.hero{display:grid;grid-template-columns:196px 1fr;gap:34px;align-items:center;
+  padding:44px 0 30px;border-bottom:1px solid var(--line)}
+.hero .mark{width:196px;height:196px}
+.hero h1{margin:0 0 10px;font-size:52px}
+.hero .lead{color:var(--dim);font-size:14px;line-height:1.7;max-width:62ch}
+.hero .lead b{color:var(--ink);font-weight:700}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:18px}.hero .mark{width:128px;height:128px}.hero h1{font-size:34px}}
+
+/* ── три шага проверки ── */
+.checks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0 6px}
+.chk{background:var(--card);border:1px solid var(--line);padding:14px 16px}
+.chk .no{font-family:"Instrument Serif",serif;font-size:30px;color:var(--amber);line-height:1}
+.chk h3{margin:6px 0 5px;font-size:12px;letter-spacing:1.6px;text-transform:uppercase}
+.chk p{margin:0;color:var(--dim);font-size:11.5px;line-height:1.65}
+@media(max-width:760px){.checks{grid-template-columns:1fr}}
+
+/* ── контракт токена ── */
+.ca{margin:26px 0 0;background:#16190f;color:#e7eae0;padding:16px 18px;display:flex;
+  gap:14px;align-items:center;flex-wrap:wrap}
+.ca .lbl{letter-spacing:2.5px;font-size:10px;color:#9aa693}
+.ca code{font-size:13px;letter-spacing:.4px;word-break:break-all;color:#e7eae0}
+
+/* ── фактура: зерно печати поверх всего, как на плёнке ── */
+body:before{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.55;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E")}
+/* тёплая виньетка по краям - бумага под лампой, а не белый экран */
+body:after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(120% 80% at 50% 0%,rgba(255,252,242,.55),transparent 60%),
+             radial-gradient(100% 60% at 50% 100%,rgba(120,110,88,.09),transparent 60%)}
+.wrap{position:relative;z-index:2}
+.bar{z-index:30}
+
+/* ── лента плёнки под шапкой: идёт всегда, как ticker в роликах ── */
+.film{position:sticky;top:44px;z-index:25;margin:0 -18px;height:20px;overflow:hidden;
+  background:#16190f;display:flex;align-items:center}
+.film .strip2{display:flex;gap:0;animation:roll 26s linear infinite;will-change:transform}
+.film i{display:block;width:13px;height:9px;margin-right:13px;background:#8d7b5f;flex:none}
+.film i:nth-child(5n+1){background:#c8913a}
+.film .pos2{position:absolute;right:12px;color:#cfd5c9;font-size:9px;letter-spacing:1.6px}
+@keyframes roll{to{transform:translateX(-520px)}}
+
+/* ── герой: живая дорожка под заголовком ── */
+.wavewrap{position:relative;margin:18px 0 2px;height:64px}
+.wavewrap canvas{display:block;width:100%;height:64px}
+.wavewrap .cap{position:absolute;right:0;bottom:-14px;font-size:9.5px;letter-spacing:1.8px;color:var(--faint)}
+
+/* логотип дышит вместе с дорожкой */
+.hero .mark{animation:breathe 6.5s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+
+/* ── появление секций при прокрутке ── */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+.rv.on{opacity:1;transform:none}
+
+/* ── таймкоды: подсветка как у живой позиции на плёнке ── */
+.pos{position:relative;padding:1px 3px;transition:background .18s,color .18s}
+.pos:hover{background:#d9ecdf;color:#1d4a33;border-bottom-style:solid}
+.pos:before{content:"";position:absolute;left:-3px;top:50%;width:3px;height:3px;margin-top:-1.5px;
+  background:var(--mint);opacity:0;transition:opacity .18s}
+.pos:hover:before{opacity:1}
+
+/* ── карточки стены слегка оживают ── */
+.card{transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 14px rgba(70,64,48,.14)}
+.wall{position:relative}
+.wall:after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.28) 47%,transparent 54%);
+  background-size:280% 100%;animation:sheen 9s ease-in-out infinite}
+@keyframes sheen{0%,72%{background-position:120% 0}100%{background-position:-40% 0}}
+
+/* ── метрики: тянутся на всю ширину, иначе справа зияет пустая ячейка ── */
+.strip div{flex:1 1 auto;min-width:122px}
+.strip div:last-child{border-right:none}
+html{scroll-behavior:smooth}
+
+/* цифра набегает, ячейка чуть тёплая */
+.strip div{position:relative;transition:background .2s}
+.strip div:hover{background:#fbf7ea}
+.strip b{font-variant-numeric:tabular-nums}
+
+/* ── мигающая точка записи в шапке ── */
+.rec{width:6px;height:6px;border-radius:50%;background:var(--red);display:inline-block;
+  animation:blink 1.9s steps(1,end) infinite}
+@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:.25}}
+
+@media(prefers-reduced-motion:reduce){
+  .film .strip2,.hero .mark,.wall:after,.rec{animation:none}
+  .rv{opacity:1;transform:none}
+}
+
+/* ── телефон: под токен половина трафика оттуда, страница не должна ехать вбок ── */
+html,body{overflow-x:hidden}
+@media(max-width:760px){
+  /* отрицательные поля шапки и ленты должны совпадать с padding обёртки, иначе они
+     ровно на эту разницу шире экрана и тащат всю страницу вбок */
+  .bar,.film{margin-left:-14px;margin-right:-14px}
+  .bar{gap:8px;padding:8px 14px;flex-wrap:nowrap}
+  .bar .cs{display:none}                    /* длинная подпись рвала шапку в столбик */
+  .bar .sp{gap:12px;font-size:9.5px;white-space:nowrap;overflow:hidden}
+  .bar .sp a:nth-child(2),.bar .sp a:nth-child(3){display:none}   /* RULES/FIGHTS есть ниже по странице */
+  .film{top:40px}
+  .wrap{padding:16px 14px 48px}
+  /* широкие таблицы прокручиваются внутри себя, а не тащат за собой всю страницу */
+  table{display:block;overflow-x:auto;white-space:nowrap}
+  .strip div{min-width:44%}
+  .hero h1{font-size:30px}
+  .wall{border-width:4px;padding:10px}
+}
+
 </style></head><body><div class="wrap">
-<div class="top"><b>COLD.DESK</b><span>CASE 01 · THE LAST SPEAKER · REAL TAPE</span><span class="pill red">● ONE SPEAKER</span><span class="pill">NO DICTIONARY · NO TRANSLATION</span><span class="pill mint">EVERY LINE HAS A TAPE POSITION</span></div>
-<h1>what six agents pulled out of 0.46 hours of one man speaking Piedmontese</h1>
-<div class="sub">tape: <a href="" target="_blank"></a> · Wikitongues, CC BY · every timestamp below opens that second of the recording</div>
+
+<div class="bar">
+  <img src="logo.svg" alt="">
+  <span class="nm">COLD.DESK</span>
+  <span class="cs"><span class="rec"></span> CASE 01 · THE LAST SPEAKER</span>
+  <span class="sp">
+    <a href="#check">HOW TO CHECK</a>
+    <a href="#rules">RULES</a>
+    <a href="#fights">FIGHTS</a>
+    <a href="https://github.com/jugqdc-sudo/cold-desk" target="_blank">CODE</a>
+    <a href="https://x.com/ventry089" target="_blank">X</a>
+  </span>
+</div>
+
+<div class="film">
+  <div class="strip2"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <span class="pos2" id="tapepos">TAPE POSITION 00000</span>
+</div>
+
+<div class="hero">
+  <img class="mark" src="logo.svg" alt="THE LAST SPEAKER">
+  <div>
+    <h1>a language with no alphabet, and one man left who speaks it</h1>
+    <div class="lead">six agents listened to <b>0.46 hours</b> of raw tape and pulled out
+      <b>1,184 word candidates</b> and <b>1 grammar rules</b> - with no dictionary,
+      no translation and nobody alive who could tell them they got it wrong.<br><br>
+      nothing is written without a source: <b>every single number on this page opens the exact second
+      of the recording it came from.</b> the 17 rules the desk threw out are published too,
+      with the reason each one died.</div>
+    <div class="tags">
+      <span class="pill red">● ONE SPEAKER LEFT</span>
+      <span class="pill">NO DICTIONARY · NO TRANSLATION</span>
+      <span class="pill mint">EVERY LINE HAS A TAPE POSITION</span>
+      <span class="pill">OPEN SOURCE · MIT</span>
+    </div>
+  </div>
+</div>
+
+<div class="wavewrap">
+  <canvas id="wv"></canvas>
+  <span class="cap">0.42 H OF SPEECH · 292 UTTERANCES</span>
+</div>
+
+<h2 id="check">how to check this yourself · takes about a minute</h2>
+<div class="checks rv">
+  <div class="chk"><div class="no">1</div><h3>click any timestamp</h3>
+    <p>every green position on this page is a link. it opens the recording at that exact second,
+       so you hear the word instead of reading a claim about it.</p></div>
+  <div class="chk"><div class="no">2</div><h3>read what got refused</h3>
+    <p>the desk wrote 18 rules and signed 1.
+       the other 17 are listed below with the reason each one failed the gate.</p></div>
+  <div class="chk"><div class="no">3</div><h3>run it on your own tape</h3>
+    <p>the code is open. <code>desk.py run tape.wav</code>, about a minute of cpu per hour of audio.
+       same pipeline, your recording.</p></div>
+</div>
+
+<div class="sub" style="margin-top:22px">tape: <a href="https://www.youtube.com/watch?v=kKg2gaNzBK4" target="_blank">Italy&#x27;s Piedmontese language, casually spoken | Giorgio speaking Piedmontese | Wikitongues</a> · Wikitongues, CC BY · every timestamp below opens that second of the recording</div>
 <div class="strip">
 <div>WORDS SAVED<b>1,184</b></div><div>HEARD ONLY ONCE<b>628</b></div>
 <div>RULES SIGNED<b class="mint">1</b></div><div>RULES REFUSED<b class="red">17</b></div>
@@ -43,16 +224,16 @@ ul{padding-left:18px} li{margin:3px 0}
 
 <div>DIE WITH HIM<b class="red">747</b></div>
 </div>
-<h2>the wall · chains that keep coming back</h2>
-<div class="wall"><div class="card"><div class="ipa">a l a</div><div class="cnt">×9</div><div class="where"><a class="pos" href="#" target="_blank">00:00:44</a> <a class="pos" href="#" target="_blank">00:06:49</a></div></div><div class="card"><div class="ipa">ij j a</div><div class="cnt">×9</div><div class="where"><a class="pos" href="#" target="_blank">00:03:51</a> <a class="pos" href="#" target="_blank">00:07:01</a></div></div><div class="card"><div class="ipa">b j e</div><div class="cnt">×9</div><div class="where"><a class="pos" href="#" target="_blank">00:05:40</a> <a class="pos" href="#" target="_blank">00:06:02</a></div></div><div class="card"><div class="ipa">e t i</div><div class="cnt">×9</div><div class="where"><a class="pos" href="#" target="_blank">00:08:02</a> <a class="pos" href="#" target="_blank">00:08:55</a></div></div><div class="card"><div class="ipa">p a ɾ</div><div class="cnt">×8</div><div class="where"><a class="pos" href="#" target="_blank">00:00:02</a> <a class="pos" href="#" target="_blank">00:00:29</a></div></div><div class="card"><div class="ipa">o m a</div><div class="cnt">×8</div><div class="where"><a class="pos" href="#" target="_blank">00:00:39</a> <a class="pos" href="#" target="_blank">00:00:50</a></div></div><div class="card"><div class="ipa">e tɕ i</div><div class="cnt">×8</div><div class="where"><a class="pos" href="#" target="_blank">00:01:26</a> <a class="pos" href="#" target="_blank">00:04:03</a></div></div><div class="card"><div class="ipa">i j a</div><div class="cnt">×8</div><div class="where"><a class="pos" href="#" target="_blank">00:04:59</a> <a class="pos" href="#" target="_blank">00:05:04</a></div></div><div class="card"><div class="ipa">u m a</div><div class="cnt">×8</div><div class="where"><a class="pos" href="#" target="_blank">00:05:04</a> <a class="pos" href="#" target="_blank">00:05:52</a></div></div><div class="card"><div class="ipa">ð j e</div><div class="cnt">×8</div><div class="where"><a class="pos" href="#" target="_blank">00:07:46</a> <a class="pos" href="#" target="_blank">00:07:57</a></div></div><div class="card"><div class="ipa">t ɾ a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="#" target="_blank">00:00:29</a> <a class="pos" href="#" target="_blank">00:03:08</a></div></div><div class="card"><div class="ipa">l a s</div><div class="cnt">×7</div><div class="where"><a class="pos" href="#" target="_blank">00:00:50</a> <a class="pos" href="#" target="_blank">00:02:53</a></div></div><div class="card"><div class="ipa">a p e</div><div class="cnt">×7</div><div class="where"><a class="pos" href="#" target="_blank">00:02:08</a> <a class="pos" href="#" target="_blank">00:05:52</a></div></div><div class="card"><div class="ipa">s t a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="#" target="_blank">00:03:08</a> <a class="pos" href="#" target="_blank">00:05:52</a></div></div><div class="card"><div class="ipa">p e ɾ</div><div class="cnt">×7</div><div class="where"><a class="pos" href="#" target="_blank">00:03:32</a> <a class="pos" href="#" target="_blank">00:04:03</a></div></div><div class="card"><div class="ipa">i t ɒ</div><div class="cnt">×7</div><div class="where"><a class="pos" href="#" target="_blank">00:03:51</a> <a class="pos" href="#" target="_blank">00:08:32</a></div></div><div class="card"><div class="ipa">a s e</div><div class="cnt">×7</div><div class="where"><a class="pos" href="#" target="_blank">00:04:03</a> <a class="pos" href="#" target="_blank">00:09:50</a></div></div><div class="card"><div class="ipa">o b a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="#" target="_blank">00:04:16</a> <a class="pos" href="#" target="_blank">00:04:43</a></div></div><div class="card"><div class="ipa">a l o</div><div class="cnt">×7</div><div class="where"><a class="pos" href="#" target="_blank">00:05:34</a> <a class="pos" href="#" target="_blank">00:07:06</a></div></div><div class="card"><div class="ipa">e l a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="#" target="_blank">00:06:39</a> <a class="pos" href="#" target="_blank">00:06:58</a></div></div><div class="card"><div class="ipa">m uə a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="#" target="_blank">00:07:46</a> <a class="pos" href="#" target="_blank">00:16:17</a></div></div></div>
+<h2 class="rv">the wall · chains that keep coming back</h2>
+<div class="wall rv"><div class="card"><div class="ipa">a l a</div><div class="cnt">×9</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=44s" target="_blank">00:00:44</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=409s" target="_blank">00:06:49</a></div></div><div class="card"><div class="ipa">ij j a</div><div class="cnt">×9</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=231s" target="_blank">00:03:51</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=421s" target="_blank">00:07:01</a></div></div><div class="card"><div class="ipa">b j e</div><div class="cnt">×9</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=340s" target="_blank">00:05:40</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=362s" target="_blank">00:06:02</a></div></div><div class="card"><div class="ipa">e t i</div><div class="cnt">×9</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=482s" target="_blank">00:08:02</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=535s" target="_blank">00:08:55</a></div></div><div class="card"><div class="ipa">p a ɾ</div><div class="cnt">×8</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=2s" target="_blank">00:00:02</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=29s" target="_blank">00:00:29</a></div></div><div class="card"><div class="ipa">o m a</div><div class="cnt">×8</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=39s" target="_blank">00:00:39</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=50s" target="_blank">00:00:50</a></div></div><div class="card"><div class="ipa">e tɕ i</div><div class="cnt">×8</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=86s" target="_blank">00:01:26</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=243s" target="_blank">00:04:03</a></div></div><div class="card"><div class="ipa">i j a</div><div class="cnt">×8</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=299s" target="_blank">00:04:59</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=304s" target="_blank">00:05:04</a></div></div><div class="card"><div class="ipa">u m a</div><div class="cnt">×8</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=304s" target="_blank">00:05:04</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=352s" target="_blank">00:05:52</a></div></div><div class="card"><div class="ipa">ð j e</div><div class="cnt">×8</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=466s" target="_blank">00:07:46</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=477s" target="_blank">00:07:57</a></div></div><div class="card"><div class="ipa">t ɾ a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=29s" target="_blank">00:00:29</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=188s" target="_blank">00:03:08</a></div></div><div class="card"><div class="ipa">l a s</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=50s" target="_blank">00:00:50</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=173s" target="_blank">00:02:53</a></div></div><div class="card"><div class="ipa">a p e</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=128s" target="_blank">00:02:08</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=352s" target="_blank">00:05:52</a></div></div><div class="card"><div class="ipa">s t a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=188s" target="_blank">00:03:08</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=352s" target="_blank">00:05:52</a></div></div><div class="card"><div class="ipa">p e ɾ</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=212s" target="_blank">00:03:32</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=243s" target="_blank">00:04:03</a></div></div><div class="card"><div class="ipa">i t ɒ</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=231s" target="_blank">00:03:51</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=512s" target="_blank">00:08:32</a></div></div><div class="card"><div class="ipa">a s e</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=243s" target="_blank">00:04:03</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=590s" target="_blank">00:09:50</a></div></div><div class="card"><div class="ipa">o b a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=256s" target="_blank">00:04:16</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=283s" target="_blank">00:04:43</a></div></div><div class="card"><div class="ipa">a l o</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=334s" target="_blank">00:05:34</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=426s" target="_blank">00:07:06</a></div></div><div class="card"><div class="ipa">e l a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=399s" target="_blank">00:06:39</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=418s" target="_blank">00:06:58</a></div></div><div class="card"><div class="ipa">m uə a</div><div class="cnt">×7</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=466s" target="_blank">00:07:46</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=977s" target="_blank">00:16:17</a></div></div></div>
 <h2 id="rules">rules signed by CHIEF · a chain that attaches to many different neighbours</h2>
-<table><tr><td class="n">1</td><td class="k">prefix</td><td class="ipa">i d i</td><td>6× on 6 stems</td><td><a class="pos" href="#" target="_blank">00:00:50</a> <a class="pos" href="#" target="_blank">00:04:29</a> <a class="pos" href="#" target="_blank">00:04:59</a></td></tr></table>
+<table><tr><td class="n">1</td><td class="k">prefix</td><td class="ipa">i d i</td><td>6× on 6 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=50s" target="_blank">00:00:50</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=269s" target="_blank">00:04:29</a> <a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=299s" target="_blank">00:04:59</a></td></tr></table>
 <h2 id="fights">fights · two answers, nobody alive to settle it</h2>
 <table></table>
 <h2>the gate · refused (17)</h2>
 <ul><li><span class="ipa">l a l</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">i j e</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">i t a</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">e a l</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">o t e</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">ɒ l ә</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">p ɾ ɒ</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">i s u</span> · heard 4 times, the gate wants 6</li><li><span class="ipa">i b a</span> · heard 4 times, the gate wants 6</li><li><span class="ipa">m a l</span> · heard 4 times, the gate wants 6</li><li>… and 7 more in report.md</li></ul>
 <h2 id="voice">his voice · where the register shifts (median 151.1 Hz, 8.77 phones/s)</h2>
-<table><tr><td><a class="pos" href="#" target="_blank">00:17:40</a></td><td>299.1 Hz</td><td class="hi">z +4.1</td><td>4.0 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:09:09</a></td><td>298.5 Hz</td><td class="hi">z +4.1</td><td>3.33 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:12:29</a></td><td>292.7 Hz</td><td class="hi">z +3.9</td><td>0.0 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:12:00</a></td><td>266.5 Hz</td><td class="hi">z +3.2</td><td>4.44 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:17:06</a></td><td>257.2 Hz</td><td class="hi">z +3.0</td><td>10.0 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:01:30</a></td><td>255.6 Hz</td><td class="hi">z +2.9</td><td>10.58 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:06:47</a></td><td>247.9 Hz</td><td class="hi">z +2.7</td><td>6.36 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:12:10</a></td><td>235.2 Hz</td><td class="hi">z +2.3</td><td>7.11 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:05:22</a></td><td>233.9 Hz</td><td class="hi">z +2.3</td><td>2.63 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:19:51</a></td><td>233.5 Hz</td><td class="hi">z +2.3</td><td>9.8 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:07:01</a></td><td>232.0 Hz</td><td class="hi">z +2.2</td><td>8.12 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:11:02</a></td><td>231.6 Hz</td><td class="hi">z +2.2</td><td>5.0 phones/s</td></tr></table>
+<table><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=1060s" target="_blank">00:17:40</a></td><td>299.1 Hz</td><td class="hi">z +4.1</td><td>4.0 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=549s" target="_blank">00:09:09</a></td><td>298.5 Hz</td><td class="hi">z +4.1</td><td>3.33 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=749s" target="_blank">00:12:29</a></td><td>292.7 Hz</td><td class="hi">z +3.9</td><td>0.0 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=720s" target="_blank">00:12:00</a></td><td>266.5 Hz</td><td class="hi">z +3.2</td><td>4.44 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=1026s" target="_blank">00:17:06</a></td><td>257.2 Hz</td><td class="hi">z +3.0</td><td>10.0 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=90s" target="_blank">00:01:30</a></td><td>255.6 Hz</td><td class="hi">z +2.9</td><td>10.58 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=407s" target="_blank">00:06:47</a></td><td>247.9 Hz</td><td class="hi">z +2.7</td><td>6.36 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=730s" target="_blank">00:12:10</a></td><td>235.2 Hz</td><td class="hi">z +2.3</td><td>7.11 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=322s" target="_blank">00:05:22</a></td><td>233.9 Hz</td><td class="hi">z +2.3</td><td>2.63 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=1191s" target="_blank">00:19:51</a></td><td>233.5 Hz</td><td class="hi">z +2.3</td><td>9.8 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=421s" target="_blank">00:07:01</a></td><td>232.0 Hz</td><td class="hi">z +2.2</td><td>8.12 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=kKg2gaNzBK4&t=662s" target="_blank">00:11:02</a></td><td>231.6 Hz</td><td class="hi">z +2.2</td><td>5.0 phones/s</td></tr></table>
 <h2>vowels nobody wrote down</h2>
 <div class="vb"><span class="ipa">a</span><i style="width:180px"></i><b>1623</b></div><div class="vb"><span class="ipa">e</span><i style="width:100px"></i><b>902</b></div><div class="vb"><span class="ipa">ɒ</span><i style="width:71px"></i><b>647</b></div><div class="vb"><span class="ipa">i</span><i style="width:62px"></i><b>567</b></div><div class="vb"><span class="ipa">o</span><i style="width:60px"></i><b>544</b></div><div class="vb"><span class="ipa">ʌ</span><i style="width:52px"></i><b>473</b></div><div class="vb"><span class="ipa">uə</span><i style="width:50px"></i><b>457</b></div><div class="vb"><span class="ipa">ɪ</span><i style="width:35px"></i><b>316</b></div><div class="vb"><span class="ipa">u</span><i style="width:34px"></i><b>312</b></div><div class="vb"><span class="ipa">ɛ</span><i style="width:9px"></i><b>90</b></div><div class="vb"><span class="ipa">ɨ</span><i style="width:9px"></i><b>89</b></div><div class="vb"><span class="ipa">æ</span><i style="width:5px"></i><b>46</b></div>
 <h2>case log</h2>
@@ -66,5 +247,83 @@ ul{padding-left:18px} li{margin:3px 0}
 <table><tr><td>window</td><td>utterances</td><td>speech share</td><td>phones/s</td><td>pitch</td><td>median utterance</td></tr><tr><td>00:00-10:00</td><td>102</td><td>0.92</td><td>8.15</td><td>151.8</td><td>4.8 s</td></tr><tr><td>10:00-20:00</td><td>115</td><td>0.921</td><td>8.82</td><td>156.5</td><td>4.5 s</td></tr><tr><td>20:00-27:00</td><td>75</td><td>0.89</td><td>9.42</td><td>145.5</td><td>4.4 s</td></tr></table>
 <h2>what this is not</h2>
 <div class="note">no dictionary of the language was used and nothing here is a translation. a "word" is a chain of phones that repeats, a "rule" is a chain that keeps attaching to different neighbours, a "fight" is two of them one phone apart. the register detector hears pitch and tempo, not meaning. a linguist would call this a starting point. that is what it is, and every line carries the second of tape it came from.</div>
-<div class="foot">other tapes: <a href="index.html">torwali</a> · <a href="piedmontese.html">piedmontese</a> · desk.py run tape.wav · generated from runs/piedmontese/run.json</div>
-</div></body></html>
+
+<div class="foot">other tapes: <a href="index.html">torwali</a> · <a href="piedmontese.html">piedmontese</a>
+ · <a href="https://github.com/jugqdc-sudo/cold-desk" target="_blank">code</a>
+ · <a href="https://x.com/ventry089" target="_blank">the serial</a>
+ · desk.py run tape.wav · generated from runs/piedmontese/run.json</div>
+</div>
+<script>
+// дорожка в герое: не декор, а тот же курсор воспроизведения, что идёт в роликах
+(function(){
+  var c=document.getElementById('wv'); if(!c) return;
+  var g=c.getContext('2d'), dpr=Math.min(2,window.devicePixelRatio||1), W=0,H=64;
+  function size(){ W=c.clientWidth; c.width=W*dpr; c.height=H*dpr; g.setTransform(dpr,0,0,dpr,0,0); }
+  size(); addEventListener('resize',size);
+  var seed=function(i){ var v=Math.sin(i*12.9898)*43758.5453; return v-Math.floor(v); };
+  var t=0, slow=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function frame(){
+    t+=slow?0:1;
+    g.clearRect(0,0,W,H);
+    var bw=3, gap=3, n=Math.floor(W/(bw+gap)), cur=(t*0.0016)%1;
+    for(var i=0;i<n;i++){
+      var u=i/n;
+      // огибающая речи: пачки высказываний с паузами, как на настоящей плёнке
+      var env=Math.max(0,Math.sin(u*26)*0.5+0.5)*Math.max(0,Math.sin(u*7.3+1.1)*0.6+0.55);
+      var a=env*(0.35+seed(i+((t*0.02)|0))*0.65);
+      var h=Math.max(1,a*(H-10));
+      var past=u<cur;
+      g.fillStyle = past ? (u>cur-0.02 ? '#c8913a' : 'rgba(43,48,42,.62)') : 'rgba(43,48,42,.16)';
+      g.fillRect(i*(bw+gap), (H-h)/2, bw, h);
+    }
+    g.fillStyle='rgba(192,74,60,.75)';
+    g.fillRect(cur*W, 4, 1, H-8);
+    requestAnimationFrame(frame);
+  }
+  frame();
+})();
+
+// секции проявляются один раз, без дёрганья при обратной прокрутке
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('on');}); return; }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('on'); io.unobserve(en.target); } });
+  },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  els.forEach(function(e){ io.observe(e); });
+})();
+
+// цифры метрик набегают, когда полоса появляется в кадре
+(function(){
+  var strip=document.querySelector('.strip'); if(!strip) return;
+  var done=false;
+  function run(){
+    if(done) return; done=true;
+    strip.querySelectorAll('b').forEach(function(b){
+      var raw=b.textContent.trim(), m=raw.replace(/,/g,'').match(/^(\d+(?:\.\d+)?)(.*)$/);
+      if(!m) return;
+      var end=parseFloat(m[1]), tail=m[2]||'', dec=(m[1].split('.')[1]||'').length;
+      var grp=raw.indexOf(',')>=0, t0=performance.now(), dur=900;
+      function step(now){
+        var k=Math.min(1,(now-t0)/dur), e=1-Math.pow(1-k,3), v=end*e;
+        var txt=dec?v.toFixed(dec):Math.round(v).toString();
+        if(grp) txt=txt.replace(/\B(?=(\d{3})+(?!\d))/g,',');
+        b.textContent=txt+tail;
+        if(k<1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) run(); }); },
+    {threshold:.3}).observe(strip);
+})();
+
+// позиция плёнки в ленте: тикает, как счётчик магнитофона
+(function(){
+  var el=document.getElementById('tapepos'); if(!el) return;
+  var n=0;
+  setInterval(function(){ n=(n+37)%99999; el.textContent='TAPE POSITION '+String(n).padStart(5,'0'); },140);
+})();
+</script>
+</body></html>

@@ -1,6 +1,11 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>THE LAST SPEAKER · torwali · case report</title>
+<link rel="icon" href="logo.svg">
+<meta property="og:title" content="THE LAST SPEAKER · COLD.DESK">
+<meta property="og:description" content="six agents, 1.2 hours of a language with no alphabet, 3,218 words and 19 rules - every one of them opens the second of tape it came from">
+<meta property="og:image" content="https://jugqdc-sudo.github.io/cold-desk/desk.gif">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Instrument+Serif&display=swap" rel="stylesheet">
 <style>
@@ -31,10 +36,186 @@ td.hi{color:var(--red);font-weight:700} td.lo{color:var(--mint);font-weight:700}
 .note{background:#fbf7ea;border-left:3px solid #c8913a;padding:10px 14px;color:#4a4f45}
 ul{padding-left:18px} li{margin:3px 0}
 .foot{margin-top:40px;color:var(--faint);font-size:11px}
+
+/* ── шапка: логотип едет с прокруткой, чтобы имя было видно всегда ── */
+.bar{position:sticky;top:0;z-index:20;background:rgba(244,242,236,.94);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);margin:0 -18px 0;padding:9px 18px;display:flex;align-items:center;gap:12px}
+.bar img{width:26px;height:26px;display:block}
+.bar .nm{font-weight:700;letter-spacing:2.5px;font-size:12px}
+.bar .cs{color:var(--dim);letter-spacing:2px;font-size:10px}
+.bar .sp{margin-left:auto;display:flex;gap:14px;font-size:10.5px;letter-spacing:1.6px}
+.bar .sp a{color:var(--dim);text-decoration:none;border-bottom:1px solid transparent}
+.bar .sp a:hover{color:var(--ink);border-bottom-color:var(--line)}
+
+/* ── герой ── */
+.hero{display:grid;grid-template-columns:196px 1fr;gap:34px;align-items:center;
+  padding:44px 0 30px;border-bottom:1px solid var(--line)}
+.hero .mark{width:196px;height:196px}
+.hero h1{margin:0 0 10px;font-size:52px}
+.hero .lead{color:var(--dim);font-size:14px;line-height:1.7;max-width:62ch}
+.hero .lead b{color:var(--ink);font-weight:700}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:18px}.hero .mark{width:128px;height:128px}.hero h1{font-size:34px}}
+
+/* ── три шага проверки ── */
+.checks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0 6px}
+.chk{background:var(--card);border:1px solid var(--line);padding:14px 16px}
+.chk .no{font-family:"Instrument Serif",serif;font-size:30px;color:var(--amber);line-height:1}
+.chk h3{margin:6px 0 5px;font-size:12px;letter-spacing:1.6px;text-transform:uppercase}
+.chk p{margin:0;color:var(--dim);font-size:11.5px;line-height:1.65}
+@media(max-width:760px){.checks{grid-template-columns:1fr}}
+
+/* ── контракт токена ── */
+.ca{margin:26px 0 0;background:#16190f;color:#e7eae0;padding:16px 18px;display:flex;
+  gap:14px;align-items:center;flex-wrap:wrap}
+.ca .lbl{letter-spacing:2.5px;font-size:10px;color:#9aa693}
+.ca code{font-size:13px;letter-spacing:.4px;word-break:break-all;color:#e7eae0}
+
+/* ── фактура: зерно печати поверх всего, как на плёнке ── */
+body:before{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.55;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E")}
+/* тёплая виньетка по краям - бумага под лампой, а не белый экран */
+body:after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(120% 80% at 50% 0%,rgba(255,252,242,.55),transparent 60%),
+             radial-gradient(100% 60% at 50% 100%,rgba(120,110,88,.09),transparent 60%)}
+.wrap{position:relative;z-index:2}
+.bar{z-index:30}
+
+/* ── лента плёнки под шапкой: идёт всегда, как ticker в роликах ── */
+.film{position:sticky;top:44px;z-index:25;margin:0 -18px;height:20px;overflow:hidden;
+  background:#16190f;display:flex;align-items:center}
+.film .strip2{display:flex;gap:0;animation:roll 26s linear infinite;will-change:transform}
+.film i{display:block;width:13px;height:9px;margin-right:13px;background:#8d7b5f;flex:none}
+.film i:nth-child(5n+1){background:#c8913a}
+.film .pos2{position:absolute;right:12px;color:#cfd5c9;font-size:9px;letter-spacing:1.6px}
+@keyframes roll{to{transform:translateX(-520px)}}
+
+/* ── герой: живая дорожка под заголовком ── */
+.wavewrap{position:relative;margin:18px 0 2px;height:64px}
+.wavewrap canvas{display:block;width:100%;height:64px}
+.wavewrap .cap{position:absolute;right:0;bottom:-14px;font-size:9.5px;letter-spacing:1.8px;color:var(--faint)}
+
+/* логотип дышит вместе с дорожкой */
+.hero .mark{animation:breathe 6.5s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+
+/* ── появление секций при прокрутке ── */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+.rv.on{opacity:1;transform:none}
+
+/* ── таймкоды: подсветка как у живой позиции на плёнке ── */
+.pos{position:relative;padding:1px 3px;transition:background .18s,color .18s}
+.pos:hover{background:#d9ecdf;color:#1d4a33;border-bottom-style:solid}
+.pos:before{content:"";position:absolute;left:-3px;top:50%;width:3px;height:3px;margin-top:-1.5px;
+  background:var(--mint);opacity:0;transition:opacity .18s}
+.pos:hover:before{opacity:1}
+
+/* ── карточки стены слегка оживают ── */
+.card{transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 14px rgba(70,64,48,.14)}
+.wall{position:relative}
+.wall:after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.28) 47%,transparent 54%);
+  background-size:280% 100%;animation:sheen 9s ease-in-out infinite}
+@keyframes sheen{0%,72%{background-position:120% 0}100%{background-position:-40% 0}}
+
+/* ── метрики: тянутся на всю ширину, иначе справа зияет пустая ячейка ── */
+.strip div{flex:1 1 auto;min-width:122px}
+.strip div:last-child{border-right:none}
+html{scroll-behavior:smooth}
+
+/* цифра набегает, ячейка чуть тёплая */
+.strip div{position:relative;transition:background .2s}
+.strip div:hover{background:#fbf7ea}
+.strip b{font-variant-numeric:tabular-nums}
+
+/* ── мигающая точка записи в шапке ── */
+.rec{width:6px;height:6px;border-radius:50%;background:var(--red);display:inline-block;
+  animation:blink 1.9s steps(1,end) infinite}
+@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:.25}}
+
+@media(prefers-reduced-motion:reduce){
+  .film .strip2,.hero .mark,.wall:after,.rec{animation:none}
+  .rv{opacity:1;transform:none}
+}
+
+/* ── телефон: под токен половина трафика оттуда, страница не должна ехать вбок ── */
+html,body{overflow-x:hidden}
+@media(max-width:760px){
+  /* отрицательные поля шапки и ленты должны совпадать с padding обёртки, иначе они
+     ровно на эту разницу шире экрана и тащат всю страницу вбок */
+  .bar,.film{margin-left:-14px;margin-right:-14px}
+  .bar{gap:8px;padding:8px 14px;flex-wrap:nowrap}
+  .bar .cs{display:none}                    /* длинная подпись рвала шапку в столбик */
+  .bar .sp{gap:12px;font-size:9.5px;white-space:nowrap;overflow:hidden}
+  .bar .sp a:nth-child(2),.bar .sp a:nth-child(3){display:none}   /* RULES/FIGHTS есть ниже по странице */
+  .film{top:40px}
+  .wrap{padding:16px 14px 48px}
+  /* широкие таблицы прокручиваются внутри себя, а не тащат за собой всю страницу */
+  table{display:block;overflow-x:auto;white-space:nowrap}
+  .strip div{min-width:44%}
+  .hero h1{font-size:30px}
+  .wall{border-width:4px;padding:10px}
+}
+
 </style></head><body><div class="wrap">
-<div class="top"><b>COLD.DESK</b><span>CASE 01 · THE LAST SPEAKER · REAL TAPE</span><span class="pill red">● ONE SPEAKER</span><span class="pill">NO DICTIONARY · NO TRANSLATION</span><span class="pill mint">EVERY LINE HAS A TAPE POSITION</span></div>
-<h1>what six agents pulled out of 1.2 hours of one man speaking Torwali</h1>
-<div class="sub">tape: <a href="" target="_blank"></a> · Wikitongues, CC BY · every timestamp below opens that second of the recording</div>
+
+<div class="bar">
+  <img src="logo.svg" alt="">
+  <span class="nm">COLD.DESK</span>
+  <span class="cs"><span class="rec"></span> CASE 01 · THE LAST SPEAKER</span>
+  <span class="sp">
+    <a href="#check">HOW TO CHECK</a>
+    <a href="#rules">RULES</a>
+    <a href="#fights">FIGHTS</a>
+    <a href="https://github.com/jugqdc-sudo/cold-desk" target="_blank">CODE</a>
+    <a href="https://x.com/ventry089" target="_blank">X</a>
+  </span>
+</div>
+
+<div class="film">
+  <div class="strip2"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <span class="pos2" id="tapepos">TAPE POSITION 00000</span>
+</div>
+
+<div class="hero">
+  <img class="mark" src="logo.svg" alt="THE LAST SPEAKER">
+  <div>
+    <h1>a language with no alphabet, and one man left who speaks it</h1>
+    <div class="lead">six agents listened to <b>1.2 hours</b> of raw tape and pulled out
+      <b>3,218 word candidates</b> and <b>19 grammar rules</b> - with no dictionary,
+      no translation and nobody alive who could tell them they got it wrong.<br><br>
+      nothing is written without a source: <b>every single number on this page opens the exact second
+      of the recording it came from.</b> the 41 rules the desk threw out are published too,
+      with the reason each one died.</div>
+    <div class="tags">
+      <span class="pill red">● ONE SPEAKER LEFT</span>
+      <span class="pill">NO DICTIONARY · NO TRANSLATION</span>
+      <span class="pill mint">EVERY LINE HAS A TAPE POSITION</span>
+      <span class="pill">OPEN SOURCE · MIT</span>
+    </div>
+  </div>
+</div>
+
+<div class="wavewrap">
+  <canvas id="wv"></canvas>
+  <span class="cap">0.93 H OF SPEECH · 1,164 UTTERANCES</span>
+</div>
+
+<h2 id="check">how to check this yourself · takes about a minute</h2>
+<div class="checks rv">
+  <div class="chk"><div class="no">1</div><h3>click any timestamp</h3>
+    <p>every green position on this page is a link. it opens the recording at that exact second,
+       so you hear the word instead of reading a claim about it.</p></div>
+  <div class="chk"><div class="no">2</div><h3>read what got refused</h3>
+    <p>the desk wrote 60 rules and signed 19.
+       the other 41 are listed below with the reason each one failed the gate.</p></div>
+  <div class="chk"><div class="no">3</div><h3>run it on your own tape</h3>
+    <p>the code is open. <code>desk.py run tape.wav</code>, about a minute of cpu per hour of audio.
+       same pipeline, your recording.</p></div>
+</div>
+
+<div class="sub" style="margin-top:22px">tape: <a href="https://www.youtube.com/watch?v=361y-JDT_bs" target="_blank">WIKITONGUES: Abdul Mateen speaking Torwali</a> · Wikitongues, CC BY · every timestamp below opens that second of the recording</div>
 <div class="strip">
 <div>WORDS SAVED<b>3,218</b></div><div>HEARD ONLY ONCE<b>1,316</b></div>
 <div>RULES SIGNED<b class="mint">19</b></div><div>RULES REFUSED<b class="red">41</b></div>
@@ -43,16 +224,16 @@ ul{padding-left:18px} li{margin:3px 0}
 <div>NEVER RECORDED<b class="red">1,105</b></div>
 <div>DIE WITH HIM<b class="red">2,041</b></div>
 </div>
-<h2>the wall · chains that keep coming back</h2>
-<div class="wall"><div class="card"><div class="ipa">a ɕ i</div><div class="cnt">×14</div><div class="where"><a class="pos" href="#" target="_blank">00:07:37</a> <a class="pos" href="#" target="_blank">00:11:01</a></div></div><div class="card"><div class="ipa">e tɕ i</div><div class="cnt">×13</div><div class="where"><a class="pos" href="#" target="_blank">00:09:41</a> <a class="pos" href="#" target="_blank">00:11:46</a></div></div><div class="card"><div class="ipa">ɒ ʁ ɒ</div><div class="cnt">×13</div><div class="where"><a class="pos" href="#" target="_blank">00:17:45</a> <a class="pos" href="#" target="_blank">00:20:02</a></div></div><div class="card"><div class="ipa">ɒ ɕ i</div><div class="cnt">×11</div><div class="where"><a class="pos" href="#" target="_blank">00:02:24</a> <a class="pos" href="#" target="_blank">00:11:01</a></div></div><div class="card"><div class="ipa">tɕ j e</div><div class="cnt">×11</div><div class="where"><a class="pos" href="#" target="_blank">00:02:57</a> <a class="pos" href="#" target="_blank">00:12:00</a></div></div><div class="card"><div class="ipa">n tɕ i</div><div class="cnt">×11</div><div class="where"><a class="pos" href="#" target="_blank">00:05:04</a> <a class="pos" href="#" target="_blank">00:09:06</a></div></div><div class="card"><div class="ipa">ɴ tɕ i</div><div class="cnt">×11</div><div class="where"><a class="pos" href="#" target="_blank">00:11:20</a> <a class="pos" href="#" target="_blank">00:11:46</a></div></div><div class="card"><div class="ipa">ә m ɒ</div><div class="cnt">×11</div><div class="where"><a class="pos" href="#" target="_blank">00:17:12</a> <a class="pos" href="#" target="_blank">00:29:52</a></div></div><div class="card"><div class="ipa">ʌ ɾ ɒ</div><div class="cnt">×11</div><div class="where"><a class="pos" href="#" target="_blank">00:25:28</a> <a class="pos" href="#" target="_blank">00:25:32</a></div></div><div class="card"><div class="ipa">ɒ x ɒ</div><div class="cnt">×10</div><div class="where"><a class="pos" href="#" target="_blank">00:02:18</a> <a class="pos" href="#" target="_blank">00:04:39</a></div></div><div class="card"><div class="ipa">b u l</div><div class="cnt">×10</div><div class="where"><a class="pos" href="#" target="_blank">00:02:37</a> <a class="pos" href="#" target="_blank">00:13:18</a></div></div><div class="card"><div class="ipa">æ tɕ i</div><div class="cnt">×10</div><div class="where"><a class="pos" href="#" target="_blank">00:09:16</a> <a class="pos" href="#" target="_blank">00:16:49</a></div></div><div class="card"><div class="ipa">i l e</div><div class="cnt">×10</div><div class="where"><a class="pos" href="#" target="_blank">00:10:15</a> <a class="pos" href="#" target="_blank">00:10:57</a></div></div><div class="card"><div class="ipa">kp uə a</div><div class="cnt">×10</div><div class="where"><a class="pos" href="#" target="_blank">00:11:32</a> <a class="pos" href="#" target="_blank">00:11:58</a></div></div><div class="card"><div class="ipa">ɾ tɕ i</div><div class="cnt">×10</div><div class="where"><a class="pos" href="#" target="_blank">00:12:39</a> <a class="pos" href="#" target="_blank">00:19:16</a></div></div><div class="card"><div class="ipa">ɒ ʂ ɻ</div><div class="cnt">×10</div><div class="where"><a class="pos" href="#" target="_blank">00:15:54</a> <a class="pos" href="#" target="_blank">00:22:08</a></div></div><div class="card"><div class="ipa">kp j e</div><div class="cnt">×9</div><div class="where"><a class="pos" href="#" target="_blank">00:01:02</a> <a class="pos" href="#" target="_blank">00:04:20</a></div></div><div class="card"><div class="ipa">i tɕ i</div><div class="cnt">×9</div><div class="where"><a class="pos" href="#" target="_blank">00:01:16</a> <a class="pos" href="#" target="_blank">00:15:54</a></div></div><div class="card"><div class="ipa">ɴ j e</div><div class="cnt">×9</div><div class="where"><a class="pos" href="#" target="_blank">00:01:35</a> <a class="pos" href="#" target="_blank">00:15:27</a></div></div><div class="card"><div class="ipa">d j e</div><div class="cnt">×9</div><div class="where"><a class="pos" href="#" target="_blank">00:01:35</a> <a class="pos" href="#" target="_blank">00:23:08</a></div></div><div class="card"><div class="ipa">ɒ r ɒ</div><div class="cnt">×9</div><div class="where"><a class="pos" href="#" target="_blank">00:01:35</a> <a class="pos" href="#" target="_blank">00:01:51</a></div></div></div>
+<h2 class="rv">the wall · chains that keep coming back</h2>
+<div class="wall rv"><div class="card"><div class="ipa">a ɕ i</div><div class="cnt">×14</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=457s" target="_blank">00:07:37</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=661s" target="_blank">00:11:01</a></div></div><div class="card"><div class="ipa">e tɕ i</div><div class="cnt">×13</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=581s" target="_blank">00:09:41</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=706s" target="_blank">00:11:46</a></div></div><div class="card"><div class="ipa">ɒ ʁ ɒ</div><div class="cnt">×13</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1065s" target="_blank">00:17:45</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1202s" target="_blank">00:20:02</a></div></div><div class="card"><div class="ipa">ɒ ɕ i</div><div class="cnt">×11</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=144s" target="_blank">00:02:24</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=661s" target="_blank">00:11:01</a></div></div><div class="card"><div class="ipa">tɕ j e</div><div class="cnt">×11</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=177s" target="_blank">00:02:57</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=720s" target="_blank">00:12:00</a></div></div><div class="card"><div class="ipa">n tɕ i</div><div class="cnt">×11</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=304s" target="_blank">00:05:04</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=546s" target="_blank">00:09:06</a></div></div><div class="card"><div class="ipa">ɴ tɕ i</div><div class="cnt">×11</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=680s" target="_blank">00:11:20</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=706s" target="_blank">00:11:46</a></div></div><div class="card"><div class="ipa">ә m ɒ</div><div class="cnt">×11</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1032s" target="_blank">00:17:12</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1792s" target="_blank">00:29:52</a></div></div><div class="card"><div class="ipa">ʌ ɾ ɒ</div><div class="cnt">×11</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1528s" target="_blank">00:25:28</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1532s" target="_blank">00:25:32</a></div></div><div class="card"><div class="ipa">ɒ x ɒ</div><div class="cnt">×10</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=138s" target="_blank">00:02:18</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=279s" target="_blank">00:04:39</a></div></div><div class="card"><div class="ipa">b u l</div><div class="cnt">×10</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=157s" target="_blank">00:02:37</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=798s" target="_blank">00:13:18</a></div></div><div class="card"><div class="ipa">æ tɕ i</div><div class="cnt">×10</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=556s" target="_blank">00:09:16</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1009s" target="_blank">00:16:49</a></div></div><div class="card"><div class="ipa">i l e</div><div class="cnt">×10</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=615s" target="_blank">00:10:15</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=657s" target="_blank">00:10:57</a></div></div><div class="card"><div class="ipa">kp uə a</div><div class="cnt">×10</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=692s" target="_blank">00:11:32</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=718s" target="_blank">00:11:58</a></div></div><div class="card"><div class="ipa">ɾ tɕ i</div><div class="cnt">×10</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=759s" target="_blank">00:12:39</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1156s" target="_blank">00:19:16</a></div></div><div class="card"><div class="ipa">ɒ ʂ ɻ</div><div class="cnt">×10</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=954s" target="_blank">00:15:54</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1328s" target="_blank">00:22:08</a></div></div><div class="card"><div class="ipa">kp j e</div><div class="cnt">×9</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=62s" target="_blank">00:01:02</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=260s" target="_blank">00:04:20</a></div></div><div class="card"><div class="ipa">i tɕ i</div><div class="cnt">×9</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=76s" target="_blank">00:01:16</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=954s" target="_blank">00:15:54</a></div></div><div class="card"><div class="ipa">ɴ j e</div><div class="cnt">×9</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=95s" target="_blank">00:01:35</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=927s" target="_blank">00:15:27</a></div></div><div class="card"><div class="ipa">d j e</div><div class="cnt">×9</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=95s" target="_blank">00:01:35</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1388s" target="_blank">00:23:08</a></div></div><div class="card"><div class="ipa">ɒ r ɒ</div><div class="cnt">×9</div><div class="where"><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=95s" target="_blank">00:01:35</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=111s" target="_blank">00:01:51</a></div></div></div>
 <h2 id="rules">rules signed by CHIEF · a chain that attaches to many different neighbours</h2>
-<table><tr><td class="n">1</td><td class="k">suffix</td><td class="ipa">ʌ ɾ ɒ</td><td>11× on 10 stems</td><td><a class="pos" href="#" target="_blank">00:25:28</a> <a class="pos" href="#" target="_blank">00:25:32</a> <a class="pos" href="#" target="_blank">00:30:59</a></td></tr><tr><td class="n">2</td><td class="k">prefix</td><td class="ipa">b u l</td><td>10× on 10 stems</td><td><a class="pos" href="#" target="_blank">00:02:37</a> <a class="pos" href="#" target="_blank">00:13:18</a> <a class="pos" href="#" target="_blank">00:13:49</a></td></tr><tr><td class="n">3</td><td class="k">suffix</td><td class="ipa">ɒ x ɒ</td><td>10× on 9 stems</td><td><a class="pos" href="#" target="_blank">00:02:18</a> <a class="pos" href="#" target="_blank">00:04:39</a> <a class="pos" href="#" target="_blank">00:11:24</a></td></tr><tr><td class="n">4</td><td class="k">prefix</td><td class="ipa">b æ n</td><td>9× on 9 stems</td><td><a class="pos" href="#" target="_blank">00:03:50</a> <a class="pos" href="#" target="_blank">00:19:55</a> <a class="pos" href="#" target="_blank">00:22:35</a></td></tr><tr><td class="n">5</td><td class="k">suffix</td><td class="ipa">i tɕ i</td><td>9× on 8 stems</td><td><a class="pos" href="#" target="_blank">00:01:16</a> <a class="pos" href="#" target="_blank">00:15:54</a> <a class="pos" href="#" target="_blank">00:25:48</a></td></tr><tr><td class="n">6</td><td class="k">suffix</td><td class="ipa">b a n</td><td>8× on 8 stems</td><td><a class="pos" href="#" target="_blank">00:13:27</a> <a class="pos" href="#" target="_blank">00:24:46</a> <a class="pos" href="#" target="_blank">00:25:09</a></td></tr><tr><td class="n">7</td><td class="k">prefix</td><td class="ipa">b a ɾ</td><td>8× on 8 stems</td><td><a class="pos" href="#" target="_blank">00:27:15</a> <a class="pos" href="#" target="_blank">00:29:23</a> <a class="pos" href="#" target="_blank">00:43:13</a></td></tr><tr><td class="n">8</td><td class="k">prefix</td><td class="ipa">ʔ ɒ l</td><td>8× on 7 stems</td><td><a class="pos" href="#" target="_blank">00:00:24</a> <a class="pos" href="#" target="_blank">00:03:58</a> <a class="pos" href="#" target="_blank">00:05:32</a></td></tr><tr><td class="n">9</td><td class="k">prefix</td><td class="ipa">ʔ ɒ tɕ</td><td>8× on 7 stems</td><td><a class="pos" href="#" target="_blank">00:00:51</a> <a class="pos" href="#" target="_blank">00:07:20</a> <a class="pos" href="#" target="_blank">00:07:46</a></td></tr><tr><td class="n">10</td><td class="k">prefix</td><td class="ipa">b u ɾ</td><td>8× on 7 stems</td><td><a class="pos" href="#" target="_blank">00:04:16</a> <a class="pos" href="#" target="_blank">00:05:04</a> <a class="pos" href="#" target="_blank">00:07:29</a></td></tr><tr><td class="n">11</td><td class="k">prefix</td><td class="ipa">s ɒ n</td><td>8× on 7 stems</td><td><a class="pos" href="#" target="_blank">00:09:33</a> <a class="pos" href="#" target="_blank">00:10:46</a> <a class="pos" href="#" target="_blank">00:20:37</a></td></tr><tr><td class="n">12</td><td class="k">suffix</td><td class="ipa">a l a</td><td>8× on 7 stems</td><td><a class="pos" href="#" target="_blank">00:16:41</a> <a class="pos" href="#" target="_blank">00:28:43</a> <a class="pos" href="#" target="_blank">00:35:27</a></td></tr><tr><td class="n">13</td><td class="k">suffix</td><td class="ipa">l j i</td><td>7× on 7 stems</td><td><a class="pos" href="#" target="_blank">00:01:49</a> <a class="pos" href="#" target="_blank">00:29:07</a> <a class="pos" href="#" target="_blank">00:41:12</a></td></tr><tr><td class="n">14</td><td class="k">suffix</td><td class="ipa">i ɕ i</td><td>7× on 7 stems</td><td><a class="pos" href="#" target="_blank">00:02:41</a> <a class="pos" href="#" target="_blank">00:08:10</a> <a class="pos" href="#" target="_blank">00:09:16</a></td></tr><tr><td class="n">15</td><td class="k">prefix</td><td class="ipa">a tʂ e</td><td>7× on 7 stems</td><td><a class="pos" href="#" target="_blank">00:20:59</a> <a class="pos" href="#" target="_blank">00:23:29</a> <a class="pos" href="#" target="_blank">00:28:32</a></td></tr><tr><td class="n">16</td><td class="k">prefix</td><td class="ipa">ʔ ɒ n</td><td>7× on 6 stems</td><td><a class="pos" href="#" target="_blank">00:00:17</a> <a class="pos" href="#" target="_blank">00:03:58</a> <a class="pos" href="#" target="_blank">00:10:52</a></td></tr><tr><td class="n">17</td><td class="k">prefix</td><td class="ipa">b o ɾ</td><td>6× on 6 stems</td><td><a class="pos" href="#" target="_blank">00:07:20</a> <a class="pos" href="#" target="_blank">00:21:02</a> <a class="pos" href="#" target="_blank">00:46:52</a></td></tr><tr><td class="n">18</td><td class="k">suffix</td><td class="ipa">b ɒ ɾ ɒ</td><td>6× on 5 stems</td><td><a class="pos" href="#" target="_blank">00:03:41</a> <a class="pos" href="#" target="_blank">00:08:06</a> <a class="pos" href="#" target="_blank">00:09:41</a></td></tr><tr><td class="n">19</td><td class="k">prefix</td><td class="ipa">tɕ ɒ b</td><td>6× on 5 stems</td><td><a class="pos" href="#" target="_blank">00:10:57</a> <a class="pos" href="#" target="_blank">00:15:45</a> <a class="pos" href="#" target="_blank">00:31:06</a></td></tr></table>
+<table><tr><td class="n">1</td><td class="k">suffix</td><td class="ipa">ʌ ɾ ɒ</td><td>11× on 10 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1528s" target="_blank">00:25:28</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1532s" target="_blank">00:25:32</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1859s" target="_blank">00:30:59</a></td></tr><tr><td class="n">2</td><td class="k">prefix</td><td class="ipa">b u l</td><td>10× on 10 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=157s" target="_blank">00:02:37</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=798s" target="_blank">00:13:18</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=829s" target="_blank">00:13:49</a></td></tr><tr><td class="n">3</td><td class="k">suffix</td><td class="ipa">ɒ x ɒ</td><td>10× on 9 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=138s" target="_blank">00:02:18</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=279s" target="_blank">00:04:39</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=684s" target="_blank">00:11:24</a></td></tr><tr><td class="n">4</td><td class="k">prefix</td><td class="ipa">b æ n</td><td>9× on 9 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=230s" target="_blank">00:03:50</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1195s" target="_blank">00:19:55</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1355s" target="_blank">00:22:35</a></td></tr><tr><td class="n">5</td><td class="k">suffix</td><td class="ipa">i tɕ i</td><td>9× on 8 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=76s" target="_blank">00:01:16</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=954s" target="_blank">00:15:54</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1548s" target="_blank">00:25:48</a></td></tr><tr><td class="n">6</td><td class="k">suffix</td><td class="ipa">b a n</td><td>8× on 8 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=807s" target="_blank">00:13:27</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1486s" target="_blank">00:24:46</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1509s" target="_blank">00:25:09</a></td></tr><tr><td class="n">7</td><td class="k">prefix</td><td class="ipa">b a ɾ</td><td>8× on 8 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1635s" target="_blank">00:27:15</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1763s" target="_blank">00:29:23</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=2593s" target="_blank">00:43:13</a></td></tr><tr><td class="n">8</td><td class="k">prefix</td><td class="ipa">ʔ ɒ l</td><td>8× on 7 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=24s" target="_blank">00:00:24</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=238s" target="_blank">00:03:58</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=332s" target="_blank">00:05:32</a></td></tr><tr><td class="n">9</td><td class="k">prefix</td><td class="ipa">ʔ ɒ tɕ</td><td>8× on 7 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=51s" target="_blank">00:00:51</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=440s" target="_blank">00:07:20</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=466s" target="_blank">00:07:46</a></td></tr><tr><td class="n">10</td><td class="k">prefix</td><td class="ipa">b u ɾ</td><td>8× on 7 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=256s" target="_blank">00:04:16</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=304s" target="_blank">00:05:04</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=449s" target="_blank">00:07:29</a></td></tr><tr><td class="n">11</td><td class="k">prefix</td><td class="ipa">s ɒ n</td><td>8× on 7 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=573s" target="_blank">00:09:33</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=646s" target="_blank">00:10:46</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1237s" target="_blank">00:20:37</a></td></tr><tr><td class="n">12</td><td class="k">suffix</td><td class="ipa">a l a</td><td>8× on 7 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1001s" target="_blank">00:16:41</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1723s" target="_blank">00:28:43</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=2127s" target="_blank">00:35:27</a></td></tr><tr><td class="n">13</td><td class="k">suffix</td><td class="ipa">l j i</td><td>7× on 7 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=109s" target="_blank">00:01:49</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1747s" target="_blank">00:29:07</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=2472s" target="_blank">00:41:12</a></td></tr><tr><td class="n">14</td><td class="k">suffix</td><td class="ipa">i ɕ i</td><td>7× on 7 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=161s" target="_blank">00:02:41</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=490s" target="_blank">00:08:10</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=556s" target="_blank">00:09:16</a></td></tr><tr><td class="n">15</td><td class="k">prefix</td><td class="ipa">a tʂ e</td><td>7× on 7 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1259s" target="_blank">00:20:59</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1409s" target="_blank">00:23:29</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1712s" target="_blank">00:28:32</a></td></tr><tr><td class="n">16</td><td class="k">prefix</td><td class="ipa">ʔ ɒ n</td><td>7× on 6 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=17s" target="_blank">00:00:17</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=238s" target="_blank">00:03:58</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=652s" target="_blank">00:10:52</a></td></tr><tr><td class="n">17</td><td class="k">prefix</td><td class="ipa">b o ɾ</td><td>6× on 6 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=440s" target="_blank">00:07:20</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1262s" target="_blank">00:21:02</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=2812s" target="_blank">00:46:52</a></td></tr><tr><td class="n">18</td><td class="k">suffix</td><td class="ipa">b ɒ ɾ ɒ</td><td>6× on 5 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=221s" target="_blank">00:03:41</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=486s" target="_blank">00:08:06</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=581s" target="_blank">00:09:41</a></td></tr><tr><td class="n">19</td><td class="k">prefix</td><td class="ipa">tɕ ɒ b</td><td>6× on 5 stems</td><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=657s" target="_blank">00:10:57</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=945s" target="_blank">00:15:45</a> <a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1866s" target="_blank">00:31:06</a></td></tr></table>
 <h2 id="fights">fights · two answers, nobody alive to settle it</h2>
 <table><tr><td class="ipa">b u l</td><td class="vs">vs</td><td class="ipa">b u ɾ</td><td>one phone apart, both come back: two answers</td></tr><tr><td class="ipa">i tɕ i</td><td class="vs">vs</td><td class="ipa">i ɕ i</td><td>one phone apart, both come back: two answers</td></tr><tr><td class="ipa">b a ɾ</td><td class="vs">vs</td><td class="ipa">b u ɾ</td><td>one phone apart, both come back: two answers</td></tr><tr><td class="ipa">b a ɾ</td><td class="vs">vs</td><td class="ipa">b o ɾ</td><td>one phone apart, both come back: two answers</td></tr><tr><td class="ipa">ʔ ɒ l</td><td class="vs">vs</td><td class="ipa">ʔ ɒ tɕ</td><td>one phone apart, both come back: two answers</td></tr><tr><td class="ipa">ʔ ɒ l</td><td class="vs">vs</td><td class="ipa">ʔ ɒ n</td><td>one phone apart, both come back: two answers</td></tr><tr><td class="ipa">ʔ ɒ tɕ</td><td class="vs">vs</td><td class="ipa">ʔ ɒ n</td><td>one phone apart, both come back: two answers</td></tr><tr><td class="ipa">b u ɾ</td><td class="vs">vs</td><td class="ipa">b o ɾ</td><td>one phone apart, both come back: two answers</td></tr><tr><td class="ipa">s ɒ n</td><td class="vs">vs</td><td class="ipa">ʔ ɒ n</td><td>one phone apart, both come back: two answers</td></tr></table>
 <h2>the gate · refused (41)</h2>
 <ul><li><span class="ipa">ʔ ɒ tʂ</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">tɕ ɒ l</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">o b ɒ</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">n ɒ ɴ</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">o b u</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">ð e ɾ</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">i j b</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">ʌ b ɒ</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">b ɔ ɾ</span> · heard 5 times, the gate wants 6</li><li><span class="ipa">ɨ b ɒ</span> · heard 5 times, the gate wants 6</li><li>… and 31 more in report.md</li></ul>
 <h2 id="voice">his voice · where the register shifts (median 152.9 Hz, 10.27 phones/s)</h2>
-<table><tr><td><a class="pos" href="#" target="_blank">00:38:45</a></td><td>332.2 Hz</td><td class="hi">z +7.4</td><td>2.86 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:52:53</a></td><td>299.1 Hz</td><td class="hi">z +6.1</td><td>3.75 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:49:40</a></td><td>290.5 Hz</td><td class="hi">z +5.7</td><td>2.5 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">01:04:48</a></td><td>275.4 Hz</td><td class="hi">z +5.1</td><td>2.73 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">01:06:09</a></td><td>271.9 Hz</td><td class="hi">z +4.9</td><td>6.25 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">01:11:42</a></td><td>270.6 Hz</td><td class="hi">z +4.9</td><td>5.0 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:07:15</a></td><td>260.2 Hz</td><td class="hi">z +4.5</td><td>8.0 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">01:08:06</a></td><td>253.5 Hz</td><td class="hi">z +4.2</td><td>7.35 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:56:22</a></td><td>246.8 Hz</td><td class="hi">z +3.9</td><td>11.82 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:21:32</a></td><td>242.4 Hz</td><td class="hi">z +3.7</td><td>14.5 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:18:16</a></td><td>237.9 Hz</td><td class="hi">z +3.5</td><td>1.0 phones/s</td></tr><tr><td><a class="pos" href="#" target="_blank">00:21:37</a></td><td>234.5 Hz</td><td class="hi">z +3.4</td><td>8.75 phones/s</td></tr></table>
+<table><tr><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=2325s" target="_blank">00:38:45</a></td><td>332.2 Hz</td><td class="hi">z +7.4</td><td>2.86 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=3173s" target="_blank">00:52:53</a></td><td>299.1 Hz</td><td class="hi">z +6.1</td><td>3.75 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=2980s" target="_blank">00:49:40</a></td><td>290.5 Hz</td><td class="hi">z +5.7</td><td>2.5 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=3888s" target="_blank">01:04:48</a></td><td>275.4 Hz</td><td class="hi">z +5.1</td><td>2.73 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=3969s" target="_blank">01:06:09</a></td><td>271.9 Hz</td><td class="hi">z +4.9</td><td>6.25 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=4302s" target="_blank">01:11:42</a></td><td>270.6 Hz</td><td class="hi">z +4.9</td><td>5.0 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=435s" target="_blank">00:07:15</a></td><td>260.2 Hz</td><td class="hi">z +4.5</td><td>8.0 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=4086s" target="_blank">01:08:06</a></td><td>253.5 Hz</td><td class="hi">z +4.2</td><td>7.35 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=3382s" target="_blank">00:56:22</a></td><td>246.8 Hz</td><td class="hi">z +3.9</td><td>11.82 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1292s" target="_blank">00:21:32</a></td><td>242.4 Hz</td><td class="hi">z +3.7</td><td>14.5 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1096s" target="_blank">00:18:16</a></td><td>237.9 Hz</td><td class="hi">z +3.5</td><td>1.0 phones/s</td></tr><tr><td><a class="pos" href="https://www.youtube.com/watch?v=361y-JDT_bs&t=1297s" target="_blank">00:21:37</a></td><td>234.5 Hz</td><td class="hi">z +3.4</td><td>8.75 phones/s</td></tr></table>
 <h2>vowels nobody wrote down</h2>
 <div class="vb"><span class="ipa">ɒ</span><i style="width:180px"></i><b>3353</b></div><div class="vb"><span class="ipa">e</span><i style="width:102px"></i><b>1912</b></div><div class="vb"><span class="ipa">a</span><i style="width:99px"></i><b>1851</b></div><div class="vb"><span class="ipa">o</span><i style="width:58px"></i><b>1089</b></div><div class="vb"><span class="ipa">ʌ</span><i style="width:55px"></i><b>1041</b></div><div class="vb"><span class="ipa">uə</span><i style="width:53px"></i><b>994</b></div><div class="vb"><span class="ipa">i</span><i style="width:51px"></i><b>967</b></div><div class="vb"><span class="ipa">ɪ</span><i style="width:32px"></i><b>611</b></div><div class="vb"><span class="ipa">æ</span><i style="width:29px"></i><b>543</b></div><div class="vb"><span class="ipa">ɨ</span><i style="width:16px"></i><b>299</b></div><div class="vb"><span class="ipa">ɔ</span><i style="width:15px"></i><b>291</b></div><div class="vb"><span class="ipa">u</span><i style="width:14px"></i><b>268</b></div>
 <h2>case log</h2>
@@ -68,5 +249,83 @@ ul{padding-left:18px} li{margin:3px 0}
 <table><tr><td>window</td><td>utterances</td><td>speech share</td><td>phones/s</td><td>pitch</td><td>median utterance</td></tr><tr><td>00:00-10:00</td><td>170</td><td>0.773</td><td>10.0</td><td>156.8</td><td>2.1 s</td></tr><tr><td>10:00-20:00</td><td>172</td><td>0.771</td><td>10.87</td><td>149.7</td><td>2.2 s</td></tr><tr><td>20:00-30:00</td><td>171</td><td>0.778</td><td>11.43</td><td>153.1</td><td>2.0 s</td></tr><tr><td>30:00-40:00</td><td>140</td><td>0.76</td><td>9.16</td><td>155.4</td><td>2.65 s</td></tr><tr><td>40:00-50:00</td><td>156</td><td>0.799</td><td>10.0</td><td>153.4</td><td>2.3 s</td></tr><tr><td>50:00-60:00</td><td>160</td><td>0.792</td><td>10.33</td><td>152.7</td><td>2.3 s</td></tr><tr><td>60:00-70:00</td><td>167</td><td>0.764</td><td>10.0</td><td>152.1</td><td>2.2 s</td></tr><tr><td>70:00-71:00</td><td>28</td><td>0.8</td><td>10.28</td><td>150.9</td><td>2.75 s</td></tr></table>
 <h2>what this is not</h2>
 <div class="note">no dictionary of the language was used and nothing here is a translation. a "word" is a chain of phones that repeats, a "rule" is a chain that keeps attaching to different neighbours, a "fight" is two of them one phone apart. the register detector hears pitch and tempo, not meaning. a linguist would call this a starting point. that is what it is, and every line carries the second of tape it came from.</div>
-<div class="foot">other tapes: <a href="index.html">torwali</a> · <a href="piedmontese.html">piedmontese</a> · desk.py run tape.wav · generated from runs/torwali/run.json</div>
-</div></body></html>
+
+<div class="foot">other tapes: <a href="index.html">torwali</a> · <a href="piedmontese.html">piedmontese</a>
+ · <a href="https://github.com/jugqdc-sudo/cold-desk" target="_blank">code</a>
+ · <a href="https://x.com/ventry089" target="_blank">the serial</a>
+ · desk.py run tape.wav · generated from runs/torwali/run.json</div>
+</div>
+<script>
+// дорожка в герое: не декор, а тот же курсор воспроизведения, что идёт в роликах
+(function(){
+  var c=document.getElementById('wv'); if(!c) return;
+  var g=c.getContext('2d'), dpr=Math.min(2,window.devicePixelRatio||1), W=0,H=64;
+  function size(){ W=c.clientWidth; c.width=W*dpr; c.height=H*dpr; g.setTransform(dpr,0,0,dpr,0,0); }
+  size(); addEventListener('resize',size);
+  var seed=function(i){ var v=Math.sin(i*12.9898)*43758.5453; return v-Math.floor(v); };
+  var t=0, slow=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function frame(){
+    t+=slow?0:1;
+    g.clearRect(0,0,W,H);
+    var bw=3, gap=3, n=Math.floor(W/(bw+gap)), cur=(t*0.0016)%1;
+    for(var i=0;i<n;i++){
+      var u=i/n;
+      // огибающая речи: пачки высказываний с паузами, как на настоящей плёнке
+      var env=Math.max(0,Math.sin(u*26)*0.5+0.5)*Math.max(0,Math.sin(u*7.3+1.1)*0.6+0.55);
+      var a=env*(0.35+seed(i+((t*0.02)|0))*0.65);
+      var h=Math.max(1,a*(H-10));
+      var past=u<cur;
+      g.fillStyle = past ? (u>cur-0.02 ? '#c8913a' : 'rgba(43,48,42,.62)') : 'rgba(43,48,42,.16)';
+      g.fillRect(i*(bw+gap), (H-h)/2, bw, h);
+    }
+    g.fillStyle='rgba(192,74,60,.75)';
+    g.fillRect(cur*W, 4, 1, H-8);
+    requestAnimationFrame(frame);
+  }
+  frame();
+})();
+
+// секции проявляются один раз, без дёрганья при обратной прокрутке
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('on');}); return; }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('on'); io.unobserve(en.target); } });
+  },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  els.forEach(function(e){ io.observe(e); });
+})();
+
+// цифры метрик набегают, когда полоса появляется в кадре
+(function(){
+  var strip=document.querySelector('.strip'); if(!strip) return;
+  var done=false;
+  function run(){
+    if(done) return; done=true;
+    strip.querySelectorAll('b').forEach(function(b){
+      var raw=b.textContent.trim(), m=raw.replace(/,/g,'').match(/^(\d+(?:\.\d+)?)(.*)$/);
+      if(!m) return;
+      var end=parseFloat(m[1]), tail=m[2]||'', dec=(m[1].split('.')[1]||'').length;
+      var grp=raw.indexOf(',')>=0, t0=performance.now(), dur=900;
+      function step(now){
+        var k=Math.min(1,(now-t0)/dur), e=1-Math.pow(1-k,3), v=end*e;
+        var txt=dec?v.toFixed(dec):Math.round(v).toString();
+        if(grp) txt=txt.replace(/\B(?=(\d{3})+(?!\d))/g,',');
+        b.textContent=txt+tail;
+        if(k<1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) run(); }); },
+    {threshold:.3}).observe(strip);
+})();
+
+// позиция плёнки в ленте: тикает, как счётчик магнитофона
+(function(){
+  var el=document.getElementById('tapepos'); if(!el) return;
+  var n=0;
+  setInterval(function(){ n=(n+37)%99999; el.textContent='TAPE POSITION '+String(n).padStart(5,'0'); },140);
+})();
+</script>
+</body></html>
